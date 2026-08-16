@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麻生区PTA協議会 臨時総会（書面議決）— 教育講演（講演＋ミニライブ）開催の承認について</title>
+<meta name="robots" content="noindex, noarchive, nosnippet">
+<meta name="description" content="麻生区PTA協議会 臨時総会（オンライン・書面議決）。教育講演（講演＋ミニライブ・講師: 木山裕策氏）の開催と講演会特別区分の設置について、代議員のみなさまの議決をお願いします。提出期限は令和8年8月9日（日）23:59です。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【8/9締切】麻生区PTA協議会 臨時総会（オンライン）ご回答のお願い">
+<meta property="og:description" content="教育講演（講演＋ミニライブ・講師: 木山裕策氏）の開催について、承認・非承認をGoogleフォームでご回答ください（約2分）。提出期限: 令和8年8月9日（日）23:59">
+<meta property="og:image" content="assets/kiyama_portrait_v2.jpg">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root {
+    --navy: #1e3a5f; --navy-2: #2b4f7e; --amber: #e8a13d; --amber-d: #b0862f;
+    --bg: #f4f6f9; --line: #d8dee8; --ink: #2b2b2b; --sub: #5a6c85;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  /* 固定ヘッダー分のオフセット（ジャンプ後に見出しが隠れないように） */
+  section[id], div[id] { scroll-margin-top: 70px; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+    color: var(--ink); background: var(--bg); line-height: 1.85; font-size: 16px;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  /* height属性が付いた画像でも縦横比が崩れないよう、高さは常に自動算出させる */
+  img { max-width: 100%; height: auto; display: block; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 20px; }
+
+  /* ---------- 固定ヘッダー ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.96);
+    border-bottom: 1px solid var(--line); backdrop-filter: blur(6px);
+  }
+  .topbar-in {
+    max-width: 880px; margin: 0 auto; padding: 10px 20px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .topbar .brand { font-size: 13px; font-weight: 700; color: var(--navy); line-height: 1.4; }
+  .topbar .brand small { display: block; font-weight: 600; color: var(--sub); font-size: 11px; }
+  .topbar .sp { margin-left: auto; }
+
+  /* ---------- ボタン ---------- */
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 700; text-align: center;
+    border-radius: 999px; transition: transform 0.15s, box-shadow 0.15s; line-height: 1.4;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-vote {
+    background: linear-gradient(135deg, #e8a13d, #d98c1f); color: #fff;
+    padding: 14px 30px; font-size: 17px; box-shadow: 0 4px 14px rgba(217,140,31,0.4);
+  }
+  .btn-vote.small { padding: 9px 18px; font-size: 13px; box-shadow: 0 2px 8px rgba(217,140,31,0.35); }
+  .btn-pdf {
+    background: #fff; color: var(--navy); border: 2px solid var(--navy);
+    padding: 12px 26px; font-size: 15px;
+  }
+  .btn-pdf.on-dark { background: rgba(255,255,255,0.12); color: #fff; border-color: rgba(255,255,255,0.6); }
+
+  /* ---------- ヒーロー ---------- */
+  .hero {
+    background: linear-gradient(150deg, #16304f 0%, #1e3a5f 55%, #2b4f7e 100%);
+    color: #fff; padding: 56px 0 64px; position: relative; overflow: hidden;
+  }
+  .hero::after {
+    content: ""; position: absolute; right: -120px; top: -120px; width: 380px; height: 380px;
+    border-radius: 50%; background: radial-gradient(circle, rgba(232,161,61,0.25), transparent 70%);
+  }
+  .hero .org { letter-spacing: 0.3em; font-size: 14px; font-weight: 600; opacity: 0.85; }
+  .hero h1 { font-size: clamp(24px, 4.6vw, 38px); font-weight: 800; line-height: 1.5; margin: 10px 0 6px; }
+  .hero h1 .accent { color: var(--amber); }
+  .hero .sub { font-size: clamp(14px, 2.4vw, 17px); opacity: 0.9; }
+  .hero .badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0; }
+  .tocbar { background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .tocbar-in {
+    max-width: 880px; margin: 0 auto; padding: 11px 20px;
+    display: flex; gap: 20px; white-space: nowrap; font-size: 13px;
+  }
+  /* タップ領域を確保（スマホでの誤タップ防止） */
+  .tocbar-in a {
+    color: var(--sub); text-decoration: none; font-weight: 600; transition: color 0.15s;
+    padding: 8px 2px; display: inline-block;
+  }
+  .tocbar-in a:hover { color: var(--navy); }
+  .tocbar-in a.vote { color: var(--amber-d); font-weight: 800; }
+  .badge {
+    background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 999px; padding: 6px 16px; font-size: 13px; font-weight: 600;
+  }
+  .badge.deadline { background: var(--amber); border-color: var(--amber); color: #16304f; font-weight: 800; }
+  .hero .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-top: 26px; }
+  .hero .from { margin-top: 26px; font-size: 13px; opacity: 0.8; }
+  .hero-grid { display: flex; gap: 34px; align-items: center; flex-wrap: wrap; }
+  .hero-main { flex: 1.6 1 340px; }
+  .hero-photo { flex: 1 1 240px; max-width: 360px; margin: 0 auto; }
+  .hero-photo img { border-radius: 14px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); border: 3px solid rgba(255,255,255,0.25); }
+  .hero-photo .cap-w { font-size: 11px; opacity: 0.78; text-align: center; margin-top: 8px; line-height: 1.6; }
+
+  /* ---------- セクション共通 ---------- */
+  section { padding: 48px 0 8px; }
+  .sec-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 22px; }
+  .sec-head .no {
+    background: var(--navy); color: #fff; font-size: 14px; font-weight: 800;
+    padding: 4px 10px; border-radius: 6px; line-height: 1.4;
+  }
+  .sec-head h2 { font-size: clamp(19px, 3.4vw, 24px); color: var(--navy); line-height: 1.5; }
+  .sec-head .en { margin-left: auto; font-size: 11px; letter-spacing: 0.15em; color: var(--amber-d); font-weight: 700; }
+  .card {
+    background: #fff; border-radius: 14px; padding: 24px 26px; margin-bottom: 16px;
+    box-shadow: 0 2px 10px rgba(30,58,95,0.07); border: 1px solid #e7ecf3;
+  }
+  .navy { color: var(--navy); font-weight: 700; }
+  .amber { color: var(--amber-d); font-weight: 700; }
+  .todo { color: #c0392b; font-weight: 700; }
+  p.body { font-size: 15px; margin-bottom: 10px; }
+  .note { font-size: 13px; color: var(--sub); line-height: 1.7; }
+
+  /* ---------- 3行まとめ ---------- */
+  .sum-card { display: flex; gap: 18px; align-items: flex-start; border-left: 6px solid var(--amber); }
+  .sum-card .n { font-family: Georgia, serif; font-size: 30px; font-weight: 800; color: var(--amber); line-height: 1.1; }
+  .sum-card .t { font-size: 17px; font-weight: 800; color: var(--navy); margin-bottom: 4px; line-height: 1.6; }
+  .sum-card .d { font-size: 14px; color: #444; }
+
+  /* ---------- 記（招集通知の要点） ---------- */
+  .ki-item { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px dashed var(--line); }
+  .ki-item:last-child { border-bottom: none; }
+  .ki-item .kn {
+    flex: none; width: 30px; height: 30px; background: var(--navy); color: #fff; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px; margin-top: 3px;
+  }
+  .ki-item .kt { font-weight: 800; color: var(--navy); font-size: 15px; }
+  .ki-item .kd { font-size: 14px; color: #444; }
+  .qr-slot {
+    flex: none; width: 96px; height: 96px; border: 1px solid var(--line); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; padding: 4px; background: #fff;
+  }
+  .qr-slot img { width: 100%; height: 100%; }
+
+  /* ---------- 企画した委員の言葉（抜粋・全文は omoi.html） ----------
+     LP全体が長いため、本文には心に残る2文だけを置き、全文は別ページへ逃がす。
+     事務的な表・箇条書きと質感を変え、「人の言葉」だと一目でわかるようにする。 */
+  .letter-teaser {
+    background: #fffdf8; border: 1px solid #e6dcc4; border-left: 6px solid var(--amber);
+    border-radius: 12px; padding: 20px 24px 18px; margin: 30px 0 6px;
+  }
+  .letter-teaser .lt-lead {
+    font-size: 13px; font-weight: 800; color: #7a5c1e;
+    letter-spacing: 0.08em; margin-bottom: 10px;
+  }
+  .letter-teaser p {
+    font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+    font-size: 16px; line-height: 2.0; color: #3b3529; margin-bottom: 12px;
+  }
+  .letter-teaser .hl {
+    background: linear-gradient(transparent 62%, #fbe9c0 62%); font-weight: 600;
+  }
+  .letter-teaser .lt-more {
+    display: inline-block; color: #7a5c1e; font-weight: 700; font-size: 14px;
+    text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 2px;
+  }
+  @media (max-width: 600px) {
+    .letter-teaser { padding: 17px 16px 15px; }
+    .letter-teaser p { font-size: 15px; line-height: 1.95; }
+  }
+
+  /* ---------- 表 ---------- */
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { border: 1px solid var(--line); padding: 9px 12px; text-align: left; vertical-align: top; line-height: 1.7; }
+  th { background: #eef2f7; color: var(--navy); white-space: nowrap; }
+  td.k { background: #f6f8fb; color: var(--navy); font-weight: 700; white-space: nowrap; width: 130px; }
+  tr.hl td { background: #fdf6e7; }
+  .tbl-scroll { overflow-x: auto; }
+
+  /* ---------- 理由カード ---------- */
+  h3.reason { font-size: 17px; color: var(--navy); margin-bottom: 10px; line-height: 1.6; }
+  h3.reason .chip {
+    display: inline-block; background: var(--amber); color: #16304f; border-radius: 6px;
+    font-size: 12px; font-weight: 800; padding: 2px 10px; margin-right: 10px; vertical-align: 2px;
+  }
+  .quote {
+    background: #fbf7ef; border: 1px solid #ecdfc4; border-radius: 12px; padding: 18px 22px; margin: 14px 0;
+  }
+  .quote .q { font-family: "Hiragino Mincho ProN", "Yu Mincho", serif; font-size: 16px; color: #4a3f2a; line-height: 2; }
+  .quote .q::before { content: "“"; color: var(--amber); font-size: 22px; margin-right: 4px; }
+  .quote .q::after { content: "”"; color: var(--amber); font-size: 22px; margin-left: 4px; }
+  .quote .src { text-align: right; font-size: 12px; color: #7d6f52; margin-top: 6px; }
+  .voices { display: flex; flex-wrap: wrap; gap: 12px; margin: 14px 0; }
+  .voice {
+    flex: 1 1 220px; background: #fff; border: 1.5px solid var(--amber); border-radius: 12px;
+    text-align: center; padding: 14px 10px;
+  }
+  .voice .v { font-family: "Hiragino Mincho ProN", serif; font-size: 18px; font-weight: 700; color: var(--amber-d); }
+  .voice .who { font-size: 12px; color: #666; margin-top: 2px; }
+  .media-2col { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+  .media-2col .txt { flex: 1.5 1 320px; }
+  .media-2col .pic { flex: 1 1 240px; }
+  .media-2col .pic img { border-radius: 12px; border: 1px solid var(--line); }
+  .cap { font-size: 12px; color: #6b7688; text-align: center; margin-top: 6px; line-height: 1.6; }
+  .tbl-scroll { position: relative; }
+  .scroll-hint { font-size: 11.5px; color: var(--amber-d); font-weight: 700; margin-bottom: 5px; }
+
+  /* ---------- FAQ ---------- */
+  details.faq {
+    background: #fff; border: 1px solid #e7ecf3; border-radius: 12px; margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(30,58,95,0.06); overflow: hidden;
+  }
+  details.faq summary {
+    cursor: pointer; list-style: none; padding: 16px 20px; font-weight: 800; color: var(--navy);
+    display: flex; align-items: center; gap: 12px; font-size: 15px;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary .qchip {
+    flex: none; background: var(--navy); color: #fff; border-radius: 6px; font-size: 12px; padding: 2px 9px;
+  }
+  details.faq summary::after { content: "＋"; margin-left: auto; color: var(--amber-d); font-weight: 800; }
+  details.faq[open] summary::after { content: "－"; }
+  details.faq .a { padding: 0 20px 16px 20px; font-size: 14px; color: #444; }
+  details.faq.profile summary { background: #f6f8fb; }
+  details.faq.profile .a { padding-top: 14px; }
+  details.faq.profile .a::after { content: ""; display: block; clear: both; }
+  .wrapimg {
+    float: right; width: 260px; max-width: 42%; margin: 0 0 14px 18px;
+    border-radius: 12px; border: 1px solid var(--line);
+  }
+  @media (max-width: 560px) {
+    .wrapimg { float: none; width: 100%; max-width: 100%; margin: 0 0 14px 0; }
+  }
+
+  /* ---------- CTAバンド ---------- */
+  .cta-band {
+    background: linear-gradient(135deg, #fdf6e7, #fbecd0); border: 1.5px solid var(--amber);
+    border-radius: 16px; padding: 26px 28px; margin: 34px 0 10px;
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  }
+  .cta-band .msg { flex: 1 1 300px; }
+  .cta-band .msg .l1 { font-size: 17px; font-weight: 800; color: var(--navy); }
+  .cta-band .msg .l2 { font-size: 13px; color: var(--sub); margin-top: 2px; }
+
+  /* ---------- 最終CTA（投票セクション） ---------- */
+  .vote-sec {
+    background: linear-gradient(150deg, #16304f, #1e3a5f 60%, #2b4f7e); color: #fff;
+    border-radius: 20px; padding: 46px 30px; text-align: center; margin: 40px 0;
+  }
+  .vote-sec h2 { font-size: clamp(21px, 3.6vw, 28px); line-height: 1.6; }
+  .vote-sec .dl { color: var(--amber); font-weight: 800; }
+  .vote-sec p { font-size: 14px; opacity: 0.92; margin-top: 10px; }
+  .vote-inner {
+    display: flex; gap: 26px; align-items: center; justify-content: center; flex-wrap: wrap; margin-top: 26px;
+  }
+  .vote-qr {
+    width: 140px; height: 140px; background: #fff; border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; padding: 8px;
+  }
+  .vote-qr img { width: 100%; height: 100%; }
+  .vote-btns { display: flex; flex-direction: column; gap: 12px; }
+  .form-embed { max-width: 760px; margin: 28px auto 0; }
+  .form-embed iframe { width: 100%; border: 0; border-radius: 14px; background: #fff; }
+  .form-embed-ph {
+    border: 2px dashed #c0392b; border-radius: 14px; background: rgba(255,255,255,0.95);
+    color: #c0392b; font-weight: 700; font-size: 15px; text-align: center;
+    padding: 46px 20px; line-height: 1.9;
+  }
+  .form-embed-ph span { font-size: 12px; font-weight: 600; }
+  .vote-note { font-size: 12px; opacity: 0.8; margin-top: 18px; line-height: 1.8; }
+
+  footer { padding: 30px 0 46px; text-align: center; font-size: 12px; color: var(--sub); }
+  footer .fbtns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 18px; }
+
+  @media (max-width: 560px) {
+    body { font-size: 15px; }
+    .card { padding: 18px 18px; }
+    .topbar .brand small { display: none; }
+  }
+
+  /* ---------- 印刷 ---------- */
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    .topbar, .tocbar, .cta-band, .vote-btns, .form-embed, .form-embed-ph, footer .fbtns { display: none !important; }
+    .hero, .vote-sec { background: #fff !important; color: #1e3a5f !important; border: 1px solid #1e3a5f; }
+    .hero .org, .hero .sub, .hero .from, .vote-sec p { opacity: 1; color: #333 !important; }
+    .badge, .badge.deadline { background: #fff !important; color: #1e3a5f !important; border: 1px solid #1e3a5f !important; }
+    .btn { display: none !important; }
+    /* 折りたたみを全部開いて印刷する */
+    details.faq { display: block !important; break-inside: avoid; }
+    details.faq .a { display: block !important; padding: 0 20px 14px 20px !important; }
+    details.faq summary::after { content: "" !important; }
+    .card, .quote, .voice { break-inside: avoid; }
+    .tbl-scroll { overflow: visible !important; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #555; }
+  }
+</style>
+<script>
+  /* 印刷時にFAQの折りたたみをすべて開く（閉じたQ&Aが印刷から落ちるのを防ぐ） */
+  window.addEventListener('beforeprint', function () {
+    document.querySelectorAll('details').forEach(function (d) {
+      if (!d.open) { d.dataset.wasClosed = '1'; d.open = true; }
+    });
+  });
+  window.addEventListener('afterprint', function () {
+    document.querySelectorAll('details[data-was-closed]').forEach(function (d) {
+      d.open = false; delete d.dataset.wasClosed;
+    });
+  });
+</script>
+</head>
+<body>
+
+<!-- 固定ヘッダー -->
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand">麻生区PTA協議会 臨時総会<small>教育講演（講演＋ミニライブ・講師: 木山裕策氏）の開催について（書面議決）</small></div>
+    <span class="sp"></span>
+    <a class="btn btn-vote small" href="#vote">投票する</a>
+  </div>
+</div>
+
+<!-- ヒーロー -->
+<div class="hero">
+  <div class="wrap" style="position:relative; z-index:1;">
+    <div class="hero-grid">
+      <div class="hero-main">
+    <div class="org">麻生区PTA協議会　臨時総会（書面議決）</div>
+    <h1>教育講演（講演＋ミニライブ）<span class="accent">（講師: 木山裕策氏）</span><br>開催の承認をお願いします</h1>
+    <div class="sub">運営委員のみなさんの声から生まれた教育講演会の開催と、そのお金を区分して管理する「講演会特別区分」の設置について、代議員のみなさまの議決をお願いいたします。</div>
+    <div class="badges">
+      <span class="badge deadline">提出期限　令和8年8月9日（日）23:59</span>
+      <span class="badge">Googleフォームで2分</span>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-vote" href="#vote">承認・非承認を投票する</a>
+      <a class="btn btn-pdf on-dark" href="rinji-sokai-shiryo.pdf" target="_blank" rel="noopener">📄 PDFで確認する（ダウンロードする）</a>
+    </div>
+    <div class="from">令和8年7月30日　麻生区PTA協議会　会長　前村 嘉昭</div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/kiyama_portrait_v2.jpg" alt="講師の木山裕策氏" width="1200" height="800">
+        <div class="cap-w">木山裕策氏<br>木山裕策オフィシャルページより引用　https://yusakukiyama.com/biography/</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 目次バー -->
+<nav class="tocbar" aria-label="目次">
+  <div class="tocbar-in">
+    <a href="#summary">0 はじめにお読みください</a>
+    <a href="#notice">記 招集通知・議決要件</a>
+    <a href="#gian">1 議案の概要</a>
+    <a href="#reasons">2 提案の理由</a>
+    <a href="#approval">3 承認をお願いする内容</a>
+    <a href="#budget">4 収支計画</a>
+    <a href="#faq">Q&amp;A よくあるご質問</a>
+    <a class="vote" href="#vote">🗳 投票する</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <!-- 3行まとめ -->
+  <section id="summary">
+    <div class="sec-head"><span class="no">0</span><h2>はじめにお読みください — 今回のお願いを、まず3行で</h2><span class="en">SUMMARY</span></div>
+    <div class="card sum-card">
+      <div class="n">1</div>
+      <div>
+        <div class="t">歌手の木山裕策さんをお招きして、教育講演会を開きたいと考えています</div>
+        <div class="d">「home」・NHK紅白歌合戦出場の歌手です。講演（約60分）＋歌のミニライブ（約30分）の構成です。<br>
+        <span class="navy">なぜ木山さんなのか：</span>がんの手術で「声が出なくなるかもしれない」と告げられた経験から38歳で歌に挑戦し、一度の不合格を乗り越えて39歳・現役サラリーマンのままデビューされた方です。「失敗しても人生は終わらない」「いくつになっても夢を叶えられる」というメッセージは、聞いた大人を前向きにします。<span class="navy">その姿を見た子どもたちが前向きな生き方を学ぶ——それが一番の教育</span>だと考えています。本年5月の市Pの講演会も大変好評で、麻生区でも「もう一度聞きたい」「自分もぜひ聞きたい」という声が寄せられています。</div>
+      </div>
+    </div>
+    <div class="card sum-card">
+      <div class="n">2</div>
+      <div>
+        <div class="t">費用は約38万円。<span class="amber">会費（分担金）の負担増はありません</span></div>
+        <div class="d">本会の予備費を本企画に充当します。また充当額の軽減のため、共催団体の募集（運営費用を負担いただく）、協賛金・ご寄付などを試み、得られた収入がある場合には当協議会の負担は38万円から軽減されます。<br><span class="navy">仮に全額を本会の資金で賄った場合でも、会員一人あたりに換算すると約36円です（38万円÷会員保護者世帯数約10,667世帯）。</span></div>
+      </div>
+    </div>
+    <div class="card sum-card">
+      <div class="n">3</div>
+      <div>
+        <div class="t">Googleフォームで「承認・非承認」をご回答ください</div>
+        <div class="d">このページの投票ボタン、またはQRコードからアクセスできます。提出期限は<span class="navy">令和8年8月9日（日）</span>です。<br>お聞きするのは<span class="navy">①学校名（選ぶだけ）②お名前 ③承認・非承認 ④ご意見（任意）</span>の4つだけ。2分で終わります。</div>
+      </div>
+    </div>
+
+    <div class="cta-band">
+      <div class="msg">
+        <div class="l1">内容にすでに目を通された方は、こちらから投票いただけます</div>
+        <div class="l2">所要時間は約2分。詳しい内容はこのまま下へお読みください。</div>
+      </div>
+      <a class="btn btn-vote" href="#vote">投票にすすむ</a>
+    </div>
+  </section>
+
+  <!-- 招集通知の要点 -->
+  <section id="notice">
+    <div class="sec-head"><span class="no">記</span><h2>臨時総会 招集通知（書面議決のご案内）</h2><span class="en">NOTICE</span></div>
+    <div class="card">
+      <p class="body">先日開催いたしました臨時運営委員会において、会則第7条第3項に基づき、臨時総会を招集することを決定いたしました。本総会は、会則第7条第4項に基づき、書面（電磁的な記録を含む）による議決で行うオンライン臨時総会です。定期総会（WEB総会）と同じ方法です。</p>
+      <div class="ki-item">
+        <div class="kn">1</div>
+        <div><div class="kt">議案</div>
+        <div class="kd">議案第1号　成人教育活動 教育講演会の開催および講演会特別区分の設置について<br>
+        歌手・木山裕策氏をお招きする教育講演会（講演＋ミニライブ・参加費無料・2026年度後半、12月を予定）を開催すること、支出は総額38万円を上限として成人教育費の組み替え・本会の予備費からの繰入等を財源とすること、および本事業の収支を他の予算と区分して管理する「講演会特別区分」を設置することについて、ご承認をお願いするものです（詳細は下の「議案書」のとおり）。</div></div>
+      </div>
+      <div class="ki-item">
+        <div class="kn">2</div>
+        <div><div class="kt">議決の方法</div><div class="kd">書面（電磁的な記録を含む）による議決（会則第7条第4項）　※Googleフォームでご回答ください</div></div>
+      </div>
+      <div class="ki-item">
+        <div class="kn">3</div>
+        <div><div class="kt">提出期限</div><div class="kd"><span class="navy">令和8年8月9日（日）23:59まで</span></div></div>
+      </div>
+      <div class="ki-item">
+        <div class="kn">4</div>
+        <div style="flex:1;"><div class="kt">議決のご回答方法</div>
+          <div class="kd" style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <div style="flex:1 1 260px;">本ページ下部に、議決の投票用フォームがあります。承認・非承認をご回答ください（2分で終わります）。<br><a href="#vote" style="font-weight:700;">▶ ページ下部の投票フォームへ移動する</a><br><span class="note">※フォームが表示されない場合は、投票欄の「投票フォームを別画面で開く」からGoogleフォームを開いてください。<br>※右のQRコードをスマートフォンで読み取ってもご回答いただけます。<br>※フォームにアクセスできない場合は、お問い合わせ先メールに ①学校名 ②氏名 ③承認・非承認 をお送りください（定期総会と同じ取り扱い）</span></div>
+            <a class="qr-slot" href="https://forms.gle/kibhoF4ZWw4vcje77" target="_blank" rel="noopener"><img src="assets/form_qr_v3.png" alt="議決フォームのQRコード" width="96" height="96"></a>
+          </div>
+        </div>
+      </div>
+      <div class="ki-item">
+        <div class="kn">5</div>
+        <div><div class="kt">お問い合わせ先</div><div class="kd">麻生区PTA協議会 事務局（<a href="mailto:asao.ku.pta.00@gmail.com">asao.ku.pta.00@gmail.com</a>）　※ご質問・ご意見は、メールでお寄せください<br><span class="note">ご質問は<span class="navy">令和8年8月7日（金）</span>までにお寄せいただけますと、期限までに回答をお返しできます（定期総会と同じ取り扱い）。</span></div></div>
+      </div>
+    </div>
+    <div class="card" style="border-left:6px solid var(--navy);">
+      <div style="font-weight:800; color:var(--navy); margin-bottom:8px;">議決要件</div>
+      <div class="tbl-scroll">
+      <table>
+        <tr><td class="k">総会の種別</td><td>会則第7条3項に基づき、運営委員会が必要と認めて招集する<span class="navy">臨時総会</span>です</td></tr>
+        <tr><td class="k">議決の方法</td><td>会則第7条4項に基づき、<span class="navy">書面（電磁的な記録を含む）による議決</span>で行います（Googleフォームでのご回答）</td></tr>
+        <tr><td class="k">総会の成立</td><td>代議員の2分の1以上（令和8年度の総代議員は69名のため、<span class="navy">35名以上のご回答</span>で成立します）</td></tr>
+        <tr><td class="k">議案の可決</td><td>出席者および議決権行使書、委任状提出者の2分の1以上の同意</td></tr>
+      </table>
+      </div>
+      <p class="note" style="margin-top:10px;">※「議決権行使書」は会則の条文どおりの表記です。今回はすべてオンライン（Googleフォーム）で承りますので、<span class="navy">紙の行使書・委任状をご提出いただく必要はありません</span>。<br>※みなさまお一人のご回答が、そのまま総会の成立要件に効きます。ご回答をどうぞよろしくお願いいたします。</p>
+      <p class="note" style="margin-top:6px;">参考: 本議案は、会則第7条5項に定める総会審議事項のうち「(2) 事業計画ならびに事業報告に関する事項」（講演会の開催）と「(3) 予算、決算ならびに会計の監査に関する事項」（支出の上限・財源・特別区分の設置）に当たります。</p>
+    </div>
+  </section>
+
+  <!-- 企画した委員の思い（抜粋のみ・全文は別ページ omoi.html） -->
+  <div class="letter-teaser">
+    <div class="lt-lead">この企画を始めた、成人委員の言葉</div>
+    <p>「ぜひこの感動を麻生区の保護者の皆さんにも届けたい」<br>
+    <span class="hl">私自身も、子育てに疲れ切っていたときに木山さんの講演会を聴き、とても前向きな気持ちになれた経験があります。</span></p>
+    <a class="lt-more" href="omoi.html" target="_blank" rel="noopener">成人委員の思いを読む（全文・別画面で開きます）</a>
+  </div>
+
+  <!-- 議案書 -->
+  <section id="gian">
+    <div class="sec-head"><span class="no">議案</span><h2>議案第1号　成人教育活動 教育講演会の開催および講演会特別区分の設置について</h2></div>
+
+    <div class="card">
+      <div style="font-weight:800; color:var(--navy); font-size:18px; margin-bottom:10px;">1. 議案の概要</div>
+      <p class="body">・運営委員のみなさんとの対話から生まれた企画として、歌手の<span class="navy">木山裕策さんをお招きする教育講演会</span>を開きたいと考えています。著名人をお招きする講演会としては、本会初めての取り組みです。</p>
+      <p class="body">・費用は<span class="navy">総額38万円を上限</span>とし、総会のご承認のうえ本会の資金で賄える計画とします（<span class="amber">会費＝分担金は上がりません</span>）。あわせて、本会の負担を軽くするため、共催・協賛・ご寄付の依頼を試みます。</p>
+      <p class="body">・そのお金の受け皿となる<span class="navy">「講演会特別区分」の設置</span>と、支出の上限（総額38万円）・財源の承認をお願いいたします。</p>
+    </div>
+
+    <div id="reasons" style="font-weight:800; color:var(--navy); font-size:18px; margin:26px 0 14px;">2. 提案の理由</div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">理由 1</span>麻生区PTA協議会の活動の方向性に合っています — 保護者に必要な学びを届けるために</h3>
+      <p class="body">本協議会は「保護者が学校・地域・子どものコミュニティを育て、ワクワクする学びの場を生み出す」ことをめざしています（令和8年度事業活動計画）。R8総会でご承認いただいた成人教育活動の計画にも「関係諸団体・地域と連携した親子の学びの場、相互親睦の場を運営する」ことが掲げられています。</p>
+      <p class="body"><span class="navy">保護者のために必要な情報・学びの機会を届けることは、本協議会の活動の第一の役割です。</span>この講演会は、総会でご承認いただいたその計画を、かたちにするものです。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">理由 2</span>運営委員のみなさんの発想から生まれた企画です — 大人が前向きになれば、子どもも変わる</h3>
+      <p class="body">本講演会は、成人教育活動として、運営委員のみなさんとの対話から生まれた企画です。今年度から、専門委員会の活動は委員長を置かず、運営委員のみなさんと一緒に企画・実施する形になりました。その最初の年に、「どのような情報を保護者や会員に届けることが、子どもたちの社会教育につながるのか」という問いから、運営委員の発想で生まれたのがこの企画です。</p>
+      <p class="body"><span class="navy">保護者の目線で木山さんのメッセージを伝えることが、大人が前向きに生きるきっかけになる。その姿が、ひいては子どもたちの健全な育成につながる</span>——それがこの企画に込めた思いです。</p>
+      <p class="note">会則第10条4項に基づき、先日開催いたしました臨時運営委員会で審議し（総会に提出する議案の審議は会則第9条4項(1)）、総会にお諮りするものです。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">理由 3</span>川崎市PTA連絡協議会（市P）での開催実績があります</h3>
+      <div class="media-2col">
+        <div class="txt">
+          <p class="body">木山裕策さんは、令和8年5月22日に市Pが開催した教育講演会の講師です。中原市民館で開かれ、川崎市教育委員会の後援を受けました。参加費は無料で、「地域にひらいた公開講演会として、どなたでもご参加いただけます」という形で広く公開され、大変好評でした。</p>
+        </div>
+        <div class="pic">
+          <img src="assets/kaijo_shugo.jpg" alt="川崎市PTA連絡協議会 教育講演会（本年5月22日・中原市民館）の会場の様子" width="454" height="341" loading="lazy">
+          <div class="cap">川崎市PTA連絡協議会 教育講演会（本年5月22日・中原市民館）の様子</div>
+        </div>
+      </div>
+      <div class="quote">
+        <div class="q">親が人生を楽しんでいる姿を見せることが大切だと気づかされた</div>
+        <div class="q">子どもを信じて待つ勇気をもらった</div>
+        <div class="src">— 川崎市PTA連絡協議会 開催報告（令和8年5月22日）より</div>
+      </div>
+      <p class="body">麻生区でも、参加した方や話を聞いた方から、次のような声が寄せられています。</p>
+      <div class="voices">
+        <div class="voice"><div class="v">「もう一度聞きたい」</div><div class="who">参加した方から</div></div>
+        <div class="voice"><div class="v">「自分もぜひ聞きたい」</div><div class="who">参加できなかった方から</div></div>
+      </div>
+      <details class="faq profile" open style="margin-top:16px;">
+        <summary><span class="qchip">講師</span>木山裕策さんって、どんな人？</summary>
+        <div class="a">
+          <img class="wrapimg" src="assets/kiyama_profile_info.png" alt="木山裕策さんのプロフィール図解（出身地・歌手デビュー・4人の息子・パラレルキャリア・がんサバイバーなど）" width="300" height="212" loading="lazy">
+          <p class="body"><span class="navy">1968年10月3日、大阪府生まれ。4人の息子さんのお父さんです。</span>会社員だった2005年、甲状腺がんの手術で「声が出なくなるかもしれない」と告げられました。その経験から「子どもたちに最後まであきらめない姿を見せたい」と38歳で歌に挑戦し、一度の不合格を乗り越えて、2008年2月6日に「home」で<span class="navy">39歳・現役サラリーマンのまま</span>メジャーデビュー。同じ年のNHK紅白歌合戦にも出場しました。</p>
+          <p class="body">デビュー後も、長男の成人式に向けた「旅立ち」（2016年）、両親への感謝を歌った「手紙」（2018年）など家族をテーマにした曲を発表。2019年には朝日新聞社のがん啓発プロジェクト「ネクストリボン」のテーマ曲「幸せはここに」を担当し、2020年にキングレコードへ移籍しました。ご自身の経験を活かした医療関係の講演にも力を入れています。</p>
+          <p class="body">活動は、今回のような講演会にとどまりません。学校の芸術鑑賞会プログラムに常設で登壇し、聞いた中学生からは「歌詞の思いが心に響いた」という感想が寄せられています。自治体の社会教育・人権啓発の講演会にも多数登壇しており（埼玉県美里町の人権講演会には206人が参加）、新聞の子育て面では「対話を大切にする子育て」を発信するなど、<span class="navy">子ども・保護者・地域に向けた社会教育的な活動を続けている方</span>です。</p>
+          <p class="body">講演では「失敗しても人生は終わらない」「いくつになっても夢を叶えられる」というメッセージを、ご自身の経験と歌で語られます。</p>
+          <div style="clear:both;"></div>
+          <p class="note" style="margin-top:10px;">画像・プロフィールは木山裕策オフィシャルページ（https://yusakukiyama.com/biography/）より引用・作成</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">理由 4</span>お金の話を正直にお伝えします</h3>
+      <p class="body">成人教育費の今年度予算は7万円です（費目「成人教育費」。摘要は「講演会費、委員会費、チラシ作成費」で、年間の委員会費・チラシ代を含む枠です）。一方、講演料は、先方にご相談したところ値引きのご回答をいただき、23万円＋消費税＋交通費（総額26〜27万円ほど）の見込みです。この枠だけでは足りません。</p>
+      <p class="body">しかし「足りないからやめる」のではなく、<span class="navy">著名人をお招きする本会初めての講演会として、総会のご承認をいただいたうえで本会の資金から支出して実現する</span>、というのが本提案です。各単位PTAの代表である運営委員の声から出来上がったこの企画を、このタイミングでまずは形にしたいと考えています。仮に全額を本会の資金で賄っても、会員一人あたり約36円です（会員保護者世帯数約10,667世帯）。そのうえで、負担を少しでも軽くするため、関係社会教育団体との共催や、企業・個人への協賛・ご寄付の依頼を試みます。そのために必要な承認を、次の「3. 承認をお願いする内容」でお願いいたします。</p>
+
+    <div class="cta-band">
+      <div class="msg">
+        <div class="l1">ここまでで、企画の中身とお金の考え方はお伝えできました</div>
+        <div class="l2">この時点でご判断いただける方は、こちらからご回答ください（約2分）。承認内容の詳細は、このまま下へお読みいただけます。</div>
+      </div>
+      <a class="btn btn-vote" href="#vote">投票にすすむ</a>
+    </div>
+    </div>
+
+    <div id="approval" style="font-weight:800; color:var(--navy); font-size:18px; margin:26px 0 14px;">3. 承認をお願いする内容（4点）</div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">(1)</span>教育講演会の開催</h3>
+      <div class="tbl-scroll">
+      <table>
+        <tr><td class="k">講師</td><td>木山裕策 氏（歌手・「home」・NHK紅白歌合戦出場）</td></tr>
+        <tr><td class="k">内容</td><td>講演（約60分）＋ミニライブ（約30分）</td></tr>
+        <tr><td class="k">時期</td><td>12月を予定。木山さんのスケジュールと会場の空き状況で決定します</td></tr>
+        <tr><td class="k">会場</td><td>新百合ヶ丘駅近辺の会場（川崎市アートセンターを検討中）</td></tr>
+        <tr><td class="k">参加対象</td><td>区内PTA会員を優先しつつ、広く地域にも公開します<br><span class="note">（地域に開くからこそ、地域の企業・団体にご協賛をお願いすることもしやすくなります。詳しくは<a href="#faq">Q&amp;A</a>をご覧ください）</span></td></tr>
+        <tr><td class="k">想定参加人数</td><td>約200名（確保できた会場にもよります。）</td></tr>
+        <tr><td class="k">参加費</td><td>無料（徴収しません）</td></tr>
+      </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">(2)</span>支出の上限</h3>
+      <p class="body">支出は<span class="navy">総額38万円を上限</span>とします。内訳は次のとおりです。</p>
+      <div class="tbl-scroll">
+      <table>
+        <tr><th>費目</th><th>金額</th><th>備考</th></tr>
+        <tr><td>講演料</td><td>約27万円</td><td>値引き後23万円＋消費税＋交通費</td></tr>
+        <tr><td>会場費</td><td>約2万円</td><td>使用料約1.5万円＋附帯設備費見込み</td></tr>
+        <tr><td>チラシ作成・印刷費</td><td>約7万円</td><td>昨年度実績5.3万円から配布枚数の増加を見込み増額</td></tr>
+        <tr><td>雑費</td><td>約2万円</td><td>備品購入・運営に関わる費用</td></tr>
+        <tr class="hl"><td><span class="navy">合計（上限）</span></td><td><span class="navy">38万円</span></td><td>本企画の概算支出金額として</td></tr>
+      </table>
+      </div>
+      <p class="note" style="margin-top:8px;">※講演料は、教育目的・PTA主催であることをお伝えしてご相談したところ、通常の講演料から値引きのご回答をいただいた実額ベースです。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">(3)</span>財源（成人教育費の組み替え・予備費からの繰入と、共催負担金・協賛金・寄付の受け入れ）</h3>
+      <p class="body">1. 既存予算（成人教育費7万円）を、全額「講演会特別区分」の財源として組み替えます。</p>
+      <p class="body">2. <span class="navy">本会の予備費から講演会特別区分へ、上限38万円の範囲内で必要経費分を繰り入れます</span>。<br><span style="font-size:0.88em; opacity:0.85;">（実際の繰入は、ご支援で足りない分のみ行います。本会の予備費は約118.6万円で、仮に上限38万円を全額充当しても残高は約80万円です）</span></p>
+      <p class="body">3. 本会の負担を軽くするため、成人教育活動としては初めて、<span class="navy">共催負担金（関係社会教育団体との費用の折半・一部負担）や、協賛金・ご寄付（企業・個人・団体）の受け入れ</span>を試みます。会則第16条の「単位PTA分担金およびその他の収入」に基づくものです。</p>
+      <p class="body">協賛金等に金額の目標は設けません。ここでご承認いただきたいのは「受け入れを試みること」です。いただいたご支援は全額を講演会特別区分に組み入れ、その分だけ予備費からの充当額を減らします。ご支援が集まらない場合でも、上限の範囲内で開催できます。支出が上限を大きく超える見込みとなった場合は、内容・規模を見直します。</p>
+    </div>
+
+    <div class="card">
+      <h3 class="reason"><span class="chip">(4)</span>講演会特別区分の設置</h3>
+      <p class="body">本事業のお金は、「講演会特別区分」として、一般会計の中で他の予算と混ざらないよう区分して管理します。開催後2ヶ月以内に、収支の全額を報告します。予備費からの繰入は必要経費分のみとし、余剰が出た場合は、次年度の成人教育活動に充てます。</p>
+    </div>
+
+    <div id="budget" style="font-weight:800; color:var(--navy); font-size:18px; margin:26px 0 14px;">4. 収支計画（案）</div>
+    <div class="card">
+      <div class="tbl-scroll">
+      <table>
+        <tr><th>区分</th><th>項目</th><th>金額・考え方</th></tr>
+        <tr><td rowspan="3" style="vertical-align:middle; background:#f6f8fb; color:var(--navy); font-weight:700; text-align:center;">収入</td><td>既存予算（成人教育費）</td><td>7万円を全額組み替え</td></tr>
+        <tr><td>本会の予備費からの繰入</td><td>上限38万円の範囲内。ご支援で足りない分のみ繰り入れます</td></tr>
+        <tr><td>共催負担金・協賛金・ご寄付</td><td>金額の目標は設けません。全額を特別区分に組み入れ、予備費からの充当額を軽減します</td></tr>
+        <tr><td rowspan="5" style="vertical-align:middle; background:#f6f8fb; color:var(--navy); font-weight:700; text-align:center;">支出</td><td>講演料</td><td>約27万円（値引き後23万円＋消費税＋交通費）</td></tr>
+        <tr><td>会場費</td><td>約2万円</td></tr>
+        <tr><td>チラシ作成・印刷費</td><td>約7万円</td></tr>
+        <tr><td>雑費</td><td>約2万円</td></tr>
+        <tr class="hl"><td><span class="navy">支出合計（上限）</span></td><td><span class="navy">38万円</span></td></tr>
+      </table>
+      </div>
+      <p class="note" style="margin-top:8px;">※ご支援が集まらなくても、上限の範囲内で開催できます。ご支援いただけた分だけ、予備費からの充当額が減ります。支出が上限を大きく超える見込みとなった場合は、内容・規模を見直します。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="sec-head"><span class="no">Q&amp;A</span><h2>よくあるご質問</h2><span class="en">FAQ</span></div>
+    <details class="faq" open>
+      <summary><span class="qchip">Q1</span>会費は上がりませんか？</summary>
+      <div class="a">会費（分担金）は上がりません。費用は総会のご承認をいただいたうえで本会の資金から支出し、仮に全額を本会資金で賄っても会員一人あたり約36円です。共催・協賛のご支援をいただけた分だけ、さらに減ります。</div>
+    </details>
+    <details class="faq" open>
+      <summary><span class="qchip">Q2</span>なぜPTA会員以外にも公開するのですか？</summary>
+      <div class="a">教育講演を地域に開くことは、家庭・学校・地域のつながりを深めることにつながります。木山さんのお話は、保護者のみならず、地域で社会教育活動に関わるすべての方々の、これからの生きる意味や人生観に前向きな影響を与えるものだと考えています。ひいては、それが麻生区の子どもたちの健全な育成にもつながると感じております。なお、参加費は無料で、営利を目的とするものではありません（会則第4条(2)）。区内PTA会員のみなさまには、優先してのご案内を検討します。<br><span style="font-size:0.88em; opacity:0.85;">（参考：本年5月の市Pの講演会も、「どなたでもご参加いただけます」という一般公開の形で開かれました）</span></div>
+    </details>
+    <details class="faq">
+      <summary><span class="qchip">Q3</span>協賛金が集まらなかったらどうするのですか？</summary>
+      <div class="a">集まらなくても開催できます。費用は総会でご承認いただく上限（38万円）の範囲内で、本会の資金から支出できる計画だからです。協賛・共催・ご寄付は本会の負担を軽くするための試みで、ご支援いただけた分だけ実負担が減ります。</div>
+    </details>
+    <details class="faq">
+      <summary><span class="qchip">Q4</span>定期総会で予算を決めたのに、なぜ臨時総会が必要なのですか？</summary>
+      <div class="a">予算は総会で承認する事項と会則に定められています（会則第7条5項(3)）。今回の講演会に必要な支出は、成人教育費7万円（摘要「講演会費、委員会費、チラシ作成費」の年間枠）だけでは足りず、定期総会でご承認いただいた予算の枠には収まりません。そのため、承認済みの予算をやりくりして進めるのではなく、正面から臨時総会（書面議決）で新たにご承認をいただくものです。書面での議決にも会則の根拠があります（第7条4項）。</div>
+    </details>
+    <details class="faq" open>
+      <summary><span class="qchip">Q5</span>予備費を使って、非常時の備えは大丈夫ですか？</summary>
+      <div class="a">予備費（約118.6万円）のうち、必要経費分のみを繰り入れます。仮に上限38万円を全額充当したとしても、残高は約80万円あり、非常時への備えは維持されます。また、共催・協賛・ご寄付のご支援をいただけた分だけ、予備費からの繰入額はさらに少なくなります。<br>会則第16条は、本会の経費について「本会の目的達成のために支出し、他に流用してはならない」と定めています。本講演会は、保護者の学びの場をつくるという本会の目的に沿う事業です。だからこそ、内々に費目をやりくりするのではなく、予備費の使いみちに本講演会を加えることについて、この総会で正面からご承認をいただくものです。</div>
+    </details>
+    <details class="faq">
+      <summary><span class="qchip">Q6</span>誰が運営するのですか。役員・運営委員の負担が増えませんか？</summary>
+      <div class="a">企画の実務は担当の運営委員が担い、機関手続きや共催・協賛先との調整は役員会で分担します。特定の方に負担が偏らないよう、役割分担表を作って役員会で確認します。当日の運営体制は、総会でのご承認後に担当の運営委員と詰めてまいります。</div>
+    </details>
+    <p class="note">※このほかのご質問は、メール（<a href="mailto:asao.ku.pta.00@gmail.com">asao.ku.pta.00@gmail.com</a>）でお受けします。いただいたご質問と回答は、事務局から代議員のみなさまへ共有いたします。<br>※投票フォームの「ご意見・ご質問」欄からもお寄せいただけます。</p>
+  </section>
+
+  <!-- 最終CTA -->
+  <div class="vote-sec" id="vote">
+    <h2>議決のご回答をお願いします<br><span class="dl">提出期限　令和8年8月9日（日）23:59</span></h2>
+    <p><span class="dl">このすぐ下に投票用のフォームがあります。</span>「承認・非承認」を選ぶだけ、約2分で終わります。<br>
+    （フォームが表示されない場合は、下の「投票フォームを別画面で開く」からGoogleフォームをお開きください）<br>お聞きするのは <span class="dl">①学校名（選ぶだけ）②お役職 ③お名前 ④承認・非承認 ⑤PTA活動へのご要望（任意）</span> です。<br>ご意見・ご質問もフォームのご要望欄からお寄せいただけます。</p>
+    <p style="font-size:15px; opacity:1; background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.35); border-radius:12px; padding:14px 18px; max-width:640px; margin:18px auto 0;">
+      総代議員は<span class="dl">69名</span>。<span class="dl">35名以上</span>のご回答で総会が成立します。<br>
+      みなさまお一人のご回答が、そのまま成立要件に効きます。どうぞよろしくお願いいたします。
+    </p>
+    <div class="vote-inner">
+      <a class="vote-qr" href="https://forms.gle/kibhoF4ZWw4vcje77" target="_blank" rel="noopener"><img src="assets/form_qr_v3.png" alt="議決フォームのQRコード" width="124" height="124"></a>
+      <div class="vote-btns">
+        <a class="btn btn-vote" href="https://forms.gle/kibhoF4ZWw4vcje77" target="_blank" rel="noopener">フォームが表示されない場合は、こちらから<br><small style="font-weight:600; font-size:13px;">→ 投票フォームを別画面で開く</small></a>
+        <a class="btn btn-pdf on-dark" href="rinji-sokai-shiryo.pdf" target="_blank" rel="noopener">📄 PDFで確認する</a>
+      </div>
+    </div>
+    <div class="form-embed" id="form-embed">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTLq4tniby_Ev4JWvnoWEH-kP0yVdQBwclNj9_1QC9jrM_Wg/viewform?embedded=true" height="1200" loading="lazy" title="麻生区PTA協議会 臨時総会 議決フォーム">読み込んでいます…</iframe>
+    </div>
+    <p class="vote-note">フォームが表示されない場合は、こちらから → <a href="https://forms.gle/kibhoF4ZWw4vcje77" target="_blank" rel="noopener" style="color:#ffd79a; font-weight:700;">投票フォームを別画面で開く</a><br>※上のQRコードをスマートフォンで読み取ってもご回答いただけます。<br>※フォームにアクセスできない場合は、事務局メール（asao.ku.pta.00@gmail.com）に ①学校名 ②氏名 ③承認・非承認 をお送りください（定期総会と同じ取り扱い）</p>
+  </div>
+
+  <footer>
+    <div class="fbtns">
+      <a class="btn btn-vote small" href="#vote">投票する</a>
+      <a class="btn btn-pdf" style="padding:9px 18px; font-size:13px;" href="rinji-sokai-shiryo.pdf" target="_blank" rel="noopener">📄 PDFで確認する</a>
+    </div>
+    麻生区PTA協議会　臨時総会 資料（書面議決）｜令和8年7月30日<br>
+    お問い合わせ: 麻生区PTA協議会 事務局（asao.ku.pta.00@gmail.com）
+  </footer>
+
+</div>
+
+</body>
+</html>
