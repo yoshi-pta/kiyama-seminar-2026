@@ -58,6 +58,14 @@
   .btn:hover{background:#f0b055}
   .btn.small{padding:8px 15px;font-size:13.5px}
   .btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--navy);box-shadow:none}
+  .btn-pdf{
+    display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.35;text-align:center;padding:11px 22px;
+  }
+  .btn-pdf .main{font-size:15px;font-weight:800}
+  .btn-pdf .sub{font-size:12px;font-weight:600;opacity:.82;margin-top:3px}
+  .ctablock .btn-pdf.ghost{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.08);color:#fff}
+  .ctablock .btn-pdf.ghost:hover{background:rgba(255,255,255,.16)}
 
   /* ---- ヒーロー ---- */
   .hero{background:linear-gradient(160deg,var(--navy) 0%,#2c4f7c 100%);color:#fff;padding:44px 0 40px}
@@ -221,7 +229,10 @@
         </div>
         <div class="cta">
           <button class="btn" onclick="applyForm()">協賛を申し込む</button>
-          <a class="btn ghost" href="kyosan-shuisho.pdf" target="_blank" rel="noopener">趣意書をPDFで見る</a>
+          <a class="btn ghost btn-pdf" href="kyosan-shuisho.pdf" target="_blank" rel="noopener">
+            <span class="main">趣意書・申込書をPDFで見る</span>
+            <span class="sub">（A4・4ページ＋申込書）</span>
+          </a>
           <div class="ctanote">※ お申し込みフォームは準備中です（近日公開）</div>
         </div>
       </div>
@@ -378,11 +389,14 @@
     <div class="ctablock">
       <h3>ご協賛・ご寄付のお申し込み</h3>
       <p>フォームからのお申し込みが最も簡単です。<br>PDFの申込書にご記入のうえ、メール添付・お手渡しでも承ります。<br><b style="color:#ffd98a">お申し込み・お問い合わせには、48時間以内にご返信いたします。</b></p>
-      <button class="btn" onclick="applyForm()">協賛を申し込む</button>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin-top:16px">
+        <button class="btn" onclick="applyForm()">協賛を申し込む</button>
+        <a class="btn ghost btn-pdf" href="kyosan-shuisho.pdf" target="_blank" rel="noopener">
+          <span class="main">趣意書・申込書をPDFで見る</span>
+          <span class="sub">（A4・4ページ＋申込書）</span>
+        </a>
+      </div>
       <div class="qrbox">【フォーム公開後、ここにQRコードを掲載します】</div>
-      <p style="margin-top:14px;font-size:14px">
-        <a href="kyosan-shuisho.pdf" target="_blank" rel="noopener" style="color:#ffd98a">趣意書・申込書（A4・本編4ページ＋申込書）をPDFで見る</a>
-      </p>
     </div>
   </div>
 </section>
