@@ -31,6 +31,25 @@
   .fixbar .orgsub{font-weight:600;color:var(--sub);font-size:12px}
   @media(max-width:640px){ .fixbar .orgsub{display:none} }
   .fixbar .sp{margin-left:auto}
+  .navrow{border-top:1px solid #e6ebf2;background:rgba(255,255,255,.96)}
+  .navrow .inner{max-width:860px;margin:0 auto;padding:0 20px}
+  .navrow ul{
+    display:flex;gap:6px;list-style:none;overflow-x:auto;padding:7px 0;margin:0;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .navrow ul::-webkit-scrollbar{display:none}
+  .navrow a{
+    display:block;white-space:nowrap;text-decoration:none;color:var(--sub);
+    font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:999px;
+    border:1px solid transparent;
+  }
+  .navrow a:hover{background:var(--bg);color:var(--navy)}
+  .navrow a.on{background:var(--navy);color:#fff}
+  section[id]{scroll-margin-top:96px}
+  @media(max-width:640px){
+    .navrow a{font-size:12.5px;padding:5px 10px}
+    section[id]{scroll-margin-top:104px}
+  }
   .btn{
     display:inline-block;background:var(--amber);color:#3a2b09;text-decoration:none;
     font-weight:800;padding:11px 20px;border-radius:999px;font-size:15px;
@@ -166,6 +185,19 @@
     <span class="sp"></span>
     <button class="btn small" onclick="applyForm()">申し込む</button>
   </div>
+  <nav class="navrow">
+    <div class="inner">
+      <ul>
+        <li><a href="#about">企画について</a></li>
+        <li><a href="#gaiyo">開催の概要</a></li>
+        <li><a href="#kyosan">ご協賛のお願い</a></li>
+        <li><a href="#shiharai">お支払い・書類</a></li>
+        <li><a href="#faq">よくあるご質問</a></li>
+        <li><a href="#apply">お申し込み</a></li>
+        <li><a href="#org">主催者について</a></li>
+      </ul>
+    </div>
+  </nav>
 </div>
 
 <!-- ============ ヒーロー ============ -->
@@ -198,7 +230,7 @@
 </div>
 
 <!-- ============ なぜこの企画か ============ -->
-<section>
+<section id="about">
   <div class="wrap">
     <h2>「もっと多くの人に聞いてほしい」——麻生区の保護者の声から生まれた企画です</h2>
     <p>今年5月22日、川崎市PTA連絡協議会が木山さんの講演会を開きました（後援：川崎市教育委員会・参加費無料）。大変好評でしたが、会場は中原市民館。川崎市全体を対象とした開催で、麻生区から足を運べた方は限られていました。</p>
@@ -212,7 +244,7 @@
 </section>
 
 <!-- ============ 開催概要 ============ -->
-<section class="alt">
+<section class="alt" id="gaiyo">
   <div class="wrap">
     <h2>開催の概要</h2>
     <table>
@@ -234,7 +266,7 @@
 </section>
 
 <!-- ============ ご協賛のお願い ============ -->
-<section>
+<section id="kyosan">
   <div class="wrap">
     <h2>ご協賛・ご寄付のお願い</h2>
     <p>当会は、区内23校のPTAからの分担金で運営される任意団体です。成人教育費の今年度予算は7万円。一方、本企画は会場費・広報費・講演料・その他費用などを含め、総額約38万円の見込みです。従来の予算だけでは、まかなえません。</p>
@@ -248,8 +280,8 @@
         <div class="d">この講演会をPTAだけで支えるのではなく、<b>地域の皆様とともにつくる活動にしたい</b>と考えています。皆様の一口一口が、この講演会を地域全体の学びの場へと育てていきます。</div>
       </div>
       <div class="card">
-        <div class="t">ご芳名は五十音順で掲載</div>
-        <div class="d">ご希望の方のお名前を、チラシやHP、当日プログラム等の「ご協賛御礼」欄に五十音順で掲載します。社名は文字のみの掲載です（ロゴマークは掲載いたしません）。</div>
+        <div class="t">ご協賛への御礼（ご希望制）</div>
+        <div class="d"><b>①ご芳名の掲載</b>…チラシ・HP・当日プログラム等の「ご協賛御礼」欄に掲載します。<br><b>②ご協賛者様紹介</b>…企業・団体は1種類・1枚まで当日会場で配布可。<br><b>③ご来賓・ご協賛者席</b>…2席までご用意します。</div>
       </div>
       <div class="card">
         <div class="t">使い道は全部ご報告します</div>
@@ -280,7 +312,7 @@
 </section>
 
 <!-- ============ お支払いと書類 ============ -->
-<section class="alt">
+<section class="alt" id="shiharai">
   <div class="wrap">
     <h2>お支払いと、書類について</h2>
     <table>
@@ -304,7 +336,7 @@
 </section>
 
 <!-- ============ FAQ ============ -->
-<section>
+<section id="faq">
   <div class="wrap">
     <h2>よくあるご質問</h2>
 
@@ -341,7 +373,7 @@
 </section>
 
 <!-- ============ CTA ============ -->
-<section class="alt">
+<section class="alt" id="apply">
   <div class="wrap">
     <div class="ctablock">
       <h3>ご協賛・ご寄付のお申し込み</h3>
@@ -356,7 +388,7 @@
 </section>
 
 <!-- ============ 主催者情報 ============ -->
-<section>
+<section id="org">
   <div class="wrap">
     <h2>主催者について</h2>
     <div class="orgbox">
@@ -386,6 +418,22 @@
     a.href = "mailto:" + addr; a.textContent = addr; a.className = "maillink";
     el.replaceWith(a);
   });
+
+  // 見ているセクションのメニューを強調する
+  (function(){
+    var links = Array.prototype.slice.call(document.querySelectorAll(".navrow a"));
+    var map = {};
+    links.forEach(function(a){ map[a.getAttribute("href").slice(1)] = a; });
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        links.forEach(function(a){ a.classList.remove("on"); });
+        var a = map[e.target.id];
+        if(a) a.classList.add("on");
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("section[id]").forEach(function(sec){ obs.observe(sec); });
+  })();
 
   // フォーム公開後、FORM_URL を実URLに差し替えるだけで全ボタンが有効になります
   var FORM_URL = "";
