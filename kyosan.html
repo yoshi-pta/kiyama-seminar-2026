@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ご協賛・ご寄付のお願い｜教育講演（講演＋ミニライブ）講師 木山裕策さん — 麻生区PTA協議会</title>
+<style>
+  :root{
+    --navy:#1e3a5f; --navy2:#2b4f7e; --amber:#e8a13d; --amber2:#b0862f;
+    --ink:#2b2b2b; --sub:#5a6c85; --line:#c9d3e0; --bg:#f6f8fb; --cream:#fdf6e7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+    color:var(--ink); line-height:1.85; background:#fff; font-size:16px;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  section{padding:52px 0}
+  section.alt{background:var(--bg)}
+
+  /* ---- 固定ヘッダー ---- */
+  .fixbar{
+    position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96);
+    border-bottom:1px solid var(--line); backdrop-filter:blur(6px);
+  }
+  .fixbar .inner{max-width:860px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;gap:12px}
+  .fixbar .org{font-size:13px;color:var(--navy);font-weight:700;letter-spacing:.06em}
+  .fixbar .orgsub{font-weight:600;color:var(--sub);font-size:12px}
+  @media(max-width:640px){ .fixbar .orgsub{display:none} }
+  .fixbar .sp{margin-left:auto}
+  .btn{
+    display:inline-block;background:var(--amber);color:#3a2b09;text-decoration:none;
+    font-weight:800;padding:11px 20px;border-radius:999px;font-size:15px;
+    box-shadow:0 2px 10px rgba(232,161,61,.4); border:none; cursor:pointer;
+  }
+  .btn:hover{background:#f0b055}
+  .btn.small{padding:8px 15px;font-size:13.5px}
+  .btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--navy);box-shadow:none}
+
+  /* ---- ヒーロー ---- */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#2c4f7c 100%);color:#fff;padding:44px 0 40px}
+  .hero .badge{
+    display:inline-block;background:var(--amber);color:#3a2b09;font-weight:800;
+    font-size:13px;padding:5px 13px;border-radius:999px;letter-spacing:.04em
+  }
+  .pagetitle{margin-top:14px;font-size:14.5px;color:#cfe0f2;line-height:1.7;letter-spacing:.04em}
+  .pagetitle b{display:inline-block;font-size:18px;color:#fff;font-weight:800;border-bottom:3px solid var(--amber);padding-bottom:2px;margin-top:2px}
+  a.maillink{color:var(--navy);font-weight:700}
+  footer a.maillink{color:#ffd98a}
+  .hero h1{font-size:26px;line-height:1.5;font-weight:800;margin:15px 0 6px;letter-spacing:.01em}
+  .hero h1 .am{color:#ffd98a}
+  .hero .lead{font-size:16px;color:#dbe6f3;margin-top:10px}
+  .hero .cols{display:flex;gap:26px;align-items:flex-start;margin-top:26px}
+  .hero .ph{flex:none;width:190px}
+  .hero .ph img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 6px 24px rgba(0,0,0,.28)}
+  .hero .ph .cap{font-size:11.5px;color:#b9cbe0;text-align:center;margin-top:7px;line-height:1.6}
+  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .facts span{
+    background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
+    border-radius:8px;padding:6px 12px;font-size:13.5px
+  }
+  .hero .cta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .hero .ctanote{font-size:12.5px;color:#ffd98a;width:100%;margin-top:2px}
+
+  /* ---- 共通パーツ ---- */
+  h2{
+    font-size:23px;color:var(--navy);font-weight:800;line-height:1.45;
+    border-left:7px solid var(--amber);padding-left:14px;margin-bottom:18px
+  }
+  h3{font-size:17.5px;color:var(--navy);font-weight:700;margin:24px 0 8px}
+  p+p{margin-top:12px}
+  .muted{color:var(--sub);font-size:14.5px}
+
+  table{border-collapse:collapse;width:100%;font-size:15px;background:#fff}
+  th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top;line-height:1.7}
+  th{background:#eef2f7;color:var(--navy);font-weight:700;white-space:nowrap;width:30%}
+
+  .voices{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}
+  .voice{
+    flex:1 1 240px;background:var(--cream);border:1px solid #ecdfc4;border-radius:12px;
+    padding:16px 18px;font-family:"Hiragino Mincho ProN",serif;font-size:16.5px;
+    color:#5c4a25;font-weight:700;line-height:1.8
+  }
+
+  .cards{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap}
+  .card{
+    flex:1 1 230px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--amber);
+    border-radius:12px;padding:18px 18px 20px
+  }
+  .card .t{font-weight:800;color:var(--navy);font-size:16.5px;margin-bottom:7px}
+  .card .d{font-size:14.5px;line-height:1.8}
+
+  .money{background:var(--cream);border:1px solid var(--amber);border-radius:14px;padding:22px 24px;margin-top:6px}
+  .money .row{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+  .money .lab{flex:none;width:110px;font-weight:800;color:var(--navy)}
+  .money .val{font-size:19px;font-weight:800;color:var(--amber2);letter-spacing:.02em}
+  .money .val .hl{background:linear-gradient(transparent 62%,#ffe6ae 62%)}
+
+  .deadline{
+    background:#fff;border:2px solid var(--navy);border-radius:12px;
+    padding:14px 18px;margin-top:16px;font-size:15.5px
+  }
+  .deadline b{color:var(--navy)}
+
+  .sample{margin-top:14px}
+  .sample img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}
+  .sample .cap{font-size:12.5px;color:var(--sub);margin-top:7px}
+
+  ol.flow{counter-reset:s;list-style:none;margin-top:14px}
+  ol.flow li{
+    counter-increment:s;position:relative;padding:12px 0 12px 52px;border-bottom:1px dashed var(--line);font-size:15.5px
+  }
+  ol.flow li:last-child{border-bottom:none}
+  ol.flow li::before{
+    content:counter(s);position:absolute;left:6px;top:12px;width:30px;height:30px;
+    background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-weight:800;font-size:14px
+  }
+  ol.flow li b{color:var(--navy)}
+
+  details{border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:10px}
+  details summary{
+    cursor:pointer;padding:14px 18px;font-weight:700;color:var(--navy);font-size:16px;list-style:none
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"＋";float:right;color:var(--amber2);font-weight:800}
+  details[open] summary::after{content:"−"}
+  details .body{padding:0 18px 16px;font-size:15px;line-height:1.85}
+
+  .ctablock{background:var(--navy);color:#fff;border-radius:16px;padding:30px 26px;text-align:center;margin-top:10px}
+  .ctablock h3{color:#fff;font-size:21px;margin:0 0 8px}
+  .ctablock p{font-size:15px;color:#dbe6f3}
+  .ctablock .btn{margin-top:16px;font-size:17px;padding:14px 30px}
+  .qrbox{
+    display:inline-block;background:#fff;border:2px dashed #c0392b;border-radius:10px;
+    padding:14px 18px;margin-top:16px;color:#c0392b;font-size:13.5px;font-weight:700
+  }
+
+  .orgbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:15px}
+  .orgbox dt{font-weight:700;color:var(--navy);margin-top:8px}
+  .orgbox dt:first-child{margin-top:0}
+
+  footer{background:var(--navy);color:#c9d8e8;padding:26px 0;font-size:13.5px;text-align:center}
+  footer a{color:#ffd98a}
+  .todo{color:#c0392b;font-weight:800}
+
+  @media(max-width:640px){
+    body{font-size:15.5px}
+    .hero h1{font-size:25px}
+    .hero .cols{flex-direction:column;align-items:center}
+    .hero .ph{width:170px}
+    h2{font-size:20px}
+    th{width:34%;white-space:normal}
+    section{padding:40px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="fixbar">
+  <div class="inner">
+    <span class="org">麻生区PTA協議会<span class="orgsub">｜ご協賛・ご寄付のお願い</span></span>
+    <span class="sp"></span>
+    <button class="btn small" onclick="applyForm()">申し込む</button>
+  </div>
+</div>
+
+<!-- ============ ヒーロー ============ -->
+<div class="hero">
+  <div class="wrap">
+    <span class="badge">令和8年12月16日（水）開催・参加費無料</span>
+    <div class="pagetitle">教育講演（講演＋ミニライブ・講師 木山裕策さん）<br><b>ご協賛・ご寄付のお願い</b></div>
+    <h1>その一口が、麻生区の保護者に<br><span class="am">「もう一度前を向く90分」</span>を届けます。</h1>
+    <div class="cols">
+      <div class="ph">
+        <img src="assets/kiyama_portrait_v2.jpg" alt="木山裕策さん">
+        <div class="cap">木山裕策さん（歌手）</div>
+      </div>
+      <div>
+        <p class="lead">がんの手術で「声が出なくなるかもしれない」と告げられ、そこから38歳で歌に挑戦。2008年、39歳・現役サラリーマンのまま「home」でデビューし、同じ年の紅白歌合戦に出場した木山裕策さんを、麻生区にお招きします。</p>
+        <div class="facts">
+          <span>📅 12月16日（水）</span>
+          <span>📍 新百合トゥエンティワンホール</span>
+          <span>🎫 参加費 無料</span>
+          <span>👥 約250名</span>
+        </div>
+        <div class="cta">
+          <button class="btn" onclick="applyForm()">協賛を申し込む</button>
+          <a class="btn ghost" href="kyosan-shuisho.pdf" target="_blank" rel="noopener">趣意書をPDFで見る</a>
+          <div class="ctanote">※ お申し込みフォームは準備中です（近日公開）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ なぜこの企画か ============ -->
+<section>
+  <div class="wrap">
+    <h2>「もう一度聞きたい」——麻生区の保護者の声から生まれた企画です</h2>
+    <p>今年5月22日、川崎市PTA連絡協議会が木山さんの講演会を開きました（後援：川崎市教育委員会・参加費無料）。大変好評でしたが、会場は中原市民館。川崎市全体を対象とした開催で、麻生区から足を運べた方は限られていました。</p>
+    <div class="voices">
+      <div class="voice">親が人生を楽しんでいる姿を見せることが大切だと気づかされた</div>
+      <div class="voice">子どもを信じて待つ勇気をもらった</div>
+    </div>
+    <p style="margin-top:16px">こうした感想が寄せられた講演を、麻生区にはまだ聞けていない方が大勢います。参加した方からは「もう一度聞きたい」、参加できなかった方からは「自分もぜひ聞きたい」。この声に応え、同じ機会を、麻生区の保護者と地域の皆様が参加できる場所でご用意する——それが本企画です。</p>
+    <p>企画は、各校の代表である運営委員のみなさんとの対話から生まれました。<b>大人が前向きに生きるきっかけをつくる。その姿が、ひいては子どもたちの健全な育成につながる</b>——それがこの企画に込めた思いです。</p>
+  </div>
+</section>
+
+<!-- ============ 開催概要 ============ -->
+<section class="alt">
+  <div class="wrap">
+    <h2>開催の概要</h2>
+    <table>
+      <tr><th>講師</th><td>木山 裕策 さん（歌手）／内容：教育講演＋ミニライブ</td></tr>
+      <tr><th>日時</th><td><b>令和8年12月16日（水）</b>を予定（時間は決まりしだいご案内します）</td></tr>
+      <tr><th>会場</th><td>新百合トゥエンティワンホール（新百合ヶ丘駅前）を予定</td></tr>
+      <tr><th>対象</th><td>区内PTA会員を優先しつつ、地域の皆様に広く公開します</td></tr>
+      <tr><th>想定参加人数</th><td>約250名</td></tr>
+      <tr><th>参加費</th><td>無料</td></tr>
+      <tr><th>主催</th><td>麻生区PTA協議会（区内23校のPTAで構成・他の社会教育団体等との共催も検討）</td></tr>
+    </table>
+
+    <h3>木山裕策さんについて</h3>
+    <p>1968年、大阪府生まれ。4人の息子さんの父です。会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、「子どもたちに最後まであきらめない姿を見せたい」と、38歳でオーディション番組『歌スタ!!』に挑戦します。結果は不合格。それでも、「子どもたちに見せるべきなのは、勝つ姿じゃない。負ける姿こそ見せるべきだ」というプロデューサーの言葉に背中を押されて再挑戦し、2008年、「home」で39歳・現役サラリーマンのままデビューしました。</p>
+    <p>「home」はオリコン最高7位・配信100万ダウンロードを記録し、日本ゴールドディスク大賞の新人賞を受賞。同年の第59回NHK紅白歌合戦に初出場しました。50歳までの約12年間は、会社員と歌手の二足のわらじで歌い続けています。</p>
+    <p>活動は歌だけではありません。自治体の人権啓発・社会教育の講演会に多数登壇し、学校の芸術鑑賞会プログラムにも常設で登壇。聞いた中学生からは「歌詞の思いが心に響いた」という感想が寄せられています。講演は、ご自身の体験談と歌をあわせた構成です。</p>
+    <div class="voice" style="flex:1 1 100%;margin-top:14px;text-align:center">「失敗しても人生は終わらない」「いくつになっても夢を叶えられる」<br>「転んでもいい、負けてもいい、かっこわるくていい」</div>
+  </div>
+</section>
+
+<!-- ============ ご協賛のお願い ============ -->
+<section>
+  <div class="wrap">
+    <h2>ご協賛・ご寄付のお願い</h2>
+    <p>当会は、区内23校のPTAからの分担金で運営される任意団体です。成人教育費の今年度予算は7万円。一方、本企画は会場費・広報費・講演料・その他費用などを含め、総額約38万円の見込みです。従来の予算だけでは、まかなえません。</p>
+    <div class="cards">
+      <div class="card">
+        <div class="t">開催は決まっています</div>
+        <div class="d">費用は令和8年8月の臨時総会で承認済みです。ご協賛が集まらなくても開催します。それでもお願いするのは、<b>参加費無料を守り、今後の教育活動に余力を残すため</b>。いただいた分だけ、区内約10,600世帯が納めた会費からの持ち出しが減ります。</div>
+      </div>
+      <div class="card">
+        <div class="t">地域とともにつくる学びの場に</div>
+        <div class="d">この講演会をPTAだけで支えるのではなく、<b>地域の皆様とともにつくる活動にしたい</b>と考えています。皆様の一口一口が、この講演会を地域全体の学びの場へと育てていきます。</div>
+      </div>
+      <div class="card">
+        <div class="t">ご芳名は五十音順で掲載</div>
+        <div class="d">ご希望の方のお名前を、チラシやHP、当日プログラム等の「ご協賛御礼」欄に五十音順で掲載します。社名は文字のみの掲載です（ロゴマークは掲載いたしません）。</div>
+      </div>
+      <div class="card">
+        <div class="t">使い道は全部ご報告します</div>
+        <div class="d">開催後2か月以内をめどに、<b>開催報告書と収支報告書</b>をご協賛の皆様へお送りします。社内でのご報告にもお使いいただけます。</div>
+      </div>
+    </div>
+
+    <h3>一口の金額と口数</h3>
+    <p class="muted" style="margin-bottom:10px">ご協賛は一口単位でお受けしております。決めていただくのは口数だけです。</p>
+    <div class="money">
+      <div class="row"><div class="lab">企業・団体</div><div class="val">一口 5,000円 <span class="hl">（2口＝10,000円を目安に）</span></div></div>
+      <div class="row"><div class="lab">個人</div><div class="val">一口 1,000円 <span class="hl">（3口＝3,000円を目安に）</span></div></div>
+      <p class="muted" style="margin-top:6px">口数に上限はありません。口数によらない金額でのご協賛も承ります。</p>
+    </div>
+
+    <div class="deadline">
+      <b>【掲載の締切】</b> チラシにご芳名を掲載できるのは、<b>令和8年9月27日（日）</b>までにお申し込みいただいた分です。それ以降は、当日プログラムへの掲載となります。
+    </div>
+
+    <p style="margin-top:18px">ご希望の企業・団体は、ご紹介のチラシ（一企業・団体につき1種類・1枚まで）を、当日会場で配布いただけます（内容は事前に確認させていただきます）。あわせて、協賛いただいた方には、口数にかかわらず、「ご来賓・ご協賛者席」を2席までご用意いたします（ご希望の席数はお申し込み時にお知らせください）。</p>
+
+    <h3>御礼の掲載イメージ（チラシ）</h3>
+    <div class="sample">
+      <img src="assets/keisai_sample.png" alt="ご協賛御礼欄の掲載イメージ">
+      <div class="cap">※ チラシへの掲載イメージです。社名・氏名はすべてサンプル（実在しません）。実際の印刷物とは体裁が異なる場合があります。HP等への掲載は別途の形式となります。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ お支払いと書類 ============ -->
+<section class="alt">
+  <div class="wrap">
+    <h2>お支払いと、書類について</h2>
+    <table>
+      <tr><th>請求書</th><td><b>ご希望に応じて発行いたします</b>（お申し込み時にその旨をお知らせください）。当会は適格請求書発行事業者ではないため、インボイス（登録番号）の記載はございません。</td></tr>
+      <tr><th>領収書</th><td>ご協賛・ご寄付をいただいたすべての皆様にお送りします。（但し書きは「教育講演会 協賛金として」といたしますが、別の記載内容をご希望の場合はお申し込み時にお知らせください）</td></tr>
+      <tr><th>お振込先</th><td>JAセレサ川崎（セレサ川崎農業協同組合）新百合ヶ丘支店　普通 2505081（金融機関コード 5123／店舗番号 037）<br>口座名義：<b>麻生区PTA協議会 会計 田澤 梓（アサオクピーティーエーキョウギカイ カイケイ タザワ アズサ）</b></td></tr>
+      <tr><th>お振込期限</th><td><b>令和8年11月30日（月）</b>までにお願いいたします。貴社のお支払い時期のご都合がある場合は、ご相談ください。</td></tr>
+      <tr><th>振込手数料</th><td>恐れ入りますが、ご負担をお願いいたします。</td></tr>
+      <tr><th>税務の扱い</th><td>当会は任意団体のため、個人の方のご協賛金は寄附金控除（所得控除など）の対象になりません。企業・団体の経理上のお取り扱いは、貴社のご担当者・税理士にご確認ください。</td></tr>
+    </table>
+
+    <h3>お申し込みから、ご報告までの流れ</h3>
+    <ol class="flow">
+      <li><b>お申し込み</b>　フォームからご送信ください（申込書PDFをメール添付・お手渡しでも結構です）</li>
+      <li><b>受領のご連絡</b>　<b>48時間以内</b>に当会よりメールでご連絡します。請求書がご入用の場合は、このときに発行します</li>
+      <li><b>お振込み</b>　11月30日（月）までにお願いいたします</li>
+      <li><b>領収書の送付</b>　ご入金を確認しだいお送りします</li>
+      <li><b>ご報告</b>　開催後2か月以内をめどに、開催報告書と収支報告書をお送りします</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <h2>よくあるご質問</h2>
+
+    <details>
+      <summary>協賛が集まらなかった場合、講演会は中止になりますか？</summary>
+      <div class="body">いいえ、開催します。費用は令和8年8月の臨時総会で会員の承認をいただき、当会の資金から支出することが決まっています。ご協賛は、参加費を無料のまま守るためのお力添えとしてお願いしているものです。</div>
+    </details>
+
+    <details>
+      <summary>金額によって、掲載の扱いは変わりますか？</summary>
+      <div class="body">変わりません。掲載は五十音順、同じ書体・同じ大きさです。社名は文字のみの掲載で、ロゴマーク・商品名・キャンペーン等は掲載いたしません。</div>
+    </details>
+
+    <details>
+      <summary>社名を出さずに応援することはできますか？</summary>
+      <div class="body">できます。お申し込みの際に「掲載しない」をお選びください。掲載の有無にかかわらず、領収書と収支報告はお送りします。</div>
+    </details>
+
+    <details>
+      <summary>インボイス（適格請求書）は発行されますか？</summary>
+      <div class="body">当会は適格請求書発行事業者ではないため、登録番号の記載はございません。請求書自体はご希望に応じて発行いたします。</div>
+    </details>
+
+    <details>
+      <summary>当日、会場に伺うことはできますか？</summary>
+      <div class="body">もちろんです。参加費は無料で、どなたでもご参加いただけます。ご協賛いただいた皆様には、当日のご案内を別途お送りします。</div>
+    </details>
+
+    <details>
+      <summary>個人でも協賛できますか？</summary>
+      <div class="body">はい。個人の方は一口1,000円で、口数は自由です（3口＝3,000円を目安に）。なお、当会は任意団体のため、個人の方のご協賛金は寄附金控除の対象にはなりません。</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="ctablock">
+      <h3>ご協賛・ご寄付のお申し込み</h3>
+      <p>フォームからのお申し込みが最も簡単です。<br>PDFの申込書にご記入のうえ、メール添付・お手渡しでも承ります。<br><b style="color:#ffd98a">お申し込み・お問い合わせには、48時間以内にご返信いたします。</b></p>
+      <button class="btn" onclick="applyForm()">協賛を申し込む</button>
+      <div class="qrbox">【フォーム公開後、ここにQRコードを掲載します】</div>
+      <p style="margin-top:14px;font-size:14px">
+        <a href="kyosan-shuisho.pdf" target="_blank" rel="noopener" style="color:#ffd98a">趣意書・申込書（A4・本編4ページ＋申込書）をPDFで見る</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 主催者情報 ============ -->
+<section>
+  <div class="wrap">
+    <h2>主催者について</h2>
+    <div class="orgbox">
+      <dl>
+        <dt>団体名</dt><dd>麻生区PTA協議会</dd>
+        <dt>代表者</dt><dd>会長　前村 嘉昭</dd>
+        <dt>構成</dt><dd>麻生区内の公立小学校・中学校・小中学校 23校のPTA（会員 約10,600世帯）</dd>
+        <dt>連絡先</dt><dd><span class="mail" data-u="asao.ku.pta.00" data-d="gmail.com"></span><br><span class="muted">※電話窓口は設けておりません。お急ぎの場合は件名に【至急】とご記入ください。<br>お申し込み・お問い合わせには、48時間以内にご返信いたします。</span></dd>
+        <dt>公式サイト</dt><dd><a href="https://asaokupta.wixsite.com/asaokupta" target="_blank" rel="noopener">https://asaokupta.wixsite.com/asaokupta</a>　／　Instagram：@asaokupta</dd>
+      </dl>
+    </div>
+    <p style="margin-top:18px">子どもたちと保護者、そして地域のための講演会です。何卒お力添えをお願い申し上げます。</p>
+  </div>
+</section>
+
+<footer>
+  麻生区PTA協議会　教育講演（講演＋ミニライブ・講師 木山裕策さん）<br>
+  お問い合わせ：<span class="mail" data-u="asao.ku.pta.00" data-d="gmail.com"></span>
+</footer>
+
+<script>
+  // メールアドレスはHTMLに直書きせず、表示時に組み立てる（収集ボット対策）
+  function mailAddr(){ return "asao.ku.pta.00" + String.fromCharCode(64) + "gmail.com"; }
+  document.querySelectorAll(".mail").forEach(function(el){
+    var addr = el.dataset.u + String.fromCharCode(64) + el.dataset.d;
+    var a = document.createElement("a");
+    a.href = "mailto:" + addr; a.textContent = addr; a.className = "maillink";
+    el.replaceWith(a);
+  });
+
+  // フォーム公開後、FORM_URL を実URLに差し替えるだけで全ボタンが有効になります
+  var FORM_URL = "";
+  function applyForm(){
+    if(FORM_URL){ window.open(FORM_URL, "_blank", "noopener"); }
+    else{ alert("お申し込みフォームは現在準備中です。\n恐れ入りますが、趣意書PDFの申込書にご記入のうえ、\n" + mailAddr() + " までお送りください。"); }
+  }
+</script>
+
+</body>
+</html>
