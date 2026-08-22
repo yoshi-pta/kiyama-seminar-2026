@@ -309,6 +309,48 @@
     color:var(--amber);font-size:1.9rem;line-height:1;
   }
 
+
+  /* ---------- adults / audience ---------- */
+  .adults{padding-top:var(--s4)}
+  .lead{
+    font-family:var(--display);font-weight:700;
+    font-size:1.15rem;line-height:1.7;color:var(--ink);
+    margin:0 0 var(--s3);
+  }
+  .audience{
+    margin:var(--s4) 0 0;
+    padding:var(--s3) var(--s3) var(--s3) var(--s3);
+    background:rgba(216,132,42,.10);
+    border-radius:var(--r-md);
+    position:relative;
+  }
+  .audience::before{
+    content:"";position:absolute;left:0;top:1.1rem;bottom:1.1rem;width:3px;
+    background:var(--amber);border-radius:2px;
+  }
+  .audience-title{
+    font-family:var(--display);font-weight:700;font-size:1.02rem;
+    margin:0 0 .6rem;color:var(--amber-deep);letter-spacing:.04em;
+  }
+  .audience ul{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+  .audience li{padding-left:1.2rem;position:relative;font-size:.97rem}
+  .audience li::before{
+    content:"";position:absolute;left:.1rem;top:.72em;width:.5rem;height:.5rem;
+    border-radius:50%;background:var(--amber);
+  }
+
+  /* ---------- voices (stage) ---------- */
+  .voices{margin:var(--s4) 0 0;padding:var(--s3) 0 0;border-top:1px solid rgba(255,244,227,.14)}
+  .voices-title{font-size:.74rem;letter-spacing:.22em;color:var(--amber);margin:0 0 .8rem;font-weight:700}
+  .voices blockquote{
+    margin:0 0 .7rem;padding:.7rem .9rem;
+    background:rgba(255,244,227,.06);
+    border-left:2px solid rgba(255,214,150,.5);
+    border-radius:0 var(--r-sm) var(--r-sm) 0;
+    font-size:.95rem;line-height:1.75;color:#fff4e3;
+  }
+  .voices-src{font-size:.72rem;color:rgba(246,237,220,.55);margin:.4rem 0 0;letter-spacing:.04em}
+
   /* ---------- bio ---------- */
   .bio-grid{display:grid;gap:var(--s3)}
   .bio-name{
@@ -467,8 +509,8 @@
           <div class="marquee" aria-hidden="true">
             <span class="beam beam-l"></span><span class="beam beam-r"></span>
             <p class="marquee-kicker">Talk &amp; Mini Live</p>
-            <p class="marquee-title">あきらめない生き方<span>家族の絆</span></p>
-            <p class="marquee-foot">歌手 · 「home」 · NHK紅白歌合戦出場</p>
+            <p class="marquee-title">前を向く大人の背中が、<span>子どもの背中を押す。</span></p>
+            <p class="marquee-foot">テーマ：あきらめない生き方 · 家族の絆</p>
           </div>
 
           <div class="badges">
@@ -493,6 +535,25 @@
     </div>
   </header>
 
+  <section class="adults">
+    <div class="wrap">
+      <p class="eyebrow reveal">For every adult</p>
+      <h2 class="reveal">子どもと関わる、すべての大人へ。</h2>
+      <p class="lead reveal">ちょっと立ち止まって、自分のこれからを考えてみませんか。</p>
+      <p class="reveal">大人が自分自身の成長を大切にし、人生を楽しむ姿勢を持つこと。それが、子どもたちの健やかな育ちにつながる——麻生区PTA協議会は、そう考えています。ヒット曲「home」で知られる木山裕策さんを講師に迎え、病を乗り越えて挑戦を続けてきたご自身の経験と、家族の絆についてお話しいただきます。</p>
+      <p class="reveal">PTA会員の方はもちろん、地域のみなさま、どなたでもご参加いただけます。</p>
+      <div class="audience reveal">
+        <p class="audience-title">こんな方におすすめです</p>
+        <ul>
+          <li>子育て中の方</li>
+          <li>子育てがひと段落した方</li>
+          <li>地域で子どもに関わっている方</li>
+          <li>自分のこれからの生き方を考えたい方</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section class="stage">
     <div class="wrap">
       <p class="eyebrow reveal">Live</p>
@@ -508,6 +569,13 @@
         <li>いくつになっても夢を叶えられる</li>
         <li>転んでもいい、負けてもいい、かっこわるくていい</li>
       </ul>
+      <div class="voices reveal">
+        <p class="voices-title">参加した方の声</p>
+        <blockquote>親が人生を楽しんでいる姿を見せることが大切だと気づかされた</blockquote>
+        <blockquote>子どもを信じて待つ勇気をもらった</blockquote>
+        <blockquote>透明感のある歌声に心が洗われ、涙が止まらなかった</blockquote>
+        <p class="voices-src">2026年5月・川崎市での講演会（川崎市PTA連絡協議会 開催報告より）</p>
+      </div>
     </div>
   </section>
 
@@ -518,11 +586,17 @@
       <div class="bio-grid">
         <div class="reveal">
           <p class="bio-name">木山 裕策<small>きやま ゆうさく · 歌手</small></p>
-          <p>1968年、大阪府生まれ。4人の息子さんの父です。会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、「子どもたちに最後まであきらめない姿を見せたい」と、38歳でオーディション番組に挑戦します。</p>
-          <p>一度の不合格を経て、2008年、「home」で39歳・現役サラリーマンのままデビュー。同年のNHK紅白歌合戦に初出場しました。いまは自治体の人権啓発・社会教育の講演会や、学校の芸術鑑賞会にも数多く登壇しています。</p>
+          <p>1968年10月3日、大阪府生まれ。大阪外国語大学イスパニア語学科卒業。東京都在住、4人のお子さんと妻の6人家族です。</p>
+          <p>会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、長年の夢だった歌手への挑戦を決意します。</p>
+          <p>2007年、オーディション番組『歌スタ!!』で音楽プロデューサー多胡邦夫氏と出会い、一度は不合格に。「子どもたちに最後まであきらめない姿を見せたい」と異例の再挑戦を経て、2008年、家族をテーマにした「home」で39歳・現役サラリーマンのままデビュー。同年の第59回NHK紅白歌合戦に初出場しました。</p>
+          <p>その後も4人の子どもを育てながら、会社員と歌手の二足のわらじを続け、いまは自治体の人権啓発・社会教育の講演会や、学校の芸術鑑賞会、医療関係の講演にも数多く登壇しています。</p>
           <dl class="milestones">
             <dt>2005</dt><dd>甲状腺がんの手術。「声が出なくなるかもしれない」</dd>
-            <dt>2008</dt><dd>「home」でデビュー。第59回NHK紅白歌合戦に初出場</dd>
+            <dt>2007</dt><dd>『歌スタ!!』に出演。一度の不合格を経て再挑戦</dd>
+            <dt>2008</dt><dd>「home」でメジャーデビュー。第59回NHK紅白歌合戦に初出場</dd>
+            <dt>2016</dt><dd>成人式を迎えた長男に向けた「旅立ち」をリリース</dd>
+            <dt>2018</dt><dd>両親への感謝を綴った「手紙」をリリース</dd>
+            <dt>2019</dt><dd>朝日新聞社「ネクストリボン」プロジェクトのテーマ曲「幸せはここに」をリリース</dd>
             <dt>2026.12</dt><dd>新百合ヶ丘で、講演＋ミニライブ</dd>
           </dl>
         </div>
