@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>【確認用】木山裕策 教育講演（講演＋ミニライブ）｜12月16日（水）新百合ヶ丘｜麻生区PTA協議会</title>
+<meta name="description" content="歌手・木山裕策さんの教育講演とミニライブ。令和8年12月16日（水）10:00〜11:30（予定）、新百合トゥエンティワンホール。参加費無料・地域のみなさまに公開。申込開始メールの事前登録はこちらから。">
+<meta property="og:title" content="【確認用】木山裕策 教育講演（講演＋ミニライブ）｜12.16（水）新百合ヶ丘">
+<meta property="og:description" content="「声が出なくなるかもしれない」と告げられた人が、歌う。参加費無料・地域公開。9月中旬の本申込開始をメールでお知らせします（座席予約ではありません）。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f6eddc;
+    --paper-deep:#ead9b8;
+    --paper-line:#c9b48c;
+    --ink:#2b2219;
+    --ink-soft:#5c4d3d;
+    --amber:#d8842a;
+    --amber-deep:#b5611a;
+    --amber-glow:rgba(216,132,42,.35);
+    --cta-bg:#a4510c;
+    --cta-bg-deep:#7f3d08;
+    --stage:#2e1b16;
+    --stage-deep:#1c100d;
+    --stage-text:rgba(246,237,220,.88);
+    --white:#fffaf0;
+
+    --display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+    --text:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif;
+
+    --s1:.5rem; --s2:.875rem; --s3:1.25rem; --s4:2rem; --s5:3rem; --s6:4.5rem;
+    --r-sm:6px; --r-md:14px;
+    --maxw:600px;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    font-family:var(--text);
+    color:var(--ink);
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(216,132,42,.18), transparent 60%),
+      repeating-linear-gradient(0deg, rgba(43,34,25,.025) 0 1px, transparent 1px 3px),
+      var(--paper);
+    line-height:1.85;
+    font-size:16px;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  figure{margin:0}
+  a{color:var(--amber-deep)}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--s3)}
+
+  /* ---------- ticket hero ---------- */
+  .hero{
+    padding:var(--s4) 0 var(--s5);
+    position:relative;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;inset:0;
+    background:
+      radial-gradient(700px 380px at 70% 10%, var(--amber-glow), transparent 70%),
+      radial-gradient(500px 300px at 10% 60%, rgba(216,132,42,.14), transparent 70%);
+    pointer-events:none;
+  }
+  .ticket{
+    position:relative;
+    background:var(--white);
+    border:1.5px solid var(--paper-line);
+    border-radius:var(--r-md);
+    box-shadow:
+      0 1px 0 rgba(255,255,255,.8) inset,
+      0 24px 50px -24px rgba(43,34,25,.45),
+      0 6px 16px -8px rgba(43,34,25,.25);
+    transform:translateY(28px) rotate(-1.2deg);
+    opacity:0;
+    animation:ticket-in .55s cubic-bezier(.2,.8,.2,1) .1s forwards;
+    overflow:visible;
+  }
+  @keyframes ticket-in{to{transform:translateY(0) rotate(0);opacity:1}}
+
+  .ticket-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:var(--s2) var(--s3) 0;
+    font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .ticket-head .serial{font-family:var(--display);letter-spacing:.08em}
+
+  .ticket-body{padding:var(--s2) var(--s3) var(--s3)}
+  .kicker{
+    display:inline-block;
+    font-size:.8rem;letter-spacing:.12em;
+    color:var(--amber-deep);
+    border:1px solid var(--amber);
+    padding:.1rem .6rem;border-radius:999px;
+    margin-bottom:var(--s2);
+    background:rgba(216,132,42,.08);
+  }
+  .date-row{
+    display:flex;align-items:flex-end;gap:.6rem;
+    font-family:var(--display);
+    line-height:1;
+    margin:.2rem 0 .5rem;
+  }
+  .date-big{
+    font-size:clamp(3.8rem,18.5vw,5.6rem);
+    font-weight:800;
+    letter-spacing:-.02em;
+    color:var(--ink);
+  }
+  .date-meta{
+    display:flex;flex-direction:column;gap:.2rem;
+    padding-bottom:.5rem;
+    font-size:.9rem;color:var(--ink-soft);
+    white-space:nowrap;flex-shrink:0;
+  }
+  .date-meta b{font-size:1.35rem;color:var(--ink);font-weight:700}
+  .venue{
+    font-size:.95rem;color:var(--ink-soft);
+    margin:0 0 var(--s3);
+    padding-left:.9rem;position:relative;
+  }
+  .venue::before{content:"";position:absolute;left:0;top:.55em;width:.45rem;height:.45rem;border-radius:50%;background:var(--amber)}
+
+  .headline{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(1.55rem,6.4vw,2rem);
+    line-height:1.35;
+    margin:0 0 var(--s1);
+    letter-spacing:.01em;
+  }
+  .headline small{display:block;font-size:.78rem;letter-spacing:.2em;color:var(--ink-soft);font-weight:500;margin-bottom:.25rem;font-family:var(--text)}
+  .sub{margin:0 0 var(--s3);color:var(--ink-soft);font-size:.95rem}
+
+  /* 写真の代わりのステージ照明パネル（講師写真は使用許可が取れるまで載せない） */
+  .marquee{
+    position:relative;
+    border-radius:var(--r-sm);
+    overflow:hidden;
+    aspect-ratio:3/2;
+    background:
+      radial-gradient(60% 70% at 50% 110%, rgba(216,132,42,.35), transparent 70%),
+      linear-gradient(180deg, #3a2119 0%, var(--stage-deep) 100%);
+    box-shadow:0 10px 24px -14px rgba(43,34,25,.6), inset 0 0 0 1px rgba(255,244,227,.06);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    padding:1.2rem;
+    color:#fff4e3;
+  }
+  .marquee::before{
+    content:"";position:absolute;inset:auto 0 0 0;height:38%;
+    background:
+      repeating-linear-gradient(90deg, rgba(255,244,227,.05) 0 2px, transparent 2px 18px),
+      linear-gradient(180deg, transparent, rgba(0,0,0,.35));
+  }
+  .beam{
+    position:absolute;top:-20%;width:46%;height:140%;
+    background:linear-gradient(180deg, rgba(255,214,150,.38) 0%, rgba(255,214,150,.10) 45%, transparent 75%);
+    clip-path:polygon(42% 0, 58% 0, 100% 100%, 0 100%);
+    filter:blur(1px);
+    animation:beam-sway 7s ease-in-out infinite alternate;
+    pointer-events:none;
+  }
+  .beam-l{left:-4%;transform-origin:50% 0;transform:rotate(-10deg)}
+  .beam-r{right:-4%;transform-origin:50% 0;transform:rotate(10deg);animation-delay:-3.5s}
+  @keyframes beam-sway{from{opacity:.65}to{opacity:1}}
+  .marquee > p{position:relative;margin:0}
+  .marquee-kicker{font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:#ffd79a;margin-bottom:.6rem !important}
+  .marquee-title{
+    font-family:var(--display);font-weight:700;
+    font-size:clamp(1.35rem,6.2vw,1.9rem);line-height:1.35;
+    text-shadow:0 2px 18px rgba(216,132,42,.45);
+  }
+  .marquee-title span{display:block;font-size:.82em;font-weight:500;color:rgba(255,244,227,.82)}
+  .marquee-foot{font-size:.72rem;letter-spacing:.14em;color:rgba(255,244,227,.6);margin-top:.8rem !important}
+  @media (prefers-reduced-motion:reduce){.beam{animation:none}}
+
+  .badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:var(--s3)}
+  .badge{
+    font-size:.82rem;letter-spacing:.06em;
+    padding:.3rem .75rem;border-radius:4px;
+    background:var(--paper);border:1px solid var(--paper-line);
+    color:var(--ink-soft);
+  }
+  .badge.free{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:700;letter-spacing:.14em}
+
+  /* perforation */
+  .tear{
+    position:relative;
+    height:0;
+    border-top:2px dashed var(--paper-line);
+    margin:0 var(--s2);
+  }
+  .tear::before,.tear::after{
+    content:"";position:absolute;top:-14px;width:28px;height:28px;border-radius:50%;
+    background:var(--paper);
+    border:1.5px solid var(--paper-line);
+  }
+  .tear::before{left:calc(-1 * var(--s2) - 15px)}
+  .tear::after{right:calc(-1 * var(--s2) - 15px)}
+
+  .stub{
+    padding:var(--s3);
+    display:flex;flex-direction:column;gap:.7rem;
+    background:
+      repeating-linear-gradient(135deg, rgba(216,132,42,.06) 0 6px, transparent 6px 14px),
+      var(--white);
+    border-radius:0 0 var(--r-md) var(--r-md);
+  }
+  .stub-note{font-size:.82rem;color:var(--ink-soft);margin:0;line-height:1.6}
+  .stub-note b{color:var(--ink)}
+
+  .cta{
+    -webkit-appearance:none;appearance:none;
+    display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    width:100%;
+    padding:1rem 1.15rem;
+    background:var(--cta-bg);
+    color:var(--white);
+    text-decoration:none;
+    font-weight:700;font-size:1.05rem;letter-spacing:.04em;
+    border-radius:var(--r-sm);
+    border:0;
+    box-shadow:0 10px 22px -10px var(--cta-bg-deep);
+    transition:transform .18s ease-out, box-shadow .18s ease-out, background .18s ease-out;
+    position:relative;overflow:hidden;
+  }
+  .cta::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg, transparent 0%, rgba(255,255,255,.22) 45%, transparent 60%);
+    transform:translateX(-120%);
+    transition:transform .5s ease-out;
+  }
+  .cta:hover,.cta:focus-visible{background:var(--cta-bg-deep);transform:translateY(-2px);box-shadow:0 16px 28px -12px var(--cta-bg-deep)}
+  .cta:hover::after{transform:translateX(120%)}
+  .cta:active{transform:translateY(0) scale(.99)}
+  .cta .arrow{font-family:var(--display);font-size:1.3rem;line-height:1;flex-shrink:0}
+  .cta > span:first-child{flex:1;letter-spacing:0}
+  .cta .nw{font-style:normal;display:inline-block;white-space:nowrap}
+  .cta-note{margin:.5rem 0 0;font-size:.78rem;color:var(--ink-soft);line-height:1.6}
+  .cta small{display:block;font-weight:500;font-size:.78rem;letter-spacing:.1em;opacity:.9}
+
+  /* ---------- section commons ---------- */
+  section{padding:var(--s5) 0}
+  .eyebrow{
+    font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;
+    color:var(--amber-deep);margin:0 0 .6rem;
+    font-weight:700;
+  }
+  h2{
+    font-family:var(--display);
+    font-weight:700;
+    font-size:clamp(1.45rem,6vw,1.9rem);
+    line-height:1.4;
+    margin:0 0 var(--s3);
+    letter-spacing:.01em;
+  }
+  p{margin:0 0 1rem}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease-out, transform .5s cubic-bezier(.2,.8,.2,1)}
+  .reveal.on{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .ticket{animation:none;opacity:1;transform:none}
+    .cta::after{display:none}
+  }
+
+  /* ---------- stage (dark) ---------- */
+  .stage{
+    background:
+      radial-gradient(600px 360px at 50% 0%, rgba(216,132,42,.28), transparent 70%),
+      linear-gradient(180deg, var(--stage) 0%, var(--stage-deep) 100%);
+    color:var(--stage-text);
+    position:relative;
+  }
+  .stage .eyebrow{color:var(--amber)}
+  .stage h2{color:#fff4e3}
+  /* 会場写真は使わず、セクション自体をステージ照明で演出する */
+  .stage::after{
+    content:"";position:absolute;left:50%;top:0;
+    width:min(90vw,560px);height:60%;
+    transform:translateX(-50%);
+    background:radial-gradient(50% 100% at 50% 0%, rgba(255,214,150,.16), transparent 70%);
+    pointer-events:none;
+  }
+  .stage .wrap{position:relative;z-index:1}
+  .stage-lead{font-size:1.05rem;line-height:2}
+  .stage-lead em{font-style:normal;color:#ffd79a;font-weight:700}
+
+  .quotes{
+    margin:var(--s4) 0 0;
+    padding:var(--s3) 0 0 !important;
+    border-top:1px solid rgba(255,244,227,.14);
+    padding:0;list-style:none;
+    display:grid;gap:.85rem;
+  }
+  .quotes li{
+    font-family:var(--display);
+    font-weight:500;
+    font-size:1.22rem;line-height:1.7;
+    padding-left:1.3rem;
+    position:relative;
+    color:#fff4e3;
+  }
+  .quotes li::before{
+    content:"“";position:absolute;left:0;top:-.15em;
+    color:var(--amber);font-size:1.9rem;line-height:1;
+  }
+
+
+  /* ---------- adults / audience ---------- */
+  .adults{padding-top:var(--s4)}
+  .lead{
+    font-family:var(--display);font-weight:700;
+    font-size:1.15rem;line-height:1.7;color:var(--ink);
+    margin:0 0 var(--s3);
+  }
+  .audience{
+    margin:var(--s4) 0 0;
+    padding:var(--s3) var(--s3) var(--s3) var(--s3);
+    background:rgba(216,132,42,.10);
+    border-radius:var(--r-md);
+    position:relative;
+  }
+  .audience::before{
+    content:"";position:absolute;left:0;top:1.1rem;bottom:1.1rem;width:3px;
+    background:var(--amber);border-radius:2px;
+  }
+  .audience-title{
+    font-family:var(--display);font-weight:700;font-size:1.02rem;
+    margin:0 0 .6rem;color:var(--amber-deep);letter-spacing:.04em;
+  }
+  .audience ul{list-style:none;margin:0;padding:0;display:grid;gap:.35rem}
+  .audience li{padding-left:1.2rem;position:relative;font-size:.97rem}
+  .audience li::before{
+    content:"";position:absolute;left:.1rem;top:.72em;width:.5rem;height:.5rem;
+    border-radius:50%;background:var(--amber);
+  }
+
+  /* ---------- voices (stage) ---------- */
+  .voices{margin:var(--s4) 0 0;padding:var(--s3) 0 0;border-top:1px solid rgba(255,244,227,.14)}
+  .voices-title{font-size:.74rem;letter-spacing:.22em;color:var(--amber);margin:0 0 .8rem;font-weight:700}
+  .voices blockquote{
+    margin:0 0 .7rem;padding:.7rem .9rem;
+    background:rgba(255,244,227,.06);
+    border-left:2px solid rgba(255,214,150,.5);
+    border-radius:0 var(--r-sm) var(--r-sm) 0;
+    font-size:.95rem;line-height:1.75;color:#fff4e3;
+  }
+  .voices-src{font-size:.72rem;color:rgba(246,237,220,.55);margin:.4rem 0 0;letter-spacing:.04em}
+
+  /* ---------- bio ---------- */
+  .bio-grid{display:grid;gap:var(--s3)}
+  .bio-name{
+    font-family:var(--display);
+    font-size:1.3rem;font-weight:700;
+    margin:0;
+  }
+  .bio-name small{display:block;font-family:var(--text);font-size:.8rem;letter-spacing:.16em;color:var(--ink-soft);font-weight:500;margin-top:.15rem}
+  .bio p{font-size:.97rem}
+  .bio .milestones{
+    display:grid;grid-template-columns:auto 1fr;gap:.35rem .9rem;
+    margin:var(--s3) 0 0;padding:var(--s3) 0 0;
+    border-top:1px solid var(--paper-line);
+    font-size:.9rem;
+  }
+  .bio .milestones dt{font-family:var(--display);font-weight:700;color:var(--amber-deep);white-space:nowrap}
+  .bio .milestones dd{margin:0;color:var(--ink-soft)}
+
+  /* ---------- setlist / info ---------- */
+  .setlist{
+    list-style:none;margin:0;padding:0;
+    display:grid;gap:0;
+  }
+  .setlist li{
+    display:grid;grid-template-columns:2.4rem 1fr;gap:.9rem;align-items:start;
+    padding:1rem 0;
+    border-bottom:1px dashed var(--paper-line);
+  }
+  .setlist li:first-child{border-top:1px dashed var(--paper-line)}
+  .setlist .n{
+    font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1;
+    color:var(--amber);
+  }
+  .setlist b{display:block;font-size:1.02rem;margin-bottom:.15rem}
+  .setlist span{font-size:.9rem;color:var(--ink-soft)}
+
+  .facts{
+    margin:var(--s4) 0 0;
+    display:grid;grid-template-columns:6.2rem 1fr;gap:.55rem 1rem;
+    font-size:.95rem;
+  }
+  .facts dt{color:var(--ink-soft);letter-spacing:.06em;font-size:.85rem;padding-top:.15rem}
+  .facts dd{margin:0}
+  .facts dd b{font-weight:700}
+  .facts .note{font-size:.82rem;color:var(--ink-soft)}
+
+  /* ---------- WL explanation ---------- */
+  .wl-box{
+    border-left:3px solid var(--amber);
+    padding:.2rem 0 .2rem 1rem;
+    margin:var(--s3) 0 0;
+  }
+  .wl-box p{font-size:.95rem}
+  .wl-steps{list-style:none;margin:var(--s3) 0 0;padding:0;display:grid;gap:1rem}
+  .wl-steps li{display:grid;grid-template-columns:1.6rem 1fr;gap:.7rem;font-size:.93rem;align-items:start}
+  .wl-steps li > div{display:grid;gap:.15rem}
+  .wl-steps li b{font-size:1rem;color:var(--ink)}
+  .wl-steps li span:not(.dot){font-size:.9rem;color:var(--ink-soft);line-height:1.75}
+  .wl-assure{
+    list-style:none;margin:var(--s3) 0 0;padding:var(--s2) var(--s3);
+    background:var(--white);border:1px dashed var(--paper-line);border-radius:var(--r-sm);
+    display:grid;gap:.35rem;font-size:.86rem;color:var(--ink-soft);
+  }
+  .wl-assure li{padding-left:1.3rem;position:relative}
+  .wl-assure li::before{content:"✓";position:absolute;left:0;top:0;color:var(--amber-deep);font-weight:700}
+  .wl-steps .dot{
+    width:1.5rem;height:1.5rem;border-radius:50%;
+    background:var(--amber);color:var(--white);
+    font-family:var(--display);font-weight:700;font-size:.85rem;
+    display:grid;place-items:center;margin-top:.2rem;
+  }
+
+  /* ---------- form counter ---------- */
+  .counter{
+    background:var(--white);
+    border:1.5px solid var(--paper-line);
+    border-radius:var(--r-md);
+    overflow:hidden;
+    box-shadow:0 24px 50px -28px rgba(43,34,25,.5);
+    position:relative;
+  }
+  .counter-head{
+    padding:var(--s2) var(--s3);
+    background:var(--ink);color:var(--paper);
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;
+  }
+  .counter-head b{font-family:var(--display);letter-spacing:.1em;font-size:.95rem;text-transform:none}
+  .counter-body{padding:var(--s3) var(--s3) var(--s3);display:grid;gap:.9rem;justify-items:stretch}
+  .counter-lead{margin:0;font-size:.98rem;color:var(--ink)}
+  .counter-lead b{color:var(--amber-deep)}
+  .cta-form{font-size:1.12rem;padding:1.1rem 1.2rem}
+  .counter-note{margin:0;font-size:.82rem;color:var(--ink-soft);line-height:1.7}
+  .counter-foot{
+    padding:var(--s2) var(--s3) var(--s3);
+    font-size:.82rem;color:var(--ink-soft);
+    border-top:1px dashed var(--paper-line);
+  }
+  .counter-foot a{font-weight:700}
+
+  /* ---------- footer ---------- */
+  footer{
+    padding:var(--s5) 0 calc(var(--s5) + 64px);
+    border-top:1px solid var(--paper-line);
+    font-size:.85rem;color:var(--ink-soft);
+  }
+  footer .org{font-family:var(--display);font-size:1.05rem;color:var(--ink);font-weight:700;margin:0 0 .4rem}
+  footer dl{margin:0;display:grid;grid-template-columns:4.5rem 1fr;gap:.3rem .8rem}
+  footer dt{letter-spacing:.06em}
+  footer dd{margin:0}
+  footer .links{margin-top:var(--s3);display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+  footer .links a{color:var(--amber-deep);text-decoration:none;border-bottom:1px solid currentColor}
+
+  /* ---------- sticky cta ---------- */
+  .sticky{
+    position:fixed;left:0;right:0;bottom:0;
+    padding:.6rem var(--s3) calc(.6rem + env(safe-area-inset-bottom));
+    background:rgba(246,237,220,.92);
+    backdrop-filter:blur(6px);
+    border-top:1px solid var(--paper-line);
+    transform:translateY(110%);
+    transition:transform .25s ease-out;
+    z-index:20;
+  }
+  .sticky.on{transform:none}
+  .sticky .cta{padding:.7rem 1rem;font-size:.95rem;box-shadow:0 8px 18px -10px var(--amber-deep)}
+  .sticky .cta small{display:none}
+
+  @media (min-width:640px){
+    :root{--maxw:640px}
+    .hero{padding-top:var(--s5)}
+    .ticket{transform:translateY(28px) rotate(-1.6deg)}
+    .stub{flex-direction:row;align-items:center;justify-content:space-between}
+    .stub-note{max-width:52%}
+    .cta{width:auto;min-width:16rem}
+    .bio-grid{grid-template-columns:1fr}
+  }
+
+  /* ---- 確認用バナー（このページだけ） ---- */
+  .preview-bar{
+    position:sticky;top:0;z-index:60;
+    background:#1c3a5e;color:#fff;
+    font-family:var(--text);font-size:.8rem;line-height:1.5;
+    padding:.55rem 1rem;text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.25);
+  }
+  .preview-bar b{display:inline-block;background:#ffd79a;color:#1c3a5e;font-weight:700;
+    padding:.05rem .5rem;border-radius:3px;margin-right:.5rem;letter-spacing:.08em}
+  @media (max-width:480px){.preview-bar{font-size:.74rem}}
+
+  /* ---- ポートレート（このページだけ） ---- */
+  .portrait{
+    position:relative;margin:0 0 var(--s3);
+    border-radius:var(--r-sm);overflow:hidden;
+    aspect-ratio:3/2;background:var(--stage-deep);
+    box-shadow:0 10px 24px -14px rgba(43,34,25,.6), inset 0 0 0 1px rgba(255,244,227,.06);
+  }
+  .portrait img{display:block;width:100%;height:100%;object-fit:cover}
+  .portrait figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:2.2rem 1rem .9rem;
+    background:linear-gradient(180deg, rgba(28,16,13,0) 0%, rgba(28,16,13,.72) 55%, rgba(28,16,13,.88) 100%);
+    color:#fff4e3;text-align:left;
+  }
+  .portrait figcaption p{margin:0}
+  .portrait-kicker{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:#ffd79a;margin-bottom:.35rem !important}
+  .portrait-title{font-family:var(--display);font-weight:700;font-size:.98rem;line-height:1.45;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+  @media (max-width:480px){.portrait-title{font-size:.9rem}}
+</style>
+</head>
+<body>
+<div class="preview-bar" role="note">
+  <b>確認用</b>木山裕策様・事務所様にお写真の使用とご案内内容をご確認いただくための仮ページです。一般には公開していません。
+</div>
+
+<main>
+  <header class="hero">
+    <div class="wrap">
+      <article class="ticket" aria-label="優先ご案内券">
+        <div class="ticket-head">
+          <span>Admission · 教育講演</span>
+          <span class="serial">No. 2026-1216</span>
+        </div>
+
+        <div class="ticket-body">
+          <span class="kicker">優先ご案内券</span>
+
+          <div class="date-row" aria-label="12月16日 水曜日">
+            <span class="date-big">12.16</span>
+            <div class="date-meta">
+              <b>水曜日</b>
+              <span>10:00〜11:30（予定）</span>
+            </div>
+          </div>
+          <p class="venue">新百合トゥエンティワンホール（新百合ヶ丘駅前）</p>
+
+          <h1 class="headline">
+            <small>教育講演（講演＋ミニライブ）</small>
+            木山裕策
+          </h1>
+          <p class="sub">「声が出なくなるかもしれない」と告げられた人が、歌う。</p>
+
+          <!-- 確認用: ポートレート写真（使用許可のご確認のため、この仮ページにのみ掲載） -->
+          <figure class="portrait">
+            <img src="assets/kiyama_portrait_v2.jpg" alt="木山裕策さん" width="1200" height="800" loading="eager">
+            <figcaption>
+              <p class="portrait-kicker">Talk &amp; Mini Live</p>
+              <p class="portrait-title">夢のある人生を！〜苦境にも負けない前向きな人生の歩き方〜</p>
+            </figcaption>
+          </figure>
+
+          <div class="badges">
+            <span class="badge free">入場無料</span>
+            <span class="badge">地域のみなさまに公開</span>
+            <span class="badge">主催 麻生区PTA協議会</span>
+          </div>
+        </div>
+
+        <div class="tear" role="presentation"></div>
+
+        <div class="stub">
+          <p class="stub-note">
+            本申込の開始は<b>9月中旬</b>の予定です。会場の席には限りがあります。いま登録しておくと、<b>開始と同時にメールが届きます</b>。
+          </p>
+          <div>
+            <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
+              <span><i class="nw">申込開始メールを</i><i class="nw">受け取る</i><small>メールアドレスだけ · 約30秒 · 無料</small></span>
+              <span class="arrow">→</span>
+            </a>
+            <p class="cta-note">※この登録は座席予約ではありません。9月中旬の本申込開始時にメールでお知らせします。</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </header>
+
+  <section class="adults">
+    <div class="wrap">
+      <p class="eyebrow reveal">For every adult</p>
+      <h2 class="reveal">ちょっと立ち止まって、自分のこれからを考えてみませんか。</h2>
+      <p class="lead reveal">子どもと関わる、すべての大人へ。</p>
+      <p class="reveal">大人が自分自身の成長を大切にし、人生を楽しむ姿勢を持つこと。それが、子どもたちの健やかな育ちにつながる——麻生区PTA協議会は、そう考えています。ヒット曲「home」で知られる木山裕策さんを講師に迎え、病を乗り越えて挑戦を続けてきたご自身の経験と、家族の絆についてお話しいただきます。</p>
+      <p class="reveal">PTA会員の方はもちろん、地域のみなさま、どなたでもご参加いただけます。</p>
+      <div class="audience reveal">
+        <p class="audience-title">こんな方におすすめです</p>
+        <ul>
+          <li>子育て中の方</li>
+          <li>子育てがひと段落した方</li>
+          <li>地域で子どもに関わっている方</li>
+          <li>自分のこれからの生き方を考えたい方</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage">
+    <div class="wrap">
+      <p class="eyebrow reveal">Live</p>
+      <h2 class="reveal">講演のあとに、歌があります。</h2>
+      <p class="stage-lead reveal">
+        体験談と歌をあわせた時間です。お子さんの話、家族の話、そして<em>「あきらめない」</em>という話。会場で、生の歌を聴いてください。
+      </p>
+      <p class="stage-lead reveal">
+        麻生区の保護者と地域の方が、同じホールで、同じ時間を過ごす。そんな場にしたいと考えています。
+      </p>
+      <ul class="quotes reveal">
+        <li>失敗しても人生は終わらない</li>
+        <li>いくつになっても夢を叶えられる</li>
+        <li>転んでもいい、負けてもいい、かっこわるくていい</li>
+      </ul>
+      <div class="voices reveal">
+        <p class="voices-title">木山さんの講演を聴いた方の声</p>
+        <blockquote>親が人生を楽しんでいる姿を見せることが大切だと気づかされた</blockquote>
+        <blockquote>子どもを信じて待つ勇気をもらった</blockquote>
+        <blockquote>透明感のある歌声に心が洗われ、涙が止まらなかった</blockquote>
+        <p class="voices-src">2026年5月・川崎市での講演会（川崎市PTA連絡協議会 開催報告より）</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bio">
+    <div class="wrap">
+      <p class="eyebrow reveal">Speaker</p>
+      <h2 class="reveal">39歳、現役サラリーマンのままデビューした人。</h2>
+      <div class="bio-grid">
+        <div class="reveal">
+          <p class="bio-name">木山 裕策<small>きやま ゆうさく · 歌手</small></p>
+          <p>1968年10月3日、大阪府生まれ。大阪外国語大学イスパニア語学科卒業。東京都在住、4人のお子さんと妻の6人家族です。</p>
+          <p>会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、長年の夢だった歌手への挑戦を決意します。</p>
+          <p>2007年、オーディション番組『歌スタ!!』で音楽プロデューサー多胡邦夫氏と出会い、一度は不合格に。「子どもたちに最後まであきらめない姿を見せたい」と異例の再挑戦を経て、2008年、家族をテーマにした「home」で39歳・現役サラリーマンのままデビュー。同年の第59回NHK紅白歌合戦に初出場しました。</p>
+          <p>その後も4人の子どもを育てながら、会社員と歌手の二足のわらじを続け、いまは自治体の人権啓発・社会教育の講演会や、学校の芸術鑑賞会、医療関係の講演にも数多く登壇しています。</p>
+          <dl class="milestones">
+            <dt>2005</dt><dd>甲状腺がんの手術。「声が出なくなるかもしれない」</dd>
+            <dt>2007</dt><dd>『歌スタ!!』に出演。一度の不合格を経て再挑戦</dd>
+            <dt>2008</dt><dd>「home」でメジャーデビュー。第59回NHK紅白歌合戦に初出場</dd>
+            <dt>2016</dt><dd>成人式を迎えた長男に向けた「旅立ち」をリリース</dd>
+            <dt>2018</dt><dd>両親への感謝を綴った「手紙」をリリース</dd>
+            <dt>2019</dt><dd>朝日新聞社「ネクストリボン」プロジェクトのテーマ曲「幸せはここに」をリリース</dd>
+            <dt>2026.12</dt><dd>新百合ヶ丘で、教育講演（講演＋ミニライブ）</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="wrap">
+      <p class="eyebrow reveal">Program</p>
+      <h2 class="reveal">当日のこと</h2>
+      <ol class="setlist reveal">
+        <li><span class="n">1</span><div><b>講演</b><span>演題「夢のある人生を！〜苦境にも負けない前向きな人生の歩き方〜」</span></div></li>
+        <li><span class="n">2</span><div><b>ミニライブ</b><span>会場で、生の歌を</span></div></li>
+      </ol>
+      <dl class="facts reveal">
+        <dt>日時</dt><dd><b>令和8年12月16日（水）10:00〜11:30（予定）</b>　所要 約90分<br><span class="note">時刻は予定です。確定しだい、登録いただいた方へ先にご案内します</span></dd>
+        <dt>会場</dt><dd><b>新百合トゥエンティワンホール</b><br><span class="note">小田急線 新百合ヶ丘駅 すぐ</span></dd>
+        <dt>対象</dt><dd>PTA会員および、地域のみなさま<br><span class="note">どなたでもご参加いただけます</span></dd>
+        <dt>参加費</dt><dd><b>無料</b></dd>
+        <dt>主催</dt><dd>麻生区PTA協議会</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="wl">
+    <div class="wrap">
+      <p class="eyebrow reveal">About this ticket</p>
+      <h2 class="reveal">この事前登録のしくみ</h2>
+      <div class="wl-box reveal">
+        <p><b>この登録は座席予約ではありません。</b>本申込の開始（9月中旬予定）を、いちばん早くお知らせするための事前登録です。会場の席には限りがあるため、開始のお知らせをすぐ受け取れるようにしておくことをおすすめします。</p>
+      </div>
+      <ol class="wl-steps reveal">
+        <li><span class="dot">1</span><div><b>登録する（約30秒）</b><span>ボタンから登録フォームを開き、メールアドレスを入力して送信。登録は無料で、この時点でお金もお約束も発生しません。送信後に完了画面が出れば、登録は終わりです。</span></div></li>
+        <li><span class="dot">2</span><div><b>9月中旬、開始のお知らせが届く</b><span>お申込み開始と同時に、登録いただいたアドレスへメールをお送りします。開始時刻・お申込み方法など、必要なことはすべてそのメールに書きます。こちらから何度も連絡することはありません。</span></div></li>
+        <li><span class="dot">3</span><div><b>メールからお申込み</b><span>届いたメールのリンクからお申込みください。あとは12月16日、会場でお会いしましょう。</span></div></li>
+      </ol>
+      <ul class="wl-assure reveal">
+        <li>優先案内に登録しても、参加申し込みの義務はありません。ご都合が合わなければ、そのままで結構です</li>
+        <li>いただいた情報は、この講演会のご案内にのみ使います</li>
+        <li>お電話はいたしません。ご連絡はメールだけです</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="uketsuke" class="form">
+    <div class="wrap">
+      <p class="eyebrow reveal">Box office</p>
+      <h2 class="reveal">受付窓口</h2>
+      <div class="counter reveal">
+        <div class="counter-head">
+          <span>Pre-registration</span>
+          <b>申込開始メールの事前登録</b>
+        </div>
+        <!-- Googleフォームは iframe 埋め込みにしない（iOS Safari 等の Cookie 制限で表示できないため）。直接リンクで開く -->
+        <div class="counter-body">
+          <p class="counter-lead">入力はメールアドレスだけ。<b>約30秒</b>で終わります。</p>
+          <a class="cta cta-form" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
+            <span>申込開始メールを受け取る<small>メールアドレスだけ · 約30秒 · 無料</small></span>
+            <span class="arrow">→</span>
+          </a>
+          <p class="counter-note">Googleフォームが開きます。送信後、完了画面が出れば登録は終わりです。<br>※この登録は座席予約ではありません。参加の義務もありません。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="org">麻生区PTA協議会</p>
+    <dl>
+      <dt>所在地</dt><dd>〒215-0004　川崎市麻生区万福寺1-5-2　麻生市民館内</dd>
+      <dt>連絡先</dt><dd><span class="mail" data-u="asao.ku.pta.00" data-d="gmail.com"></span><br>※電話窓口は設けておりません。お問い合わせには、48時間以内にご返信いたします。</dd>
+    </dl>
+    <div class="links">
+      <a href="kyosan.html">この講演会を支える（ご協賛・ご寄付のお願い）</a>
+      <a href="https://asaokupta.wixsite.com/asaokupta" target="_blank" rel="noopener">麻生区PTA協議会 ホームページ</a>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="wrap">
+    <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA" tabindex="-1"><span><i class="nw">申込開始メールを受け取る</i><small style="display:inline;margin-left:.5em;font-weight:500;">約30秒</small></span><span class="arrow">→</span></a>
+  </div>
+</div>
+
+<script>
+  (function(){
+    var at = String.fromCharCode(64);
+    document.querySelectorAll('.mail').forEach(function(el){
+      var a = el.dataset.u + at + el.dataset.d;
+      var link = document.createElement('a'); link.href = 'mailto:' + a; link.textContent = a;
+      el.appendChild(link);
+    });
+
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target);} });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:.08});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+    var sticky = document.getElementById('sticky');
+    var hero = document.querySelector('.hero');
+    var form = document.getElementById('uketsuke');
+    var heroSeen = true, formSeen = false;
+    function update(){
+      var on = !heroSeen && !formSeen;
+      sticky.classList.toggle('on', on);
+      sticky.setAttribute('aria-hidden', on ? 'false' : 'true');
+      sticky.querySelector('.cta').tabIndex = on ? 0 : -1;
+    }
+    new IntersectionObserver(function(es){ heroSeen = es[0].isIntersecting; update(); }, {threshold:0}).observe(hero);
+    new IntersectionObserver(function(es){ formSeen = es[0].isIntersecting; update(); }, {threshold:.05}).observe(form);
+  })();
+</script>
+</body>
+</html>
