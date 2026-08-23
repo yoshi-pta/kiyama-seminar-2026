@@ -46,8 +46,14 @@
   .navrow a:hover{background:var(--cream);border-color:var(--amber);color:var(--navy)}
   .navrow a.on{background:var(--navy);color:#fff;border-color:var(--navy)}
   section[id]{scroll-margin-top:96px}
+  .navrow .ls{display:none}
   @media(max-width:640px){
-    .navrow a{font-size:12.5px;padding:5px 10px}
+    /* スマホは短い見出しで7項目を1段に収める（横スクロール不要） */
+    .navrow .inner{padding:0 12px}
+    .navrow ul{gap:4px}
+    .navrow a{font-size:12px;padding:5px 8px}
+    .navrow .lf{display:none}
+    .navrow .ls{display:inline}
     section[id]{scroll-margin-top:104px}
   }
   .btn{
@@ -196,13 +202,13 @@
   <nav class="navrow">
     <div class="inner">
       <ul>
-        <li><a href="#about">企画について</a></li>
-        <li><a href="#gaiyo">開催の概要</a></li>
-        <li><a href="#kyosan">ご協賛のお願い</a></li>
-        <li><a href="#shiharai">お支払い・書類</a></li>
-        <li><a href="#faq">よくあるご質問</a></li>
-        <li><a href="#apply">お申し込み</a></li>
-        <li><a href="#org">主催者について</a></li>
+        <li><a href="#about"><span class="lf">企画について</span><span class="ls">企画</span></a></li>
+        <li><a href="#gaiyo"><span class="lf">開催の概要</span><span class="ls">概要</span></a></li>
+        <li><a href="#kyosan"><span class="lf">ご協賛のお願い</span><span class="ls">協賛</span></a></li>
+        <li><a href="#shiharai"><span class="lf">お支払い・書類</span><span class="ls">支払い</span></a></li>
+        <li><a href="#faq"><span class="lf">よくあるご質問</span><span class="ls">FAQ</span></a></li>
+        <li><a href="#apply"><span class="lf">お申し込み</span><span class="ls">申込</span></a></li>
+        <li><a href="#org"><span class="lf">主催者について</span><span class="ls">主催</span></a></li>
       </ul>
     </div>
   </nav>
