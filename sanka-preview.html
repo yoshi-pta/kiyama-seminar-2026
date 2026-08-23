@@ -495,6 +495,25 @@
     .bio-grid{grid-template-columns:1fr}
   }
 
+  /* ---- 協賛導線・中ほどCTA ---- */
+  .support-link{margin:.7rem 0 0;font-size:.82rem;line-height:1.6}
+  .support-link a{color:var(--amber-deep);font-weight:700;text-decoration:none;border-bottom:1px solid rgba(181,97,26,.45)}
+  .support-link a:hover{border-bottom-color:var(--amber-deep)}
+  .midcta{padding:var(--s4) 0}
+  .midcta-box{
+    background:var(--white);
+    border:1px solid var(--paper-line);
+    border-radius:var(--r-md);
+    padding:var(--s3);
+    box-shadow:0 12px 28px -18px rgba(43,34,25,.5);
+    display:grid;gap:.7rem;
+  }
+  .midcta-lead{margin:0 0 .2rem;font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink)}
+  .cta.cta-sub{background:transparent;color:var(--amber-deep);border:1.5px solid var(--amber-deep);box-shadow:none}
+  .cta.cta-sub:hover,.cta.cta-sub:focus-visible{background:rgba(216,132,42,.08);transform:none;box-shadow:none}
+  .cta.cta-sub::after{display:none}
+  .cta.cta-sub small{opacity:.85}
+
   /* ---- 確認用バナー（このページだけ） ---- */
   .preview-bar{
     position:sticky;top:0;z-index:60;
@@ -525,6 +544,12 @@
   .portrait-kicker{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:#ffd79a;margin-bottom:.35rem !important}
   .portrait-title{font-family:var(--display);font-weight:700;font-size:.98rem;line-height:1.45;text-shadow:0 1px 2px rgba(0,0,0,.5)}
   @media (max-width:480px){.portrait-title{font-size:.9rem}}
+
+  /* ---- 出典・プロフィール図解（このページだけ） ---- */
+  .credit{margin:-.6rem 0 var(--s3);font-size:.68rem;color:var(--ink-soft);text-align:right;letter-spacing:.02em}
+  .bio-figure{margin:0 0 var(--s3);max-width:300px}
+  .bio-figure img{display:block;width:100%;height:auto;border-radius:var(--r-sm);border:1px solid var(--paper-line)}
+  .bio-figure figcaption{font-size:.68rem;color:var(--ink-soft);margin-top:.35rem}
 </style>
 </head>
 <body>
@@ -567,6 +592,7 @@
               <p class="portrait-title">夢のある人生を！〜苦境にも負けない前向きな人生の歩き方〜</p>
             </figcaption>
           </figure>
+          <p class="credit">写真：木山裕策オフィシャルサイトより（yusakukiyama.com/biography）</p>
 
           <div class="badges">
             <span class="badge free">入場無料</span>
@@ -579,7 +605,7 @@
 
         <div class="stub">
           <p class="stub-note">
-            本申込の開始は<b>9月中旬</b>の予定です。<br>会場の席には限りがあります。<br>いま登録しておくと、<b>登録開始と同時にメールが届きます</b>。
+            本申込の開始は<b>9月中旬</b>の予定です。<br>会場の席には限りがあります。<br>いま登録しておくと、<b>本申込の開始と同時にメールが届きます</b>。
           </p>
           <div>
             <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
@@ -587,6 +613,7 @@
               <span class="arrow">→</span>
             </a>
             <p class="cta-note">※この登録は座席予約ではありません。9月中旬の本申込開始時にメールでお知らせします。</p>
+            <p class="support-link"><a href="kyosan.html">この講演会を支える — ご協賛・ご寄付のお申し込みはこちら →</a></p>
           </div>
         </div>
       </article>
@@ -637,6 +664,22 @@
     </div>
   </section>
 
+  <section class="midcta">
+    <div class="wrap">
+      <div class="midcta-box reveal">
+        <p class="midcta-lead">会場で、生の歌を聴きたい方へ</p>
+        <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
+          <span><i class="nw">申込開始メールを受け取る</i><small>メールアドレスだけ<br>（約30秒 · 無料）</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="cta cta-sub" href="kyosan.html">
+          <span>この講演会を支える<small>ご協賛・ご寄付のお申し込み（企業・団体・個人）</small></span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="bio">
     <div class="wrap">
       <p class="eyebrow reveal">Speaker</p>
@@ -644,6 +687,10 @@
       <div class="bio-grid">
         <div class="reveal">
           <p class="bio-name">木山 裕策<small>きやま ゆうさく · 歌手</small></p>
+          <figure class="bio-figure">
+            <img src="assets/kiyama_profile_info.png" alt="木山裕策さんプロフィール（図解）" width="300" height="212" loading="lazy">
+            <figcaption>木山裕策オフィシャルサイトより（yusakukiyama.com/biography）</figcaption>
+          </figure>
           <p>1968年10月3日、大阪府生まれ。大阪外国語大学イスパニア語学科卒業。東京都在住、4人のお子さんと妻の6人家族です。</p>
           <p>会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、長年の夢だった歌手への挑戦を決意します。</p>
           <p>2007年、オーディション番組『歌スタ!!』で音楽プロデューサー多胡邦夫氏と出会い、一度は不合格に。「子どもたちに最後まであきらめない姿を見せたい」と異例の再挑戦を経て、2008年、家族をテーマにした「home」で39歳・現役サラリーマンのままデビュー。同年の第59回NHK紅白歌合戦に初出場しました。</p>
@@ -672,7 +719,7 @@
         <dt>会場</dt><dd><b>新百合トゥエンティワンホール</b><br><span class="note">小田急線 新百合ヶ丘駅 すぐ</span></dd>
         <dt>対象</dt><dd>麻生区内にお住まいの、PTA会員および、地域のみなさま<br><span class="note">どなたでもご参加いただけます</span></dd>
         <dt>参加費</dt><dd><b>無料</b></dd>
-        <dt>主催</dt><dd>麻生区PTA協議会</dd>
+        <dt>主催</dt><dd>麻生区PTA協議会<br><span class="note">※ご協賛・共催をご希望の方は <a href="kyosan.html">こちら</a></span></dd>
       </dl>
     </div>
   </section>

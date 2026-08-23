@@ -494,6 +494,25 @@
     .cta{width:auto;min-width:16rem}
     .bio-grid{grid-template-columns:1fr}
   }
+
+  /* ---- 協賛導線・中ほどCTA ---- */
+  .support-link{margin:.7rem 0 0;font-size:.82rem;line-height:1.6}
+  .support-link a{color:var(--amber-deep);font-weight:700;text-decoration:none;border-bottom:1px solid rgba(181,97,26,.45)}
+  .support-link a:hover{border-bottom-color:var(--amber-deep)}
+  .midcta{padding:var(--s4) 0}
+  .midcta-box{
+    background:var(--white);
+    border:1px solid var(--paper-line);
+    border-radius:var(--r-md);
+    padding:var(--s3);
+    box-shadow:0 12px 28px -18px rgba(43,34,25,.5);
+    display:grid;gap:.7rem;
+  }
+  .midcta-lead{margin:0 0 .2rem;font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink)}
+  .cta.cta-sub{background:transparent;color:var(--amber-deep);border:1.5px solid var(--amber-deep);box-shadow:none}
+  .cta.cta-sub:hover,.cta.cta-sub:focus-visible{background:rgba(216,132,42,.08);transform:none;box-shadow:none}
+  .cta.cta-sub::after{display:none}
+  .cta.cta-sub small{opacity:.85}
 </style>
 </head>
 <body>
@@ -544,7 +563,7 @@
 
         <div class="stub">
           <p class="stub-note">
-            本申込の開始は<b>9月中旬</b>の予定です。<br>会場の席には限りがあります。<br>いま登録しておくと、<b>登録開始と同時にメールが届きます</b>。
+            本申込の開始は<b>9月中旬</b>の予定です。<br>会場の席には限りがあります。<br>いま登録しておくと、<b>本申込の開始と同時にメールが届きます</b>。
           </p>
           <div>
             <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
@@ -552,6 +571,7 @@
               <span class="arrow">→</span>
             </a>
             <p class="cta-note">※この登録は座席予約ではありません。9月中旬の本申込開始時にメールでお知らせします。</p>
+            <p class="support-link"><a href="kyosan.html">この講演会を支える — ご協賛・ご寄付のお申し込みはこちら →</a></p>
           </div>
         </div>
       </article>
@@ -602,6 +622,22 @@
     </div>
   </section>
 
+  <section class="midcta">
+    <div class="wrap">
+      <div class="midcta-box reveal">
+        <p class="midcta-lead">会場で、生の歌を聴きたい方へ</p>
+        <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
+          <span><i class="nw">申込開始メールを受け取る</i><small>メールアドレスだけ<br>（約30秒 · 無料）</small></span>
+          <span class="arrow">→</span>
+        </a>
+        <a class="cta cta-sub" href="kyosan.html">
+          <span>この講演会を支える<small>ご協賛・ご寄付のお申し込み（企業・団体・個人）</small></span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="bio">
     <div class="wrap">
       <p class="eyebrow reveal">Speaker</p>
@@ -637,7 +673,7 @@
         <dt>会場</dt><dd><b>新百合トゥエンティワンホール</b><br><span class="note">小田急線 新百合ヶ丘駅 すぐ</span></dd>
         <dt>対象</dt><dd>麻生区内にお住まいの、PTA会員および、地域のみなさま<br><span class="note">どなたでもご参加いただけます</span></dd>
         <dt>参加費</dt><dd><b>無料</b></dd>
-        <dt>主催</dt><dd>麻生区PTA協議会</dd>
+        <dt>主催</dt><dd>麻生区PTA協議会<br><span class="note">※ご協賛・共催をご希望の方は <a href="kyosan.html">こちら</a></span></dd>
       </dl>
     </div>
   </section>
