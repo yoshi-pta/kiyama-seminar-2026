@@ -239,7 +239,9 @@
   .cta:hover,.cta:focus-visible{background:var(--amber-deep);transform:translateY(-2px);box-shadow:0 16px 28px -12px var(--amber-deep)}
   .cta:hover::after{transform:translateX(120%)}
   .cta:active{transform:translateY(0) scale(.99)}
-  .cta .arrow{font-family:var(--display);font-size:1.3rem;line-height:1}
+  .cta .arrow{font-family:var(--display);font-size:1.3rem;line-height:1;flex-shrink:0}
+  .cta > span:first-child{flex:1;letter-spacing:0}
+  .cta .nw{font-style:normal;display:inline-block;white-space:nowrap}
   .cta small{display:block;font-weight:500;font-size:.78rem;letter-spacing:.1em;opacity:.9}
 
   /* ---------- section commons ---------- */
@@ -476,7 +478,7 @@
     z-index:20;
   }
   .sticky.on{transform:none}
-  .sticky .cta{padding:.8rem 1rem;font-size:.98rem;box-shadow:0 8px 18px -10px var(--amber-deep)}
+  .sticky .cta{padding:.7rem 1rem;font-size:.95rem;box-shadow:0 8px 18px -10px var(--amber-deep)}
   .sticky .cta small{display:none}
 
   @media (min-width:640px){
@@ -541,7 +543,7 @@
             お申込み開始は<b>9月中旬</b>の予定です。会場の席には限りがあります。いま登録しておくと、<b>参加登録開始と同時にメールでお知らせ</b>——乗り遅れる心配がありません。登録は1分・無料です。
           </p>
           <a class="cta" href="#uketsuke">
-            <span>開始をいち早く知る<small>優先ご案内券 · 1分 · 無料</small></span>
+            <span><i class="nw">参加登録開始の案内を</i><i class="nw">いち早くもらう</i><small>優先ご案内券 · 1分 · 無料</small></span>
             <span class="arrow">↓</span>
           </a>
         </div>
@@ -695,7 +697,7 @@
 
 <div class="sticky" id="sticky" aria-hidden="true">
   <div class="wrap">
-    <a class="cta" href="#uketsuke" tabindex="-1"><span>開始をいち早く知る · 無料 · 1分</span><span class="arrow">↓</span></a>
+    <a class="cta" href="#uketsuke" tabindex="-1"><span><i class="nw">参加登録開始の案内を</i><i class="nw">いち早くもらう</i></span><span class="arrow">↓</span></a>
   </div>
 </div>
 
