@@ -547,9 +547,16 @@
 
   /* ---- 出典・プロフィール図解（このページだけ） ---- */
   .credit{margin:-.6rem 0 var(--s3);font-size:.68rem;color:var(--ink-soft);text-align:right;letter-spacing:.02em}
-  .bio-figure{margin:0 0 var(--s3);max-width:300px}
-  .bio-figure img{display:block;width:100%;height:auto;border-radius:var(--r-sm);border:1px solid var(--paper-line)}
+  .bio-figure{margin:0 0 var(--s3)}
+  .bio-figure .zoom{display:block;position:relative;cursor:zoom-in;border-radius:var(--r-sm);overflow:hidden;border:1px solid var(--paper-line)}
+  .bio-figure img{display:block;width:100%;height:auto}
+  .zoom-hint{position:absolute;right:.5rem;bottom:.5rem;font-size:.68rem;background:rgba(43,34,25,.78);color:#fff4e3;padding:.2rem .55rem;border-radius:999px;letter-spacing:.04em}
   .bio-figure figcaption{font-size:.68rem;color:var(--ink-soft);margin-top:.35rem}
+  /* ライトボックス */
+  .lightbox{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:96vh}
+  .lightbox::backdrop{background:rgba(28,16,13,.88)}
+  .lightbox img{display:block;max-width:min(96vw,1200px);max-height:92vh;width:auto;height:auto;border-radius:var(--r-sm);cursor:zoom-out}
+  .lightbox p{margin:.5rem 0 0;text-align:center;color:#fff4e3;font-size:.74rem;font-family:var(--text)}
 </style>
 </head>
 <body>
@@ -688,7 +695,10 @@
         <div class="reveal">
           <p class="bio-name">木山 裕策<small>きやま ゆうさく · 歌手</small></p>
           <figure class="bio-figure">
-            <img src="assets/kiyama_profile_info.png" alt="木山裕策さんプロフィール（図解）" width="300" height="212" loading="lazy">
+            <a class="zoom" href="assets/kiyama_profile_info_large.jpg" target="_blank" rel="noopener" aria-label="プロフィール図解を拡大して見る">
+              <img src="assets/kiyama_profile_info_large.jpg" alt="木山裕策さんプロフィール（図解）" width="1200" height="848" loading="lazy">
+              <span class="zoom-hint">🔍 クリックで拡大</span>
+            </a>
             <figcaption>木山裕策オフィシャルサイトより（yusakukiyama.com/biography）</figcaption>
           </figure>
           <p>1968年10月3日、大阪府生まれ。大阪外国語大学イスパニア語学科卒業。東京都在住、4人のお子さんと妻の6人家族です。</p>
@@ -813,6 +823,22 @@
     new IntersectionObserver(function(es){ heroSeen = es[0].isIntersecting; update(); }, {threshold:0}).observe(hero);
     new IntersectionObserver(function(es){ formSeen = es[0].isIntersecting; update(); }, {threshold:.05}).observe(form);
   })();
+</script>
+<dialog class="lightbox" id="lightbox" aria-label="画像の拡大表示">
+  <img src="" alt="">
+  <p>画像をクリック、または Esc で閉じる</p>
+</dialog>
+<script>
+(function(){
+  var dlg=document.getElementById('lightbox'); if(!dlg||!dlg.showModal) return;
+  var im=dlg.querySelector('img');
+  document.querySelectorAll('a.zoom').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault(); im.src=a.getAttribute('href'); im.alt=a.querySelector('img').alt; dlg.showModal();
+    });
+  });
+  dlg.addEventListener('click',function(){ dlg.close(); });
+})();
 </script>
 </body>
 </html>
