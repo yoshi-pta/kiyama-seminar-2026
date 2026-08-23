@@ -545,6 +545,12 @@
   .bio-figure img{display:block;width:100%;height:auto}
   .zoom-hint{position:absolute;right:.5rem;bottom:.5rem;font-size:.68rem;background:rgba(43,34,25,.78);color:#fff4e3;padding:.2rem .55rem;border-radius:999px;letter-spacing:.04em}
   .bio-figure figcaption{font-size:.68rem;color:var(--ink-soft);margin-top:.35rem}
+  .bio-portrait{max-width:240px;margin:0 auto var(--s3);border-radius:var(--r-sm);overflow:hidden;box-shadow:0 12px 26px -16px rgba(43,34,25,.55)}
+  .bio-portrait img{aspect-ratio:602/778;object-fit:cover}
+  @media (min-width:480px){
+    .bio-portrait{float:right;width:42%;max-width:240px;margin:.3rem 0 .6rem 1.1rem}
+    .bio-grid > div::after{content:"";display:block;clear:both}
+  }
   /* ライトボックス */
   .lightbox{border:0;padding:0;background:transparent;max-width:min(96vw,1200px);max-height:96vh}
   .lightbox::backdrop{background:rgba(28,16,13,.88)}
@@ -671,12 +677,8 @@
       <div class="bio-grid">
         <div class="reveal">
           <p class="bio-name">木山 裕策<small>きやま ゆうさく · 歌手</small></p>
-          <figure class="bio-figure">
-            <a class="zoom" href="assets/kiyama_profile_info_large.jpg" target="_blank" rel="noopener" aria-label="プロフィール図解を拡大して見る">
-              <img src="assets/kiyama_profile_info_large.jpg" alt="木山裕策さんプロフィール（図解）" width="1200" height="848" loading="lazy">
-              <span class="zoom-hint">🔍 クリックで拡大</span>
-            </a>
-            <figcaption>木山裕策オフィシャルサイトより（yusakukiyama.com/biography）</figcaption>
+          <figure class="bio-figure bio-portrait">
+            <img src="assets/kiyama_portrait_white.jpg" alt="木山裕策さん。白いシャツで木立の道に立ち、空を見上げている" width="602" height="778" loading="lazy">
           </figure>
           <p>1968年10月3日、大阪府生まれ。大阪外国語大学イスパニア語学科卒業。東京都在住、4人のお子さんと妻の6人家族です。</p>
           <p>会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、長年の夢だった歌手への挑戦を決意します。</p>
