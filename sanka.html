@@ -499,20 +499,13 @@
   .support-link{margin:.7rem 0 0;font-size:.82rem;line-height:1.6}
   .support-link a{color:var(--amber-deep);font-weight:700;text-decoration:none;border-bottom:1px solid rgba(181,97,26,.45)}
   .support-link a:hover{border-bottom-color:var(--amber-deep)}
-  .midcta{padding:var(--s4) 0}
-  .midcta-box{
-    background:var(--white);
-    border:1px solid var(--paper-line);
-    border-radius:var(--r-md);
-    padding:var(--s3);
-    box-shadow:0 12px 28px -18px rgba(43,34,25,.5);
-    display:grid;gap:.7rem;
-  }
-  .midcta-lead{margin:0 0 .2rem;font-family:var(--display);font-weight:700;font-size:1.05rem;color:var(--ink)}
   .cta.cta-sub{background:transparent;color:var(--amber-deep);border:1.5px solid var(--amber-deep);box-shadow:none}
   .cta.cta-sub:hover,.cta.cta-sub:focus-visible{background:rgba(216,132,42,.08);transform:none;box-shadow:none}
   .cta.cta-sub::after{display:none}
   .cta.cta-sub small{opacity:.85}
+  .sticky-sub{margin:.35rem 0 0;text-align:center;font-size:.74rem;line-height:1.4}
+  .sticky-sub a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid rgba(92,77,61,.35)}
+  .sticky-sub a:hover{color:var(--amber-deep);border-bottom-color:var(--amber-deep)}
 </style>
 </head>
 <body>
@@ -622,22 +615,6 @@
     </div>
   </section>
 
-  <section class="midcta">
-    <div class="wrap">
-      <div class="midcta-box reveal">
-        <p class="midcta-lead">会場で、生の歌を聴きたい方へ</p>
-        <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
-          <span><i class="nw">申込開始メールを受け取る</i><small>メールアドレスだけ<br>（約30秒 · 無料）</small></span>
-          <span class="arrow">→</span>
-        </a>
-        <a class="cta cta-sub" href="kyosan.html">
-          <span>この講演会を支える<small>ご協賛・ご寄付のお申し込み（企業・団体・個人）</small></span>
-          <span class="arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="bio">
     <div class="wrap">
       <p class="eyebrow reveal">Speaker</p>
@@ -737,6 +714,7 @@
 <div class="sticky" id="sticky" aria-hidden="true">
   <div class="wrap">
     <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA" tabindex="-1"><span><small style="display:block;font-size:.72rem;font-weight:500;letter-spacing:.08em;opacity:.9;margin-bottom:.1rem;">とりあえず</small><i class="nw">申込開始メールを受け取る</i><small style="display:block;font-size:.72rem;font-weight:500;letter-spacing:.04em;opacity:.9;margin-top:.1rem;">（登録は約30秒で完了）</small></span><span class="arrow">→</span></a>
+    <p class="sticky-sub"><a href="kyosan.html" tabindex="-1">ご協賛・ご寄付で、この講演会を支える →</a></p>
   </div>
 </div>
 
@@ -762,7 +740,7 @@
       var on = !heroSeen && !formSeen;
       sticky.classList.toggle('on', on);
       sticky.setAttribute('aria-hidden', on ? 'false' : 'true');
-      sticky.querySelector('.cta').tabIndex = on ? 0 : -1;
+      sticky.querySelectorAll('a').forEach(function(a){ a.tabIndex = on ? 0 : -1; });
     }
     new IntersectionObserver(function(es){ heroSeen = es[0].isIntersecting; update(); }, {threshold:0}).observe(hero);
     new IntersectionObserver(function(es){ formSeen = es[0].isIntersecting; update(); }, {threshold:.05}).observe(form);
