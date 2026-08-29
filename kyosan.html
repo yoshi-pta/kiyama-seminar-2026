@@ -473,7 +473,7 @@
 
   // カード決済（Square リンク決済）公開後、PAY_URL を実URLに差し替えるだけで
   // 「お支払いと書類」のカード決済行と、CTAのカードボタンが表示されます
-  var PAY_URL = "";
+  var PAY_URL = "https://square.link/u/9ns812LW";
   (function(){
     if(!PAY_URL) return;
     document.querySelectorAll(".paylink").forEach(function(a){ a.href = PAY_URL; });
