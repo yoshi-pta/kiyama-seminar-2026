@@ -110,6 +110,7 @@
   table{border-collapse:collapse;width:100%;font-size:15px;background:#fff}
   th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top;line-height:1.7}
   th{background:#eef2f7;color:var(--navy);font-weight:700;white-space:nowrap;width:30%}
+  [hidden]{display:none !important}
 
   .voices{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}
   .voice{
@@ -336,6 +337,7 @@
       <tr><th>請求書</th><td><b>ご希望に応じて発行いたします</b>（お申し込み時にその旨をお知らせください）。当会は適格請求書発行事業者ではないため、インボイス（登録番号）の記載はございません。</td></tr>
       <tr><th>領収書</th><td>ご協賛・ご寄付をいただいた皆様に発行し、<b>ご登録のメールアドレス宛にお送りします</b>。ご不要の場合は申込書でお知らせください。（但し書きは「麻生区PTA協議会 教育講演会 協賛金として」といたしますが、別の記載内容をご希望の場合はお申し込み時にお知らせください）</td></tr>
       <tr><th>お振込先</th><td>JAセレサ川崎（セレサ川崎農業協同組合）新百合ヶ丘支店　普通 2505081（金融機関コード 5123／店舗番号 037）<br>口座名義：<b>麻生区PTA協議会 会計 田澤 梓（アサオクピーティーエーキョウギカイ カイケイ タザワ アズサ）</b></td></tr>
+      <tr data-pay hidden><th>クレジットカード</th><td><b>カードでのお支払いも承っております。</b>金額はご自由にお決めいただけます。<br><a class="paylink" href="#" target="_blank" rel="noopener"><b>カードでご協賛・ご寄付のお手続きをする</b></a><br>領収書は当会より別途メールでお送りします。請求書でのお支払いをご希望の場合は、お手数ですが申込フォームからお願いいたします。</td></tr>
       <tr><th>お振込期限</th><td><b>令和8年11月30日（月）</b>までにお願いいたします。貴社のお支払い時期のご都合がある場合は、ご相談ください。</td></tr>
       <tr><th>振込手数料</th><td>恐れ入りますが、協賛者様でご負担をお願いいたします。</td></tr>
       <tr><th>税務の扱い</th><td>当会は任意団体のため、個人の方のご協賛金は寄附金控除（所得控除など）の対象になりません。企業・団体の経理上のお取り扱いは、貴社のご担当者・税理士にご確認ください。</td></tr>
@@ -397,6 +399,10 @@
       <p>フォームからのお申し込みが最も簡単です。<br>PDFの申込書にご記入のうえ、メール添付・お手渡しでも承ります。<br><b style="color:#ffd98a">お申し込み・お問い合わせには、48時間以内にご返信いたします。</b></p>
       <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin-top:16px">
         <button class="btn" onclick="applyForm()">協賛を申し込む</button>
+        <a class="btn ghost btn-pdf paylink" data-pay hidden href="#" target="_blank" rel="noopener">
+          <span class="main">カードでご協賛・ご寄付</span>
+          <span class="sub">（金額はご自由に）</span>
+        </a>
         <a class="btn ghost btn-pdf" href="kyosan-shuisho.pdf" target="_blank" rel="noopener">
           <span class="main">趣意書・申込書をPDFで見る</span>
           <span class="sub">（A4・4ページ＋申込書）</span>
@@ -455,6 +461,15 @@
       });
     }, { rootMargin: "-40% 0px -55% 0px" });
     document.querySelectorAll("section[id]").forEach(function(sec){ obs.observe(sec); });
+  })();
+
+  // カード決済（Square リンク決済）公開後、PAY_URL を実URLに差し替えるだけで
+  // 「お支払いと書類」のカード決済行と、CTAのカードボタンが表示されます
+  var PAY_URL = "";
+  (function(){
+    if(!PAY_URL) return;
+    document.querySelectorAll(".paylink").forEach(function(a){ a.href = PAY_URL; });
+    document.querySelectorAll("[data-pay]").forEach(function(el){ el.hidden = false; });
   })();
 
   // フォーム公開後、FORM_URL を実URLに差し替えるだけで全ボタンが有効になります
