@@ -190,6 +190,9 @@
     th{width:34%;white-space:normal}
     section{padding:40px 0}
   }
+  .qrbox.qr-live{border:1px solid #d9dee7;color:var(--navy);display:inline-flex;align-items:center;gap:14px;text-align:left;text-decoration:none;font-size:14px}
+  .qrbox.qr-live img{display:block;width:150px;height:150px}
+  .qrbox.qr-live small{display:block;font-weight:500;color:#667;font-size:12px;margin-top:4px}
 </style>
 </head>
 <body>
@@ -240,7 +243,7 @@
             <span class="main">趣意書・申込書をPDFで見る</span>
             <span class="sub">（A4・4ページ＋申込書）</span>
           </a>
-          <div class="ctanote">※ お申し込みフォームは準備中です（近日公開）</div>
+          <div class="ctanote">※ Googleフォームが開きます（入力は約3分・ログイン不要）</div>
         </div>
       </div>
     </div>
@@ -413,7 +416,7 @@
           <span class="sub">（A4・4ページ＋申込書）</span>
         </a>
       </div>
-      <div class="qrbox">【フォーム公開後、ここにQRコードを掲載します】</div>
+      <a class="qrbox qr-live" href="https://docs.google.com/forms/d/e/1FAIpQLSdxoxRyqvOAKQwiocJPgAVUMKjqqMClior2QaCglCzehVyIJA/viewform" target="_blank" rel="noopener"><img src="assets/kyosan_form_qr.png" alt="ご協賛・ご寄付 申込フォーム QRコード" width="150" height="150"><span>スマホで申し込む<br><small>QRを読み取るとGoogleフォームが開きます</small></span></a>
     </div>
   </div>
 </section>
@@ -478,7 +481,7 @@
   })();
 
   // フォーム公開後、FORM_URL を実URLに差し替えるだけで全ボタンが有効になります
-  var FORM_URL = "";
+  var FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdxoxRyqvOAKQwiocJPgAVUMKjqqMClior2QaCglCzehVyIJA/viewform";
   function applyForm(){
     if(FORM_URL){ window.open(FORM_URL, "_blank", "noopener"); }
     else{ alert("お申し込みフォームは現在準備中です。\n恐れ入りますが、趣意書PDFの申込書にご記入のうえ、\n" + mailAddr() + " までお送りください。"); }
