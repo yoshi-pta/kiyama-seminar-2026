@@ -8,6 +8,8 @@
 <meta name="description" content="歌手・木山裕策さんの教育講演とミニライブ。令和8年12月16日（水）午前、新百合トゥエンティワンホール。参加費無料・地域のみなさまに公開。申込開始メールの事前登録はこちらから。">
 <meta property="og:title" content="木山裕策 教育講演（講演＋ミニライブ）｜12.16（水）新百合ヶ丘｜申込開始メールの事前登録">
 <meta property="og:description" content="「声が出なくなるかもしれない」と告げられた人が、歌う。参加費無料・地域公開。9月中旬の本申込開始をメールでお知らせします（座席予約ではありません）。">
+<meta property="og:image" content="https://yoshi-pta.github.io/kiyama-seminar-2026/assets/kiyama_portrait_v2.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
@@ -139,7 +141,33 @@
   .headline small{display:block;font-size:.78rem;letter-spacing:.2em;color:var(--ink-soft);font-weight:500;margin-bottom:.25rem;font-family:var(--text)}
   .sub{margin:0 0 var(--s3);color:var(--ink-soft);font-size:.95rem}
 
-  /* 写真の代わりのステージ照明パネル（講師写真は使用許可が取れるまで載せない） */
+  /* ---- 講師ポートレート（事務所より使用許可済み） ---- */
+  .portrait{
+    position:relative;margin:0 0 var(--s3);
+    border-radius:var(--r-sm);overflow:hidden;
+    aspect-ratio:3/2;background:var(--stage-deep);
+    box-shadow:0 10px 24px -14px rgba(43,34,25,.6), inset 0 0 0 1px rgba(255,244,227,.06);
+  }
+  .portrait img{display:block;width:100%;height:100%;object-fit:cover}
+  .portrait figcaption{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:2.2rem 1rem .9rem;
+    background:linear-gradient(180deg, rgba(28,16,13,0) 0%, rgba(28,16,13,.72) 55%, rgba(28,16,13,.88) 100%);
+    color:#fff4e3;text-align:left;
+  }
+  .portrait figcaption p{margin:0}
+  .portrait-kicker{font-size:.64rem;letter-spacing:.3em;text-transform:uppercase;color:#ffd79a;margin-bottom:.35rem !important}
+  .portrait-title{font-family:var(--display);font-weight:700;font-size:.98rem;line-height:1.45;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+  @media (max-width:480px){.portrait-title{font-size:.9rem}}
+  .credit{margin:-.6rem 0 var(--s3);font-size:.68rem;color:var(--ink-soft);text-align:right;letter-spacing:.02em}
+  .bio-portrait{max-width:240px;margin:0 auto var(--s3);border-radius:var(--r-sm);overflow:hidden;box-shadow:0 12px 26px -16px rgba(43,34,25,.55)}
+  .bio-portrait img{display:block;width:100%;height:auto;aspect-ratio:602/778;object-fit:cover}
+  @media (min-width:480px){
+    .bio-portrait{float:right;width:42%;max-width:240px;margin:.3rem 0 .6rem 1.1rem}
+    .bio-grid > div::after{content:"";display:block;clear:both}
+  }
+
+  /* ステージ照明パネル（写真許可前の代替。現在は未使用） */
   .marquee{
     position:relative;
     border-radius:var(--r-sm);
@@ -537,13 +565,14 @@
           </h1>
           <p class="sub">前を向く大人の背中が、子どもの背中を押す。</p>
 
-          <!-- 講師写真は使用許可が取れるまで載せない。代わりにステージ照明の意匠パネル -->
-          <div class="marquee" aria-hidden="true">
-            <span class="beam beam-l"></span><span class="beam beam-r"></span>
-            <p class="marquee-kicker">Talk &amp; Mini Live</p>
-            <p class="marquee-title">「声が出なくなるかもしれない」<span>と告げられた人が、歌う。</span></p>
-            <p class="marquee-foot">テーマ：あきらめない生き方 · 家族の絆</p>
-          </div>
+          <figure class="portrait">
+            <img src="assets/kiyama_portrait_v2.jpg" alt="木山裕策さん" width="1200" height="800" loading="eager">
+            <figcaption>
+              <p class="portrait-kicker">Talk &amp; Mini Live</p>
+              <p class="portrait-title">「声が出なくなるかもしれない」と告げられた人が、歌う。</p>
+            </figcaption>
+          </figure>
+          <p class="credit">写真：木山裕策オフィシャルサイトより（yusakukiyama.com/biography）</p>
 
           <div class="badges">
             <span class="badge free">入場無料</span>
@@ -622,6 +651,9 @@
       <div class="bio-grid">
         <div class="reveal">
           <p class="bio-name">木山 裕策<small>きやま ゆうさく · 歌手</small></p>
+          <figure class="bio-portrait">
+            <img src="assets/kiyama_portrait_white.jpg" alt="木山裕策さん。白いシャツで木立の道に立ち、空を見上げている" width="602" height="778" loading="lazy">
+          </figure>
           <p>1968年10月3日、大阪府生まれ。大阪外国語大学イスパニア語学科卒業。東京都在住、4人のお子さんと妻の6人家族です。</p>
           <p>会社員だった2005年、甲状腺がんの手術を受けることになり、「声が出なくなるかもしれない」と告げられました。手術の前夜、挑戦してこなかった人生を悔やんで涙が止まらなかった——その経験から、長年の夢だった歌手への挑戦を決意します。</p>
           <p>2007年、オーディション番組『歌スタ!!』で音楽プロデューサー多胡邦夫氏と出会い、一度は不合格に。「子どもたちに最後まであきらめない姿を見せたい」と異例の再挑戦を経て、2008年、家族をテーマにした「home」で39歳・現役サラリーマンのままデビュー。同年の第59回NHK紅白歌合戦に初出場しました。</p>
