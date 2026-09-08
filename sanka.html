@@ -481,6 +481,62 @@
   .counter-lead b{color:var(--amber-deep)}
   .cta-form{font-size:1.12rem;padding:1.1rem 1.2rem}
   .counter-note{margin:0;font-size:.82rem;color:var(--ink-soft);line-height:1.7}
+  /* ---------- LP内の登録フォーム（Googleフォームへ直接送信） ---------- */
+  .wl-form{display:grid;gap:.7rem;margin:0}
+  .wl-label{
+    font-size:.86rem;font-weight:700;color:var(--ink);
+    display:flex;align-items:center;gap:.5rem;
+  }
+  .wl-label .req{
+    font-size:.68rem;font-weight:700;letter-spacing:.06em;
+    background:var(--amber-deep);color:#fff;
+    padding:.12rem .45rem;border-radius:4px;
+  }
+  .wl-input{
+    width:100%;box-sizing:border-box;
+    font-family:inherit;font-size:1.05rem;color:var(--ink);
+    padding:.95rem 1rem;
+    background:var(--white);
+    border:1.5px solid var(--paper-line);
+    border-radius:var(--r-sm,10px);
+    transition:border-color .15s ease, box-shadow .15s ease;
+    -webkit-appearance:none;appearance:none;
+  }
+  .wl-input::placeholder{color:#a99f92}
+  .wl-input:focus{
+    outline:none;
+    border-color:var(--amber-deep);
+    box-shadow:0 0 0 3px rgba(178,110,30,.18);
+  }
+  .wl-input:user-invalid{border-color:#b4462f}
+  .wl-submit{
+    width:100%;box-sizing:border-box;
+    font-family:inherit;font-size:1.12rem;font-weight:700;
+    cursor:pointer;border:0;
+  }
+  .wl-submit[disabled]{opacity:.6;cursor:progress}
+  .wl-error{
+    margin:0;font-size:.86rem;color:#b4462f;font-weight:700;
+  }
+  .wl-done{
+    display:grid;gap:.6rem;justify-items:center;text-align:center;
+    padding:1.6rem 1rem;
+    background:var(--white);
+    border:1.5px dashed var(--amber-deep);
+    border-radius:var(--r-sm,10px);
+  }
+  .wl-done .mark{
+    width:44px;height:44px;border-radius:50%;
+    background:var(--amber-deep);color:#fff;
+    display:grid;place-items:center;font-size:1.4rem;line-height:1;
+  }
+  .wl-done b{font-family:var(--display);font-size:1.1rem;letter-spacing:.04em}
+  .wl-done p{margin:0;font-size:.9rem;color:var(--ink-soft);line-height:1.8}
+  .form-fallback{
+    margin:0;font-size:.82rem;color:var(--ink-soft);line-height:1.7;
+    text-align:center;
+  }
+  .form-fallback a{font-weight:700}
   .counter-foot{
     padding:var(--s2) var(--s3) var(--s3);
     font-size:.82rem;color:var(--ink-soft);
@@ -591,7 +647,7 @@
             本申込の開始は<b>9月中旬</b>の予定です。<br>会場の席には限りがあります。<br>いま登録しておくと、<b>本申込の開始と同時にメールが届きます</b>。
           </p>
           <div>
-            <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
+            <a class="cta" href="#uketsuke">
               <span><i class="nw">申込開始メールを</i><i class="nw">受け取る</i><small>メールアドレスだけ<br>（約30秒 · 無料）</small></span>
               <span class="arrow">→</span>
             </a>
@@ -718,14 +774,25 @@
           <span>Pre-registration</span>
           <b>申込開始メールの事前登録</b>
         </div>
-        <!-- Googleフォームは iframe 埋め込みにしない（iOS Safari 等の Cookie 制限で表示できないため）。直接リンクで開く -->
-        <div class="counter-body">
-          <p class="counter-lead">入力はメールアドレスだけ。<b>約30秒</b>で終わります。</p>
-          <a class="cta cta-form" href="https://forms.gle/UrLiSjsb9sxrBuAZA">
-            <span>申込開始メールを受け取る<small>メールアドレスだけ<br>（約30秒 · 無料）</small></span>
-            <span class="arrow">→</span>
-          </a>
-          <p class="counter-note">Googleフォームが開きます。送信後、完了画面が出れば登録は終わりです。<br>※この登録は座席予約ではありません。参加の義務もありません。</p>
+        <div class="counter-body" id="wl-box">
+          <p class="counter-lead">入力はメールアドレスだけ。<b>約30秒</b>で終わります。このページのまま送信できます。</p>
+
+          <!-- 送信先は GASウェブアプリ（下部 script の WL_API_URL）。ページ遷移なしでこの場に完了表示を出す -->
+          <form class="wl-form" id="wl-form" novalidate>
+            <label class="wl-label" for="wl-email">メールアドレス<span class="req">必須</span></label>
+            <input class="wl-input" id="wl-email" name="email" type="email"
+                   inputmode="email" autocomplete="email" required
+                   placeholder="example@example.com"
+                   aria-describedby="wl-note">
+            <button class="cta cta-form wl-submit" id="wl-submit" type="submit">
+              <span id="wl-submit-label">この内容で登録する<small>メールアドレスだけ<br>（約30秒 · 無料）</small></span>
+              <span class="arrow">→</span>
+            </button>
+            <p class="wl-error" id="wl-error" hidden></p>
+          </form>
+
+          <p class="counter-note" id="wl-note">ご登録いただいたメールアドレスは、この講演会のご案内にのみ使用します。<br>※この登録は座席予約ではありません。参加の義務もありません。</p>
+          <p class="form-fallback">うまく送信できないときは、<a href="https://forms.gle/UrLiSjsb9sxrBuAZA" target="_blank" rel="noopener">こちらのフォームからもご登録いただけます</a>。</p>
         </div>
       </div>
     </div>
@@ -748,7 +815,7 @@
 
 <div class="sticky" id="sticky" aria-hidden="true">
   <div class="wrap">
-    <a class="cta" href="https://forms.gle/UrLiSjsb9sxrBuAZA" tabindex="-1"><span><small style="display:block;font-size:.72rem;font-weight:500;letter-spacing:.08em;opacity:.9;margin-bottom:.1rem;">とりあえず</small><i class="nw">申込開始メールを受け取る</i><small style="font-size:.78rem;font-weight:500;margin-left:.15em;">（登録は約30秒）</small></span><span class="arrow">→</span></a>
+    <a class="cta" href="#uketsuke" tabindex="-1"><span><small style="display:block;font-size:.72rem;font-weight:500;letter-spacing:.08em;opacity:.9;margin-bottom:.1rem;">とりあえず</small><i class="nw">申込開始メールを受け取る</i><small style="font-size:.78rem;font-weight:500;margin-left:.15em;">（登録は約30秒）</small></span><span class="arrow">→</span></a>
     <p class="sticky-sub"><a href="kyosan.html" tabindex="-1">講演会を支える ご協賛・ご寄付 →</a></p>
   </div>
 </div>
@@ -779,6 +846,78 @@
     }
     new IntersectionObserver(function(es){ heroSeen = es[0].isIntersecting; update(); }, {threshold:0}).observe(hero);
     new IntersectionObserver(function(es){ formSeen = es[0].isIntersecting; update(); }, {threshold:.05}).observe(form);
+
+    /* ============================================================
+       申込開始メールの事前登録フォーム
+       ------------------------------------------------------------
+       送信先は GAS ウェブアプリ。GASで「デプロイ → 新しいデプロイ →
+       ウェブアプリ（次のユーザーとして実行：自分／アクセス：全員）」を
+       行い、発行された exec URL を次の WL_API_URL に貼る。
+       ※ ここは必ず行コメント（//）で書くこと。ブロックコメントの中に
+       //  URLを書くとスラッシュとアスタリスクの並びでコメントが途中で
+       //  閉じ、スクリプト全体が構文エラーで止まる。
+       ============================================================ */
+    var WL_API_URL = 'https://script.google.com/macros/s/AKfycbzylNK9RdxM_s_B0NS7odNc0DPs4g0RNmyUXq5mS5ZqCGCpOcBOGNRmhdzDiV6Il-8KGQ/exec';
+
+    var wlForm = document.getElementById('wl-form');
+    var wlBox = document.getElementById('wl-box');
+    var wlBtn = document.getElementById('wl-submit');
+    var wlLabel = document.getElementById('wl-submit-label');
+    var wlErr = document.getElementById('wl-error');
+    var wlEmail = document.getElementById('wl-email');
+
+    if (wlForm && wlBox) {
+      function showError(msg){
+        wlErr.textContent = msg;
+        wlErr.hidden = false;
+        wlBtn.disabled = false;
+        wlLabel.innerHTML = 'この内容で登録する<small>メールアドレスだけ<br>（約30秒 · 無料）</small>';
+      }
+      function showDone(mail){
+        var safe = document.createElement('div');
+        safe.textContent = mail;
+        wlBox.innerHTML =
+          '<div class="wl-done" role="status">' +
+            '<span class="mark" aria-hidden="true">✓</span>' +
+            '<b>ご登録ありがとうございます</b>' +
+            '<p>' + safe.innerHTML + ' 宛に、<br>本申込の開始時にご案内をお送りします。<br>' +
+            '<span style="font-size:.84em">※この登録は座席予約ではありません。参加の義務もありません。</span></p>' +
+          '</div>';
+      }
+
+      wlForm.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        var mail = (wlEmail.value || '').trim();
+        if (!/^[^\s@,;]+@[^\s@,;]+\.[A-Za-z]{2,}$/.test(mail)) {
+          showError('メールアドレスの形式をご確認ください。');
+          wlEmail.focus();
+          return;
+        }
+        wlErr.hidden = true;
+        wlBtn.disabled = true;
+        wlLabel.textContent = '送信しています…';
+
+        var payload = JSON.stringify({ email: mail, source: 'sanka.html', ua: navigator.userAgent });
+
+        fetch(WL_API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: payload
+        })
+        .then(function(res){ return res.json(); })
+        .then(function(data){
+          if (data && data.ok) { showDone(mail); }
+          else if (data && data.error === 'invalid_email') { showError('メールアドレスの形式をご確認ください。'); }
+          else { throw new Error('ng'); }
+        })
+        .catch(function(){
+          /* 読み取りが遮られた場合でも送信自体は届くことがあるため、no-cors で送り直す */
+          fetch(WL_API_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: payload })
+            .then(function(){ showDone(mail); })
+            .catch(function(){ showError('送信できませんでした。下のフォームからご登録ください。'); });
+        });
+      });
+    }
   })();
 </script>
 </body>
