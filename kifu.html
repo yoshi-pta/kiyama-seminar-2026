@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>ご寄付のお願い｜教育講演（講演＋ミニライブ）講師 木山裕策さん — 麻生区PTA協議会</title>
+<style>
+  :root{
+    --navy:#1e3a5f; --navy2:#2b4f7e; --amber:#e8a13d; --amber2:#b0862f;
+    --ink:#2b2b2b; --sub:#5a6c85; --line:#c9d3e0; --bg:#f6f8fb; --cream:#fdf6e7;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;
+    color:var(--ink); line-height:1.85; background:#fff; font-size:16px;
+    -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  section{padding:52px 0}
+  section.alt{background:var(--bg)}
+
+  /* ---- 固定ヘッダー ---- */
+  .fixbar{
+    position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96);
+    border-bottom:1px solid var(--line); backdrop-filter:blur(6px);
+  }
+  .fixbar .inner{max-width:860px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;gap:12px}
+  .fixbar .org{font-size:13px;color:var(--navy);font-weight:700;letter-spacing:.06em}
+  .fixbar .orgsub{font-weight:600;color:var(--sub);font-size:12px}
+  @media(max-width:640px){ .fixbar .orgsub{display:none} }
+  .fixbar .sp{margin-left:auto}
+  .navrow{border-top:1px solid #e6ebf2;background:rgba(255,255,255,.96)}
+  .navrow .inner{max-width:860px;margin:0 auto;padding:0 20px}
+  .navrow ul{
+    display:flex;gap:6px;list-style:none;overflow-x:auto;padding:7px 0;margin:0;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;
+  }
+  .navrow ul::-webkit-scrollbar{display:none}
+  .navrow a{
+    display:block;white-space:nowrap;text-decoration:none;color:var(--navy);
+    font-size:13.5px;font-weight:700;padding:6px 12px;border-radius:999px;
+    background:#fff;border:1px solid var(--line);
+  }
+  .navrow a:hover{background:var(--cream);border-color:var(--amber);color:var(--navy)}
+  .navrow a.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+  section[id]{scroll-margin-top:96px}
+  .navrow .ls{display:none}
+  @media(max-width:640px){
+    /* スマホは短い見出しで7項目を1段に収める（横スクロール不要） */
+    .navrow .inner{padding:0 12px}
+    .navrow ul{gap:4px}
+    .navrow a{font-size:12px;padding:5px 8px}
+    .navrow .lf{display:none}
+    .navrow .ls{display:inline}
+    section[id]{scroll-margin-top:104px}
+  }
+  .btn{
+    display:inline-block;background:var(--amber);color:#3a2b09;text-decoration:none;
+    font-weight:800;padding:11px 20px;border-radius:999px;font-size:15px;
+    box-shadow:0 2px 10px rgba(232,161,61,.4); border:none; cursor:pointer;
+  }
+  .btn:hover{background:#f0b055}
+  .btn.small{padding:8px 15px;font-size:13.5px}
+  .btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--navy);box-shadow:none}
+  .btn-pdf{
+    display:inline-flex;flex-direction:column;align-items:center;justify-content:center;
+    line-height:1.35;text-align:center;padding:11px 22px;
+  }
+  .btn-pdf .main{font-size:15px;font-weight:800}
+  .btn-pdf .sub{font-size:12px;font-weight:600;opacity:.82;margin-top:3px}
+  .ctablock .btn-pdf.ghost{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.08);color:#fff}
+  .ctablock .btn-pdf.ghost:hover{background:rgba(255,255,255,.16)}
+
+  /* ---- ヒーロー ---- */
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#2c4f7c 100%);color:#fff;padding:44px 0 40px}
+  .hero .badge{
+    display:inline-block;background:var(--amber);color:#3a2b09;font-weight:800;
+    font-size:13px;padding:5px 13px;border-radius:999px;letter-spacing:.04em
+  }
+  .pagetitle{margin-top:14px;font-size:14.5px;color:#cfe0f2;line-height:1.7;letter-spacing:.04em}
+  .pagetitle b{display:inline-block;font-size:18px;color:#fff;font-weight:800;border-bottom:3px solid var(--amber);padding-bottom:2px;margin-top:2px}
+  a.maillink{color:var(--navy);font-weight:700}
+  footer a.maillink{color:#ffd98a}
+  .hero h1{font-size:26px;line-height:1.5;font-weight:800;margin:15px 0 6px;letter-spacing:.01em}
+  .hero h1 .am{color:#ffd98a}
+  .hero .lead{font-size:16px;color:#dbe6f3;margin-top:10px}
+  .hero .cols{display:flex;gap:26px;align-items:flex-start;margin-top:26px}
+  .hero .ph{flex:none;width:190px}
+  .hero .ph img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 6px 24px rgba(0,0,0,.28)}
+  .hero .ph .cap{font-size:11.5px;color:#b9cbe0;text-align:center;margin-top:7px;line-height:1.6}
+  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .facts span{
+    background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
+    border-radius:8px;padding:6px 12px;font-size:13.5px
+  }
+  .hero .cta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .hero .ctanote{font-size:12.5px;color:#ffd98a;width:100%;margin-top:2px}
+
+  /* ---- 共通パーツ ---- */
+  h2{
+    font-size:23px;color:var(--navy);font-weight:800;line-height:1.45;
+    border-left:7px solid var(--amber);padding-left:14px;margin-bottom:18px
+  }
+  h3{font-size:17.5px;color:var(--navy);font-weight:700;margin:24px 0 8px}
+  p+p{margin-top:12px}
+  .muted{color:var(--sub);font-size:14.5px}
+
+  table{border-collapse:collapse;width:100%;font-size:15px;background:#fff}
+  th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top;line-height:1.7}
+  th{background:#eef2f7;color:var(--navy);font-weight:700;white-space:nowrap;width:30%}
+  [hidden]{display:none !important}
+
+  .voices{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}
+  .voice{
+    flex:1 1 240px;background:var(--cream);border:1px solid #ecdfc4;border-radius:12px;
+    padding:16px 18px;font-family:"Hiragino Mincho ProN",serif;font-size:16.5px;
+    color:#5c4a25;font-weight:700;line-height:1.8
+  }
+
+  .cards{display:flex;gap:14px;margin-top:18px;flex-wrap:wrap}
+  .card{
+    flex:1 1 230px;background:#fff;border:1px solid var(--line);border-top:5px solid var(--amber);
+    border-radius:12px;padding:18px 18px 20px
+  }
+  .card .t{font-weight:800;color:var(--navy);font-size:16.5px;margin-bottom:7px}
+  .card .d{font-size:14.5px;line-height:1.8}
+
+  .money{background:var(--cream);border:1px solid var(--amber);border-radius:14px;padding:22px 24px;margin-top:6px}
+  .money .row{display:flex;gap:16px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}
+  .money .lab{flex:none;width:110px;font-weight:800;color:var(--navy)}
+  .money .val{font-size:19px;font-weight:800;color:var(--amber2);letter-spacing:.02em}
+  .money .val .hl{background:linear-gradient(transparent 62%,#ffe6ae 62%)}
+
+  .deadline{
+    background:#fff;border:2px solid var(--navy);border-radius:12px;
+    padding:14px 18px;margin-top:16px;font-size:15.5px
+  }
+  .deadline b{color:var(--navy)}
+
+  .sample{margin-top:14px}
+  .sample img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}
+  .sample .cap{font-size:12.5px;color:var(--sub);margin-top:7px}
+
+  ol.flow{counter-reset:s;list-style:none;margin-top:14px}
+  ol.flow li{
+    counter-increment:s;position:relative;padding:12px 0 12px 52px;border-bottom:1px dashed var(--line);font-size:15.5px
+  }
+  ol.flow li:last-child{border-bottom:none}
+  ol.flow li::before{
+    content:counter(s);position:absolute;left:6px;top:12px;width:30px;height:30px;
+    background:var(--navy);color:#fff;border-radius:50%;display:flex;align-items:center;
+    justify-content:center;font-weight:800;font-size:14px
+  }
+  ol.flow li b{color:var(--navy)}
+
+  details{border:1px solid var(--line);border-radius:10px;background:#fff;margin-bottom:10px}
+  details summary{
+    cursor:pointer;padding:14px 18px;font-weight:700;color:var(--navy);font-size:16px;list-style:none
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"＋";float:right;color:var(--amber2);font-weight:800}
+  details[open] summary::after{content:"−"}
+  details .body{padding:0 18px 16px;font-size:15px;line-height:1.85}
+
+  .ctablock{background:var(--navy);color:#fff;border-radius:16px;padding:30px 26px;text-align:center;margin-top:10px}
+  .ctablock h3{color:#fff;font-size:21px;margin:0 0 8px}
+  .ctablock p{font-size:15px;color:#dbe6f3}
+  .ctablock .btn{margin-top:16px;font-size:17px;padding:14px 30px}
+  .qrbox{
+    display:inline-block;background:#fff;border:2px dashed #c0392b;border-radius:10px;
+    padding:14px 18px;margin-top:16px;color:#c0392b;font-size:13.5px;font-weight:700
+  }
+
+  .orgbox{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:15px}
+  .orgbox dt{font-weight:700;color:var(--navy);margin-top:8px}
+  .orgbox dt:first-child{margin-top:0}
+
+  footer{background:var(--navy);color:#c9d8e8;padding:26px 0;font-size:13.5px;text-align:center}
+  footer a{color:#ffd98a}
+  .todo{color:#c0392b;font-weight:800}
+
+  @media(max-width:640px){
+    body{font-size:15.5px}
+    .hero h1{font-size:25px}
+    .hero .cols{flex-direction:column;align-items:center}
+    .hero .ph{width:170px}
+    h2{font-size:20px}
+    th{width:34%;white-space:normal}
+    section{padding:40px 0}
+  }
+  .qrbox.qr-live{border:1px solid #d9dee7;color:var(--navy);display:inline-flex;align-items:center;gap:14px;text-align:left;text-decoration:none;font-size:14px}
+  .qrbox.qr-live img{display:block;width:150px;height:150px}
+  .qrbox.qr-live small{display:block;font-weight:500;color:#667;font-size:12px;margin-top:4px}
+
+  /* ---- 寄付ページ専用 ---- */
+  .hero .points{list-style:none;margin-top:18px;display:grid;gap:8px}
+  .hero .points li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:9px 14px;font-size:15px}
+  .hero .points b{color:#ffd98a}
+  .ways{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+  @media(max-width:700px){ .ways{grid-template-columns:1fr} }
+  .way{background:#fff;border:1px solid var(--line);border-top:6px solid var(--amber);border-radius:14px;padding:20px 20px 22px;display:flex;flex-direction:column}
+  .way .tag{display:inline-block;align-self:flex-start;background:var(--navy);color:#fff;font-size:12.5px;font-weight:700;border-radius:999px;padding:3px 11px;margin-bottom:8px}
+  .way h3{margin:0 0 6px;font-size:19px}
+  .way .d{font-size:14.5px;line-height:1.8}
+  .way .btn{margin-top:14px;text-align:center}
+  .way .note{font-size:12.5px;color:var(--sub);margin-top:12px;line-height:1.75}
+  .bank{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px;font-size:15px;line-height:1.9}
+  .bank .acct{font-size:20px;font-weight:800;color:var(--navy);letter-spacing:.06em}
+  .copy{margin-left:8px;font-size:12.5px;font-weight:700;color:var(--navy);background:#fff;border:1px solid var(--navy);border-radius:999px;padding:2px 10px;cursor:pointer;vertical-align:2px}
+  .copy.done{background:var(--navy);color:#fff}
+  .payqr{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:12.5px;color:var(--sub)}
+  .payqr img{width:96px;height:96px;border:1px solid var(--line);border-radius:6px}
+  @media(max-width:700px){ .payqr{display:none} }
+  table.cmp th{width:auto}
+  table.cmp td,table.cmp th{font-size:14.5px}
+  table.cmp thead th{background:var(--navy);color:#fff;text-align:center}
+  .kyosanlink{background:var(--cream);border:1px solid var(--amber);border-radius:12px;padding:16px 18px;margin-top:18px;font-size:15px}
+</style>
+</head>
+<body>
+
+<div class="fixbar">
+  <div class="inner">
+    <span class="org">麻生区PTA協議会<span class="orgsub">｜ご寄付のお願い</span></span>
+    <span class="sp"></span>
+    <a class="btn small" href="#how">寄付する</a>
+  </div>
+  <nav class="navrow">
+    <div class="inner">
+      <ul>
+        <li><a href="#how"><span class="lf">ご寄付の方法</span><span class="ls">方法</span></a></li>
+        <li><a href="#why"><span class="lf">お願いする理由</span><span class="ls">理由</span></a></li>
+        <li><a href="#after"><span class="lf">領収書・ご報告</span><span class="ls">領収書</span></a></li>
+        <li><a href="#diff"><span class="lf">協賛との違い</span><span class="ls">協賛</span></a></li>
+        <li><a href="#faq"><span class="lf">よくあるご質問</span><span class="ls">FAQ</span></a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<!-- ============ ヒーロー ============ -->
+<div class="hero">
+  <div class="wrap">
+    <span class="badge">令和8年12月16日（水）午前 開催・参加費無料</span>
+    <div class="pagetitle">教育講演（講演＋ミニライブ・講師 木山裕策さん）<br><b>ご寄付のお願い</b></div>
+    <h1>金額は、お気持ちのままに。<br><span class="am">麻生区の保護者のための講演会</span>を、一緒に支えてください。</h1>
+    <ul class="points">
+      <li>📝 <b>お申し込みは不要です。</b>下のお振込先、またはカードのお手続きページから、そのままどうぞ。</li>
+      <li>💴 <b>金額は自由です。</b>一口単位ではなく、少額でもありがたく頂戴します。</li>
+      <li>🙏 お名前の掲載などのお返しはございません。掲載をご希望の方は <a href="kyosan.html" style="color:#ffd98a">ご協賛</a> へ。</li>
+    </ul>
+    <div class="cta" style="margin-top:20px">
+      <a class="btn" href="#how">ご寄付の方法を見る</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 方法 ============ -->
+<section id="how">
+  <div class="wrap">
+    <h2>ご寄付の方法（どちらか1つ）</h2>
+    <div class="ways">
+      <div class="way">
+        <span class="tag">24時間・その場で完了</span>
+        <h3>クレジットカード</h3>
+        <div class="d">お手続きページで<b>金額をご入力</b>いただくだけです。完了すると、決済サービス（Square）から自動でレシートが届きます。</div>
+        <a class="btn paylink" href="https://square.link/u/9ns812LW" target="_blank" rel="noopener">カードで寄付する</a>
+        <div class="payqr"><img src="assets/kyosan_pay_qr.png" alt="カードのお手続きページのQRコード" width="96" height="96"><span>パソコンでご覧の方は、スマホでこちらを読み取っても手続きできます</span></div>
+        <div class="note">カードでのお支払いは、<b>株式会社 Grow With</b>（当会会長 前村嘉昭が代表を務める会社）が当会に代わってお受けします。当会は任意団体のため、カード決済の仕組みを単独では持てないためです。<b>決済手数料は同社が負担し、お支払いいただいた金額は全額そのまま当会にお渡しします。</b></div>
+      </div>
+      <div class="way">
+        <span class="tag">銀行・ATM・ネットバンキング</span>
+        <h3>お振込み</h3>
+        <div class="bank">
+          JAセレサ川崎（セレサ川崎農業協同組合）<br>
+          新百合ヶ丘支店（店番 037）<br>
+          普通 <span class="acct">2505081</span><button class="copy" type="button" data-copy="2505081">コピー</button><br>
+          口座名義：麻生区PTA協議会 会計 田澤 梓<br>
+          <span class="muted">（アサオクピーティーエーキョウギカイ カイケイ タザワ アズサ）</span><br>
+          <span class="muted">金融機関コード 5123</span>
+        </div>
+        <div class="note">
+          ・お振込みの際、<b>お名前の前に「キフ」</b>とお付けいただけますと、ご協賛金と区別でき助かります（例：キフ ヤマダタロウ）。<br>
+          ・恐れ入りますが、振込手数料はご負担をお願いいたします。<br>
+          ・できましたら<b>令和8年11月30日（月）まで</b>にお願いいたします。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ なぜ ============ -->
+<section class="alt" id="why">
+  <div class="wrap">
+    <h2>ご寄付をお願いする理由</h2>
+    <p>麻生区PTA協議会は、区内23校のPTAからの分担金で運営している任意団体です。今年度の成人教育の予算は7万円。一方、この講演会は会場費・講演料・広報費などで、総額約38万円を見込んでいます。</p>
+    <p>費用は令和8年8月の臨時総会で承認をいただいており、ご寄付が集まらなくても講演会は開催します。それでもお願いするのは、<b>参加費無料を守り、今後の教育活動に余力を残すため</b>です。いただいた分だけ、区内約10,600世帯が納めた会費からの持ち出しが減ります。</p>
+    <p>講師は、がんの手術で「声が出なくなるかもしれない」と告げられた後、38歳で歌に挑戦し、39歳で「home」でデビュー、その年の紅白歌合戦に出場した木山裕策さんです。今年5月に川崎市PTA連絡協議会が開いた講演会で好評だった内容を、麻生区の保護者と地域の皆様が参加しやすい場所でお届けします。</p>
+    <p class="muted" style="margin-top:14px">講演会のくわしいご案内は <a href="kyosan.html#gaiyo">開催の概要</a> をご覧ください。</p>
+  </div>
+</section>
+
+<!-- ============ 領収書・報告 ============ -->
+<section id="after">
+  <div class="wrap">
+    <h2>領収書と、ご報告について</h2>
+    <table>
+      <tr><th>領収書</th><td>ご希望の方には、当会から領収書をお送りします。<b>お名前（宛名）・金額・お振込日（またはカードのお手続き日）</b>を、下記のメールアドレスまでお知らせください。PDFでお送りします。<br><span class="muted">カードの場合は、Squareからの自動レシートも届きます。</span></td></tr>
+      <tr><th>収支のご報告</th><td>ご連絡先をお知らせいただいた方には、開催後2か月以内をめどに、開催報告書と収支報告書をお送りします。</td></tr>
+      <tr><th>使い道</th><td>講演会の費用に充てます。開催を延期する場合は延期後の開催に、やむを得ず中止する場合や収支に余剰が出た場合は、次年度の成人教育活動に充てます。</td></tr>
+      <tr><th>税務の扱い</th><td>当会は任意団体のため、ご寄付は寄附金控除（所得控除など）の対象になりません。</td></tr>
+      <tr><th>お問い合わせ</th><td><span class="mail" data-u="asao.ku.pta.00" data-d="gmail.com"></span><br><span class="muted">※電話窓口は設けておりません。48時間以内にご返信いたします。</span></td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 協賛との違い ============ -->
+<section class="alt" id="diff">
+  <div class="wrap">
+    <h2>「ご協賛」との違い</h2>
+    <p style="margin-bottom:14px">お名前やお店・会社名の掲載をご希望の方は、「ご協賛」としてお申し込みください。</p>
+    <table class="cmp">
+      <thead><tr><th></th><th>ご寄付（このページ）</th><th>ご協賛</th></tr></thead>
+      <tr><th>金額</th><td>自由</td><td>一口単位（企業・団体 5,000円／個人 1,000円）</td></tr>
+      <tr><th>お申し込み</th><td><b>不要</b></td><td>フォーム（約2分）</td></tr>
+      <tr><th>お名前の掲載</th><td>ありません</td><td>ご希望により、当日プログラム・HP等に掲載</td></tr>
+      <tr><th>ご来賓・ご協賛者席</th><td>ありません</td><td>ご希望により2席まで</td></tr>
+      <tr><th>お支払い</th><td>お振込み・カード</td><td>お振込み（請求書も可）・カード</td></tr>
+    </table>
+    <div class="kyosanlink">掲載をご希望の方・請求書が必要な方は <a href="kyosan.html"><b>ご協賛のお願い</b></a> のページからお申し込みください。</div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq">
+  <div class="wrap">
+    <h2>よくあるご質問</h2>
+    <details>
+      <summary>少額でも大丈夫ですか？</summary>
+      <div class="body">はい、ありがたく頂戴します。金額に決まりはありません。</div>
+    </details>
+    <details>
+      <summary>名前を知らせずに寄付してもいいですか？</summary>
+      <div class="body">はい、大丈夫です。ご連絡は不要です。領収書や収支報告をご希望の場合のみ、メールでお知らせください。</div>
+    </details>
+    <details>
+      <summary>カードの明細に「Grow With」と出るのはなぜですか？</summary>
+      <div class="body">カードでのお支払いは、株式会社 Grow With（当会会長 前村嘉昭が代表を務める会社）が、当会に代わってお受けしているためです。当会は法人格のない任意団体で、カード決済の仕組みを単独では持てないことによります。決済にかかる手数料は同社が負担し、<b>お支払いいただいた金額は1円も差し引かずに、全額そのまま当会にお渡しします</b>。収支報告にも同じ金額で記載します。</div>
+    </details>
+    <details>
+      <summary>会社として寄付したいのですが、請求書は出ますか？</summary>
+      <div class="body">請求書が必要な場合は、<a href="kyosan.html">ご協賛</a>としてフォームからお申し込みください。掲載は「掲載しない」を選ぶこともできます。</div>
+    </details>
+    <details>
+      <summary>当日、講演会に参加できますか？</summary>
+      <div class="body">はい。参加費は無料で、どなたでもご参加いただけます。<a href="sanka.html">ご参加のご案内</a>をご覧ください。</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 最後のCTA ============ -->
+<section class="alt">
+  <div class="wrap">
+    <div class="ctablock">
+      <h3>ご寄付は、この2つの方法から</h3>
+      <p>お申し込みは不要です。金額はお気持ちのままに。</p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin-top:6px">
+        <a class="btn paylink" href="https://square.link/u/9ns812LW" target="_blank" rel="noopener">カードで寄付する</a>
+        <a class="btn ghost btn-pdf" href="#how"><span class="main">お振込先を見る</span><span class="sub">（JAセレサ川崎）</span></a>
+      </div>
+    </div>
+    <p style="margin-top:22px;text-align:center">子どもたちと保護者、そして地域のための講演会です。<br>温かいお力添えを、どうぞよろしくお願いいたします。</p>
+    <p style="margin-top:8px;text-align:center">麻生区PTA協議会 会長　前村 嘉昭</p>
+  </div>
+</section>
+
+<footer>
+  麻生区PTA協議会　教育講演（講演＋ミニライブ・講師 木山裕策さん）<br>
+  〒215-0004 川崎市麻生区万福寺1-5-2 麻生市民館内<br>
+  お問い合わせ：<span class="mail" data-u="asao.ku.pta.00" data-d="gmail.com"></span><br>
+  <a href="kyosan.html">ご協賛のお願い</a>　／　<a href="sanka.html">ご参加をご希望の方へ</a>
+</footer>
+
+<script>
+  // メールアドレスはHTMLに直書きせず、表示時に組み立てる（収集ボット対策）
+  document.querySelectorAll(".mail").forEach(function(el){
+    var addr = el.dataset.u + String.fromCharCode(64) + el.dataset.d;
+    var a = document.createElement("a");
+    a.href = "mailto:" + addr; a.textContent = addr; a.className = "maillink";
+    el.replaceWith(a);
+  });
+
+  // 口座番号のコピー
+  document.querySelectorAll(".copy").forEach(function(b){
+    b.addEventListener("click", function(){
+      var v = b.dataset.copy;
+      var ok = function(){ b.textContent = "コピーしました"; b.classList.add("done"); setTimeout(function(){ b.textContent = "コピー"; b.classList.remove("done"); }, 1800); };
+      if(navigator.clipboard){ navigator.clipboard.writeText(v).then(ok, function(){}); }
+    });
+  });
+
+  // 見ているセクションのメニューを強調する
+  (function(){
+    var links = Array.prototype.slice.call(document.querySelectorAll(".navrow a"));
+    var map = {};
+    links.forEach(function(a){ map[a.getAttribute("href").slice(1)] = a; });
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(!e.isIntersecting) return;
+        links.forEach(function(a){ a.classList.remove("on"); });
+        var a = map[e.target.id];
+        if(a) a.classList.add("on");
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("section[id]").forEach(function(sec){ obs.observe(sec); });
+  })();
+</script>
+
+</body>
+</html>
