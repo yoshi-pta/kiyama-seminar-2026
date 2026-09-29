@@ -7,8 +7,8 @@
 <title>ご寄付のお願い｜教育講演（講演＋ミニライブ）講師 木山裕策さん — 麻生区PTA協議会</title>
 <style>
   :root{
-    --navy:#1e3a5f; --navy2:#2b4f7e; --amber:#e8a13d; --amber2:#b0862f;
-    --ink:#2b2b2b; --sub:#5a6c85; --line:#c9d3e0; --bg:#f6f8fb; --cream:#fdf6e7;
+    --navy:#1f5a45; --navy2:#2d7358; --amber:#e8a13d; --amber2:#b0862f;
+    --ink:#2b2b2b; --sub:#56705f; --line:#c5dacf; --bg:#f3f8f5; --cream:#fdf6e7;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -24,14 +24,15 @@
   /* ---- 固定ヘッダー ---- */
   .fixbar{
     position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96);
-    border-bottom:1px solid var(--line); backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line); border-top:4px solid var(--navy); backdrop-filter:blur(6px);
   }
   .fixbar .inner{max-width:860px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;gap:12px}
   .fixbar .org{font-size:13px;color:var(--navy);font-weight:700;letter-spacing:.06em}
-  .fixbar .orgsub{font-weight:600;color:var(--sub);font-size:12px}
-  @media(max-width:640px){ .fixbar .orgsub{display:none} }
+  /* 協賛ページと見分けがつくよう、スマホでも「ご寄付」の札を出す */
+  .fixbar .kifutag{display:inline-block;margin-left:8px;background:var(--navy);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:2px 10px;letter-spacing:.04em;vertical-align:1px}
+  @media(max-width:640px){ .fixbar .orgname{display:none} }
   .fixbar .sp{margin-left:auto}
-  .navrow{border-top:1px solid #e6ebf2;background:rgba(255,255,255,.96)}
+  .navrow{border-top:1px solid #e0ece5;background:rgba(255,255,255,.96)}
   .navrow .inner{max-width:860px;margin:0 auto;padding:0 20px}
   .navrow ul{
     display:flex;gap:6px;list-style:none;overflow-x:auto;padding:7px 0;margin:0;
@@ -74,22 +75,26 @@
   .ctablock .btn-pdf.ghost:hover{background:rgba(255,255,255,.16)}
 
   /* ---- ヒーロー ---- */
-  .hero{background:linear-gradient(160deg,var(--navy) 0%,#2c4f7c 100%);color:#fff;padding:44px 0 40px}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,#2f7a5c 100%);color:#fff;padding:44px 0 40px}
   .hero .badge{
     display:inline-block;background:var(--amber);color:#3a2b09;font-weight:800;
     font-size:13px;padding:5px 13px;border-radius:999px;letter-spacing:.04em
   }
-  .pagetitle{margin-top:14px;font-size:14.5px;color:#cfe0f2;line-height:1.7;letter-spacing:.04em}
-  .pagetitle b{display:inline-block;font-size:18px;color:#fff;font-weight:800;border-bottom:3px solid var(--amber);padding-bottom:2px;margin-top:2px}
+  .pagetitle{margin-top:10px;font-size:14.5px;color:#d4ecdf;line-height:1.7;letter-spacing:.04em}
+  /* ページの主題「ご寄付のお願い」を最大の見出しにする */
+  .hero .kifutitle{font-size:40px;font-weight:800;line-height:1.3;letter-spacing:.06em;margin-top:14px;color:#fff}
+  .hero .kifutitle .u{border-bottom:5px solid var(--amber);padding-bottom:2px}
+  .hero .catch{font-size:20px;line-height:1.6;font-weight:800;margin:18px 0 4px}
+  .hero .catch .am{color:#ffd98a}
   a.maillink{color:var(--navy);font-weight:700}
   footer a.maillink{color:#ffd98a}
   .hero h1{font-size:26px;line-height:1.5;font-weight:800;margin:15px 0 6px;letter-spacing:.01em}
   .hero h1 .am{color:#ffd98a}
-  .hero .lead{font-size:16px;color:#dbe6f3;margin-top:10px}
+  .hero .lead{font-size:16px;color:#d8ece1;margin-top:10px}
   .hero .cols{display:flex;gap:26px;align-items:flex-start;margin-top:26px}
   .hero .ph{flex:none;width:190px}
   .hero .ph img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 6px 24px rgba(0,0,0,.28)}
-  .hero .ph .cap{font-size:11.5px;color:#b9cbe0;text-align:center;margin-top:7px;line-height:1.6}
+  .hero .ph .cap{font-size:11.5px;color:#b5d3c4;text-align:center;margin-top:7px;line-height:1.6}
   .facts{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
   .facts span{
     background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);
@@ -109,7 +114,7 @@
 
   table{border-collapse:collapse;width:100%;font-size:15px;background:#fff}
   th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top;line-height:1.7}
-  th{background:#eef2f7;color:var(--navy);font-weight:700;white-space:nowrap;width:30%}
+  th{background:#e8f2ec;color:var(--navy);font-weight:700;white-space:nowrap;width:30%}
   [hidden]{display:none !important}
 
   .voices{display:flex;gap:14px;margin-top:16px;flex-wrap:wrap}
@@ -166,7 +171,7 @@
 
   .ctablock{background:var(--navy);color:#fff;border-radius:16px;padding:30px 26px;text-align:center;margin-top:10px}
   .ctablock h3{color:#fff;font-size:21px;margin:0 0 8px}
-  .ctablock p{font-size:15px;color:#dbe6f3}
+  .ctablock p{font-size:15px;color:#d8ece1}
   .ctablock .btn{margin-top:16px;font-size:17px;padding:14px 30px}
   .qrbox{
     display:inline-block;background:#fff;border:2px dashed #c0392b;border-radius:10px;
@@ -177,13 +182,14 @@
   .orgbox dt{font-weight:700;color:var(--navy);margin-top:8px}
   .orgbox dt:first-child{margin-top:0}
 
-  footer{background:var(--navy);color:#c9d8e8;padding:26px 0;font-size:13.5px;text-align:center}
+  footer{background:var(--navy);color:#c7ded2;padding:26px 0;font-size:13.5px;text-align:center}
   footer a{color:#ffd98a}
   .todo{color:#c0392b;font-weight:800}
 
   @media(max-width:640px){
     body{font-size:15.5px}
-    .hero h1{font-size:25px}
+    .hero .kifutitle{font-size:34px}
+    .hero .catch{font-size:18px}
     .hero .cols{flex-direction:column;align-items:center}
     .hero .ph{width:170px}
     h2{font-size:20px}
@@ -216,6 +222,17 @@
   table.cmp th{width:auto}
   table.cmp td,table.cmp th{font-size:14.5px}
   table.cmp thead th{background:var(--navy);color:#fff;text-align:center}
+  @media(max-width:640px){
+    /* スマホで左の見出し列が1文字ずつ折り返さないよう、余白を詰めて幅を確保 */
+    table.cmp th,table.cmp td{padding:9px 8px;font-size:13.5px}
+    table.cmp tbody th{width:5.6em}
+  }
+  table.cmp thead th.kf{background:#2f7a5c}
+  table.cmp thead th.ky{background:#1e3a5f}
+  /* メニューの「ご寄付の方法」だけ色を付けて目立たせる */
+  .navrow a.go{background:var(--amber);border-color:var(--amber);color:#3a2b09}
+  .navrow a.go.on{background:var(--navy);border-color:var(--navy);color:#fff}
+  #top{scroll-margin-top:96px}
   .kyosanlink{background:var(--cream);border:1px solid var(--amber);border-radius:12px;padding:16px 18px;margin-top:18px;font-size:15px}
 </style>
 </head>
@@ -223,14 +240,15 @@
 
 <div class="fixbar">
   <div class="inner">
-    <span class="org">麻生区PTA協議会<span class="orgsub">｜ご寄付のお願い</span></span>
+    <span class="org"><span class="orgname">麻生区PTA協議会</span><span class="kifutag">ご寄付のページ</span></span>
     <span class="sp"></span>
     <a class="btn small" href="#how">寄付する</a>
   </div>
   <nav class="navrow">
     <div class="inner">
       <ul>
-        <li><a href="#how"><span class="lf">ご寄付の方法</span><span class="ls">方法</span></a></li>
+        <li><a href="#top"><span class="lf">ご寄付のお願い</span><span class="ls">お願い</span></a></li>
+        <li><a class="go" href="#how"><span class="lf">ご寄付の方法</span><span class="ls">寄付の方法</span></a></li>
         <li><a href="#why"><span class="lf">お願いする理由</span><span class="ls">理由</span></a></li>
         <li><a href="#after"><span class="lf">領収書・ご報告</span><span class="ls">領収書</span></a></li>
         <li><a href="#diff"><span class="lf">協賛との違い</span><span class="ls">協賛</span></a></li>
@@ -241,11 +259,12 @@
 </div>
 
 <!-- ============ ヒーロー ============ -->
-<div class="hero">
+<div class="hero" id="top">
   <div class="wrap">
-    <span class="badge">令和8年12月16日（水）午前 開催・参加費無料</span>
-    <div class="pagetitle">教育講演（講演＋ミニライブ・講師 木山裕策さん）<br><b>ご寄付のお願い</b></div>
-    <h1>金額は、お気持ちのままに。<br><span class="am">麻生区の保護者のための講演会</span>を、一緒に支えてください。</h1>
+    <span class="badge">お申し込み不要・金額は自由</span>
+    <h1 class="kifutitle"><span class="u">ご寄付のお願い</span></h1>
+    <div class="pagetitle">教育講演（講演＋ミニライブ・講師 木山裕策さん）<br>令和8年12月16日（水）午前 開催・参加費無料</div>
+    <p class="catch">金額は、お気持ちのままに。<br><span class="am">麻生区の保護者のための講演会</span>を、一緒に支えてください。</p>
     <ul class="points">
       <li>📝 <b>お申し込みは不要です。</b>下のお振込先、またはカードのお手続きページから、そのままどうぞ。</li>
       <li>💴 <b>金額は自由です。</b>一口単位ではなく、少額でもありがたく頂戴します。</li>
@@ -322,14 +341,14 @@
     <h2>「ご協賛」との違い</h2>
     <p style="margin-bottom:14px">お名前やお店・会社名の掲載をご希望の方は、「ご協賛」としてお申し込みください。</p>
     <table class="cmp">
-      <thead><tr><th></th><th>ご寄付（このページ）</th><th>ご協賛</th></tr></thead>
-      <tr><th>金額</th><td>自由</td><td>一口単位（企業・団体 5,000円／個人 1,000円）</td></tr>
+      <thead><tr><th></th><th class="kf">ご寄付（このページ）</th><th class="ky">ご協賛</th></tr></thead>
+      <tr><th>金額</th><td>ご自由に（少額でもありがたく頂戴します）</td><td>一口単位で、口数はご自由に<br><span class="muted">一口 企業・団体 5,000円／個人 1,000円</span></td></tr>
       <tr><th>お申し込み</th><td><b>不要</b></td><td>フォーム（約2分）</td></tr>
       <tr><th>お名前の掲載</th><td>ありません</td><td>ご希望により、当日プログラム・HP等に掲載</td></tr>
-      <tr><th>ご来賓・ご協賛者席</th><td>ありません</td><td>ご希望により2席まで</td></tr>
+      <tr><th>ご協賛者様の席</th><td>ありません</td><td>ご希望により2席まで</td></tr>
       <tr><th>お支払い</th><td>お振込み・カード</td><td>お振込み（請求書も可）・カード</td></tr>
     </table>
-    <div class="kyosanlink">掲載をご希望の方・請求書が必要な方は <a href="kyosan.html"><b>ご協賛のお願い</b></a> のページからお申し込みください。</div>
+    <div class="kyosanlink">プログラム等へ社名やお名前の掲載をご希望の方、協賛者様用の席の確保が必要な方は <a href="kyosan.html"><b>ご協賛のお願い</b></a> のページからお申し込みください。</div>
   </div>
 </section>
 
@@ -414,7 +433,7 @@
         if(a) a.classList.add("on");
       });
     }, { rootMargin: "-40% 0px -55% 0px" });
-    document.querySelectorAll("section[id]").forEach(function(sec){ obs.observe(sec); });
+    document.querySelectorAll("section[id], #top").forEach(function(sec){ obs.observe(sec); });
   })();
 </script>
 
