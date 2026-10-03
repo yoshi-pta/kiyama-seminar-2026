@@ -220,6 +220,10 @@
     background:var(--paper);border:1px solid var(--paper-line);
     color:var(--ink-soft);
   }
+  /* 主催・共催・後援は記載必須だが主役ではないので、バッジにせず小さな1行に（スマホでは項目単位で折り返す） */
+  .orgs{display:flex;flex-wrap:wrap;gap:.15rem 1.1rem;margin:.75rem 0 0;font-size:.72rem;line-height:1.6;color:var(--ink-soft);letter-spacing:.02em}
+  .orgs span{white-space:nowrap}
+  .orgs b{font-weight:700;margin-right:.4em;color:var(--ink)}
   .badge.free{background:var(--ink);color:var(--paper);border-color:var(--ink);font-weight:700;letter-spacing:.14em}
 
   /* perforation */
@@ -651,10 +655,8 @@
           <div class="badges">
             <span class="badge free">入場無料</span>
             <span class="badge">麻生区にお住まい・ご勤務の皆様が参加可能</span>
-            <span class="badge">主催 麻生区PTA協議会</span>
-            <span class="badge">共催 麻生区地域教育会議</span>
-            <span class="badge">後援 川崎市PTA連絡協議会</span>
           </div>
+          <p class="orgs"><span><b>主催</b>麻生区PTA協議会</span><span><b>共催</b>麻生区地域教育会議</span><span><b>後援</b>川崎市PTA連絡協議会</span></p>
         </div>
 
         <div class="tear" role="presentation"></div>
