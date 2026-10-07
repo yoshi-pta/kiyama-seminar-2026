@@ -612,6 +612,44 @@
   .sticky-sub{margin:1.2rem 0 0;text-align:center;font-size:.9rem;line-height:1.4}
   .sticky-sub a{color:var(--amber-deep);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--amber-deep)}
   .sticky-sub a:hover{color:var(--cta-bg-deep);border-bottom-color:var(--cta-bg-deep)}
+  /* ---------- ご協賛御礼：ヒーロー直下のティッカー（2026-10-08） ---------- */
+  .sponsor-ticker{
+    background:var(--stage);color:var(--stage-text);
+    border-top:1px solid rgba(255,244,227,.14);border-bottom:1px solid rgba(255,244,227,.14);
+    overflow:hidden;position:relative;
+  }
+  .sponsor-ticker-inner{display:flex;align-items:stretch}
+  .sponsor-ticker-label{
+    flex:0 0 auto;margin:0;padding:.6rem .9rem;
+    font-size:.68rem;letter-spacing:.14em;color:#ffd79a;white-space:nowrap;
+    border-right:1px solid rgba(255,244,227,.18);display:flex;align-items:center;
+  }
+  .sponsor-track{flex:1 1 auto;overflow:hidden;display:flex;align-items:center;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent)}
+  .sponsor-track ul{display:flex;margin:0;padding:0;list-style:none;width:max-content;
+    animation:sponsor-scroll 40s linear infinite}
+  .sponsor-track li{white-space:nowrap;font-size:.86rem;font-weight:600;letter-spacing:.04em;padding:.6rem 0 .6rem 1.6rem}
+  .sponsor-track li::after{content:"◆";margin-left:1.6rem;color:#ffd79a;opacity:.6;font-size:.55em;vertical-align:.15em}
+  .sponsor-ticker:hover .sponsor-track ul{animation-play-state:paused}
+  @keyframes sponsor-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (max-width:480px){.sponsor-ticker-label .nw{display:none}}
+  @media (prefers-reduced-motion:reduce){
+    .sponsor-track ul{animation:none;width:auto;flex-wrap:wrap}
+    .sponsor-track li[aria-hidden]{display:none}
+    .sponsor-track{-webkit-mask-image:none;mask-image:none}
+  }
+
+  /* ---------- ご協賛御礼：フッターの紹介欄 ---------- */
+  footer .thanks{margin:0 0 var(--s4);padding:0 0 var(--s4);border-bottom:1px solid var(--paper-line)}
+  footer .thanks-title{font-family:var(--display);font-size:1.15rem;font-weight:700;color:var(--ink);margin:0 0 .35rem}
+  footer .thanks-title small{font-family:var(--text);font-size:.74rem;font-weight:500;color:var(--ink-soft);margin-left:.5em;letter-spacing:.06em}
+  footer .thanks-lead{margin:0 0 .9rem}
+  footer .thanks-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.45rem 1.2rem}
+  footer .thanks-list li{font-size:.98rem;font-weight:700;color:var(--ink);padding:.35rem 0;border-bottom:1px dashed var(--paper-line);line-height:1.5}
+  footer .thanks-note{margin:.9rem 0 0;font-size:.8rem}
+  footer .thanks-note a{color:var(--amber-deep);text-decoration:none;border-bottom:1px solid currentColor}
+  @media (max-width:520px){footer .thanks-list{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -677,6 +715,13 @@
       </article>
     </div>
   </header>
+
+  <aside class="sponsor-ticker" aria-label="ご協賛御礼">
+    <div class="sponsor-ticker-inner">
+      <p class="sponsor-ticker-label">ご協賛御礼<span class="nw">（五十音順・敬称略）</span></p>
+      <div class="sponsor-track" id="sponsor-track"></div>
+    </div>
+  </aside>
 
   <section class="adults">
     <div class="wrap">
@@ -829,6 +874,18 @@
 
 <footer>
   <div class="wrap">
+    <section class="thanks" aria-labelledby="thanks-title">
+      <p class="thanks-title" id="thanks-title">ご協賛御礼<small>（五十音順・敬称略）</small></p>
+      <p class="thanks-lead">本講演会の開催にあたり、下記の皆様よりご支援を賜りました。</p>
+      <ul class="thanks-list" id="sponsor-list">
+        <li>麻生区ソーシャルデザインセンター（あさおSDC）</li>
+        <li>あさおプレップスクール</li>
+        <li>株式会社エースプランニング</li>
+        <li>株式会社Grow With</li>
+        <li>有限会社ミリオンドリーム</li>
+      </ul>
+      <p class="thanks-note">ご協賛は引き続き受け付けております。<a href="kyosan.html">ご協賛のお願いのページ</a> をご覧ください。</p>
+    </section>
     <p class="org">麻生区PTA協議会</p>
     <dl>
       <dt>所在地</dt><dd>〒215-0004　川崎市麻生区万福寺1-5-2　麻生市民館内</dd>
@@ -850,6 +907,23 @@
 </div>
 
 <script>
+  // ご協賛御礼のティッカー：フッターの一覧（正本）を2周ぶん複製して流す
+  (function(){
+    var src = document.getElementById('sponsor-list'), tr = document.getElementById('sponsor-track');
+    if (!src || !tr) return;
+    var ul = document.createElement('ul');
+    for (var k = 0; k < 2; k++) {
+      Array.prototype.forEach.call(src.children, function(li){
+        var c = document.createElement('li');
+        c.textContent = li.textContent;
+        if (k) c.setAttribute('aria-hidden', 'true');
+        ul.appendChild(c);
+      });
+    }
+    tr.appendChild(ul);
+    var half = ul.scrollWidth / 2;
+    if (half > 0) ul.style.animationDuration = Math.max(18, Math.round(half / 42)) + 's';
+  })();
   (function(){
     var at = String.fromCharCode(64);
     document.querySelectorAll('.mail').forEach(function(el){
