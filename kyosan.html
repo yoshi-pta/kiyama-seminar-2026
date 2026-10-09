@@ -140,6 +140,15 @@
   }
   .deadline b{color:var(--navy)}
 
+  /* ご協賛御礼（参加ページのフッターと同じ5件・同じ順） */
+  .thanks{background:var(--cream);border:1px solid #ecd9b0;border-radius:12px;padding:22px 24px;text-align:center}
+  .thanks .t{font-size:19px;font-weight:700;color:var(--navy);margin:0 0 4px}
+  .thanks .t small{font-size:12.5px;font-weight:500;color:var(--sub);margin-left:.4em}
+  .thanks .lead{font-size:14.5px;color:var(--sub);margin:0 0 14px}
+  .thanks ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 22px;text-align:left;max-width:640px;margin:0 auto}
+  .thanks li{font-weight:700;color:var(--ink);padding:7px 0;border-bottom:1px dashed #d9c49a;line-height:1.5}
+  .thanks .note{font-size:13.5px;color:var(--sub);margin-top:14px}
+  @media (max-width:560px){.thanks ul{grid-template-columns:1fr}.thanks{padding:18px 16px}}
   .sample{margin-top:14px}
   .sample img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;display:block}
   .sample .cap{font-size:12.5px;color:var(--sub);margin-top:7px}
@@ -323,7 +332,7 @@
     <p style="margin-top:12px"><a class="formlink" data-form href="https://docs.google.com/forms/d/e/1FAIpQLSdxoxRyqvOAKQwiocJPgAVUMKjqqMClior2QaCglCzehVyIJA/viewform" target="_blank" rel="noopener">協賛の申込フォームを開く（口数を選ぶだけ・約2分）</a></p>
 
     <div class="deadline">
-      <b>【チラシへのご芳名掲載】</b> 事前配布の告知チラシへの掲載をご希望の場合は、<b>令和8年10月3日（土）</b>までに、お申し込みだけでもお済ませください。<br>　それ以降のお申し込みも、ホームページや当日の配布物へお名前を掲載します。ご協賛のお申し込みは引き続き受け付けております。
+      <b>【チラシへのご芳名掲載】</b> 事前配布の告知チラシへの掲載は、<b>令和8年10月3日（土）</b>までにお申し込みいただいた分で確定しました。<br>　これからのお申し込みも、ホームページや当日の配布物へお名前を掲載します。ご協賛のお申し込みは引き続き受け付けております。
     </div>
 
     <p style="margin-top:18px">ご協賛いただいた企業・団体を参加者の皆様にご紹介するため、ご希望に応じて「会場での資料配布」として、貴社・貴団体の紹介資料（一企業・団体につき1種類・1枚まで）を当日会場で配布いただけます。ご協賛の対価としての広告ではなく、ご協賛者様をご紹介する趣旨のものです（内容は事前に確認させていただきます）。あわせて、協賛いただいた方には、口数にかかわらず、「ご協賛者様の席」を3席までご用意いたします（ご希望の席数はお申し込み時にお知らせください。この席でご参加の場合、一般の参加申込は不要です）。</p>
@@ -402,6 +411,24 @@
       <summary>個人でも協賛できますか？</summary>
       <div class="body">はい。企業・団体・個人の区別はなく、どなたも一口5,000円で、口数は自由です。なお、当会は任意団体のため、個人の方のご協賛金は寄附金控除の対象にはなりません。</div>
     </details>
+  </div>
+</section>
+
+<!-- ============ ご協賛御礼 ============ -->
+<section id="thanks">
+  <div class="wrap">
+    <div class="thanks">
+      <p class="t">ご協賛御礼<small>（五十音順・敬称略）</small></p>
+      <p class="lead">本講演会の開催にあたり、下記の皆様よりご支援を賜りました。心より御礼申し上げます。</p>
+      <ul>
+        <li>麻生区ソーシャルデザインセンター<br>（あさおSDC）</li>
+        <li>あさおプレップスクール</li>
+        <li>株式会社エースプランニング</li>
+        <li>株式会社Grow With</li>
+        <li>有限会社ミリオンドリーム</li>
+      </ul>
+      <p class="note">ご協賛は引き続き受け付けております。</p>
+    </div>
   </div>
 </section>
 
